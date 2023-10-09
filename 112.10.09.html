@@ -32,7 +32,7 @@ d3.json("graph_data.json").then(function(data) {
     var link = svg.selectAll("line")
                   .data(data.links)
                   .enter().append("line")
-                  .style("stroke", "black");  // 设置边的颜色为灰色
+                  .style("stroke", "gray");  // 设置边的颜色为灰色
 
     // 添加节点
     var node = svg.selectAll("circle")
@@ -43,7 +43,11 @@ d3.json("graph_data.json").then(function(data) {
                   .call(d3.drag()  // 添加拖拽行为
                       .on("start", dragstarted)
                       .on("drag", dragged)
-                      .on("end", dragended));
+                      .on("end", dragended))
+                  .on("click", function(d) {
+                      // 点击节点时跳转到指定链接
+                      window.open(d.link, '_blank');
+                  });
 
     // 添加节点标签
     var label = svg.selectAll(null)
