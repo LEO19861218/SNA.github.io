@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collaboration Network Visualization</title>
+    <title>Key Opinion Leaders Social Network Analysis</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <style>
         /* 新增樣式，將下拉式選單樣式設置為固定位置和寬度 */
@@ -16,7 +16,7 @@
 
 <!-- 添加一个容器来呈现图形 -->
 <div id="graph-container">
-    <h1>Collaboration Network Visualization</h1>
+    <h1>Key Opinion Leaders Social Network Analysis</h1>
     <p>This is a dynamic network visualization of collaboration among authors.</p>
 
     <!-- 添加控制按钮 -->
@@ -26,9 +26,9 @@
 
         <!-- 移動下拉式選單到這裡 -->
         <select id="authorDropdown">
-            <option value="graph_data.json">Author 1</option>
-            <option value="graph2_data.json">Author 2</option>
-            <option value="graph3_data.json">Author 3</option> <!-- 新增选项 -->
+            <option value="graph_data.json">Tomohiro Fukuda</option>
+            <option value="graph2_data.json">Marc Aurel Schnabel</option>
+            <option value="graph3_data.json">Matthias Hank Haeusler</option> <!-- 新增选项 -->
             <!-- 添加更多作者的選項 -->
         </select>
     </div>
@@ -167,5 +167,4 @@ authorDropdown.on("change", updateAuthorSelection);
 
 </body>
 </html>
-
 
