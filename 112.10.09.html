@@ -12,16 +12,6 @@
 <div id="graph-container">
     <h1>Collaboration Network Visualization</h1>
     <p>This is a dynamic network visualization of collaboration among authors.</p>
-
-    <!-- 添加控制按钮 -->
-    <div>
-        <label>Show Degree Centrality:</label>
-        <input type="checkbox" id="showDegreeCentrality" checked>
-    </div>
-    <div>
-        <label>Show Authors:</label>
-        <input type="checkbox" id="showAuthors" checked>
-    </div>
 </div>
 
 <script>
@@ -109,19 +99,10 @@ d3.json("graph_data.json").then(function(data) {
     }
 
     // 获取控制按钮元素
-    var showDegreeCentralityCheckbox = d3.select("#showDegreeCentrality");
     var showAuthorsCheckbox = d3.select("#showAuthors");
 
     // 监听按钮状态变化
-    showDegreeCentralityCheckbox.on("change", updateDegreeCentralityVisibility);
     showAuthorsCheckbox.on("change", updateAuthorsVisibility);
-
-    // 更新度中心性显示
-    function updateDegreeCentralityVisibility() {
-        label.style("display", function(d) {
-            return document.getElementById("showDegreeCentrality").checked ? "block" : "none";
-        });
-    }
 
     // 更新作者名字显示
     function updateAuthorsVisibility() {
@@ -134,4 +115,3 @@ d3.json("graph_data.json").then(function(data) {
 
 </body>
 </html>
-現在，您應該可以在網頁左側看到控制按鈕，並且文本也應該正常顯示。如果問題仍然存在，請嘗試清除瀏覽器緩存並重新加載頁面。
