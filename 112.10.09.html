@@ -24,14 +24,15 @@ d3.json("graph_data.json").then(function(data) {
     var simulation = d3.forceSimulation(data.nodes)
                        .force("link", d3.forceLink(data.links).id(function(d) { return d.id; }))
                        .force("charge", d3.forceManyBody())
-                       .force("center", d3.forceCenter(400, 400));
+                       .force("center", d3.forceCenter(400, 400))
+                       .force("collide", d3.forceCollide().radius(15));  // 避免节点重叠
 
     // 添加边
     var link = svg.selectAll("line")
                   .data(data.links)
                   .enter().append("line")
                   .style("stroke", function(d) {
-                      // 根据需要修改边的颜色
+                      // 根据作者顺序设置不同颜色的边
                       return (d.order === 1) ? "lightcoral" :
                              (d.order === 2) ? "lightblue" :
                              (d.order === 3) ? "lightgreen" :
@@ -43,7 +44,11 @@ d3.json("graph_data.json").then(function(data) {
                   .data(data.nodes)
                   .enter().append("circle")
                   .attr("r", function(d) { return 8 + d.degree_centrality * 20; })
-                  .style("fill", "#A4C639");  // 设置节点的默认颜色
+                  .style("fill", function(d) {
+                      // 根据不同作者设置不同颜色的节点
+                      return (d.id === "Tomohiro Fukuda") ? "#A4C639" :
+                             "#CCCCCC";  // 其他作者的颜色
+                  });
 
     // 添加节点标签
     var label = svg.selectAll(null)
@@ -72,3 +77,4 @@ d3.json("graph_data.json").then(function(data) {
 
 </body>
 </html>
+
