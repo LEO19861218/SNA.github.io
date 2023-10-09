@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Network Visualization</title>
+    <title>Network Graph Visualization</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
@@ -30,7 +30,13 @@ d3.json("graph_data.json").then(function(data) {
     var link = svg.selectAll("line")
                   .data(data.links)
                   .enter().append("line")
-                  .style("stroke", "gray");  // 设置边的默认颜色
+                  .style("stroke", function(d) {
+                      // 根据需要修改边的颜色
+                      return (d.order === 1) ? "lightcoral" :
+                             (d.order === 2) ? "lightblue" :
+                             (d.order === 3) ? "lightgreen" :
+                             "lightgray";
+                  });
 
     // 添加节点
     var node = svg.selectAll("circle")
