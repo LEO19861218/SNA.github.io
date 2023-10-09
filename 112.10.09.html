@@ -12,6 +12,16 @@
 <div id="graph-container">
     <h1>Collaboration Network Visualization</h1>
     <p>This is a dynamic network visualization of collaboration among authors.</p>
+
+    <!-- 添加控制按钮 -->
+    <div>
+        <label>Show Author Names:</label>
+        <input type="checkbox" id="showAuthors" checked>
+    </div>
+    <div>
+        <label>Show Degree Centrality:</label>
+        <input type="checkbox" id="showDegreeCentrality" checked>
+    </div>
 </div>
 
 <script>
@@ -57,11 +67,43 @@ d3.json("graph_data.json").then(function(data) {
     var label = svg.selectAll(null)
                   .data(data.nodes)
                   .enter().append("text")
-                  .text(function(d) { return d.id + " (" + d.degree_centrality.toFixed(2) + ")"; })  // 顯示節點ID和度中心性數值
+                  .text(function(d) { return getLabelText(d); })
                   .attr("font-size", 8)
                   .attr("dx", 12)
                   .attr("dy", 4)
-                  .style("fill", "black");  // 设置节点标签的颜色为黑色
+                  .style("fill", "black")
+                  .style("visibility", "visible");  // 初始時設置為可見
+
+    // 获取控制按钮元素
+    var showAuthorsCheckbox = d3.select("#showAuthors");
+    var showDegreeCentralityCheckbox = d3.select("#showDegreeCentrality");
+
+    // 监听按钮状态变化
+    showAuthorsCheckbox.on("change", updateLabelVisibility);
+    showDegreeCentralityCheckbox.on("change", updateLabelVisibility);
+
+    function updateLabelVisibility() {
+        label.style("visibility", function(d) {
+            return isLabelVisible(d) ? "visible" : "hidden";
+        });
+    }
+
+    function isLabelVisible(d) {
+        return (showAuthorsCheckbox.property("checked") && d.id) ||
+               (showDegreeCentralityCheckbox.property("checked") && d.degree_centrality);
+    }
+
+    function getLabelText(d) {
+        if (showAuthorsCheckbox.property("checked") && showDegreeCentralityCheckbox.property("checked")) {
+            return d.id + " (" + d.degree_centrality.toFixed(2) + ")";
+        } else if (showAuthorsCheckbox.property("checked")) {
+            return d.id;
+        } else if (showDegreeCentralityCheckbox.property("checked")) {
+            return d.degree_centrality.toFixed(2);
+        } else {
+            return "";
+        }
+    }
 
     function ticked() {
         link.attr("x1", function(d) { return d.source.x; })
