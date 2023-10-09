@@ -159,14 +159,14 @@ function loadData(file, centrality) {
 // 获取控制按钮元素
 var showHideAuthorNamesCheckbox = d3.select("#showHideAuthorNames");
 var authorDropdown = d3.select("#authorDropdown");
-var centralityDropdown = d3.select("#centralityDropdown");  // 新增這一行
+var centralityDropdown = d3.select("#centralityDropdown");
 
 // 监听按钮状态变化
 showHideAuthorNamesCheckbox.on("change", updateAuthorNamesVisibility);
 
 // 监听下拉式選單變化
 authorDropdown.on("change", updateAuthorSelection);
-centralityDropdown.on("change", updateAuthorSelection);  // 新增這一行
+centralityDropdown.on("change", updateAuthorSelection);
 
 // 更新作者名字显示
 function updateAuthorNamesVisibility() {
