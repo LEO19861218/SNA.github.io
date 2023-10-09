@@ -28,6 +28,11 @@ d3.json("graph_data.json").then(function(data) {
                        .force("collide", d3.forceCollide().radius(10).strength(0.5))
                        .on("tick", ticked);
 
+    // 创建颜色比例尺
+    var colorScale = d3.scaleLinear()
+                       .domain([0, 1])  // 假设度中心性的范围在 [0, 1] 之间
+                       .range(["lightblue", "orange"]);
+
     // 添加边
     var link = svg.selectAll("line")
                   .data(data.links)
@@ -39,15 +44,11 @@ d3.json("graph_data.json").then(function(data) {
                   .data(data.nodes)
                   .enter().append("circle")
                   .attr("r", function(d) { return 5 + d.degree_centrality * 20; })  // 根据度中心性调整节点的大小
-                  .style("fill", function(d) { return getColor(d.degree_centrality); })  // 根据度中心性设置节点的颜色
+                  .style("fill", function(d) { return colorScale(d.degree_centrality); })  // 根据度中心性设置节点的颜色
                   .call(d3.drag()  // 添加拖拽行为
                       .on("start", dragstarted)
                       .on("drag", dragged)
-                      .on("end", dragended))
-                  .on("click", function(d) {
-                      // 点击节点时跳转到指定链接
-                      window.open(d.link, '_blank');
-                  });
+                      .on("end", dragended));
 
     // 添加节点标签
     var label = svg.selectAll(null)
@@ -87,16 +88,6 @@ d3.json("graph_data.json").then(function(data) {
         if (!d3.event.active) simulation.alphaTarget(0);
         d.fx = null;
         d.fy = null;
-    }
-
-    // 根据度中心性获取节点颜色函数
-    function getColor(degree_centrality) {
-        // 在这里可以根据不同的度中心性设置不同的颜色
-        if (degree_centrality > 0.5) {
-            return "orange";
-        } else {
-            return "lightblue";
-        }
     }
 });
 </script>
