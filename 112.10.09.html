@@ -31,13 +31,7 @@ d3.json("graph_data.json").then(function(data) {
     var link = svg.selectAll("line")
                   .data(data.links)
                   .enter().append("line")
-                  .style("stroke", function(d) {
-                      // 根据作者顺序设置不同颜色的边
-                      return (d.order === 1) ? "lightcoral" :
-                             (d.order === 2) ? "lightblue" :
-                             (d.order === 3) ? "lightgreen" :
-                             "lightgray";
-                  });
+                  .style("stroke", "black");  // 设置边的颜色为黑色
 
     // 添加节点
     var node = svg.selectAll("circle")
@@ -46,8 +40,7 @@ d3.json("graph_data.json").then(function(data) {
                   .attr("r", function(d) { return 8 + d.degree_centrality * 20; })
                   .style("fill", function(d) {
                       // 根据不同作者设置不同颜色的节点
-                      return (d.id === "Tomohiro Fukuda") ? "#A4C639" :
-                             "#CCCCCC";  // 其他作者的颜色
+                      return getNodeColor(d.id);
                   });
 
     // 添加节点标签
@@ -72,9 +65,22 @@ d3.json("graph_data.json").then(function(data) {
         label.attr("x", function(d) { return d.x; })
              .attr("y", function(d) { return d.y; });
     });
+
+    // 获取节点颜色函数
+    function getNodeColor(author) {
+        // 根据不同作者设置不同颜色的节点
+        if (author === "Tomohiro Fukuda") {
+            return "#A4C639";  // 绿色
+        } else if (author === "Author2") {
+            return "#FF5733";  // 橙色
+        } else if (author === "Author3") {
+            return "#3498db";  // 蓝色
+        } else {
+            return "#CCCCCC";  // 其他作者的颜色
+        }
+    }
 });
 </script>
 
 </body>
 </html>
-
