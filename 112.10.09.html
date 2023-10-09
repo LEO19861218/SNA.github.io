@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Network Visualization</title>
+    <title>Collaboration Network Visualization</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
 
 <!-- 添加一个容器来呈现图形 -->
-<div id="graph-container"></div>
+<div id="graph-container">
+    <h1>Collaboration Network Visualization</h1>
+    <p>This is a dynamic network visualization of collaboration among authors.</p>
+</div>
 
 <script>
 // 使用 D3.js 加载 JSON 数据
@@ -94,3 +97,4 @@ d3.json("graph_data.json").then(function(data) {
 
 </body>
 </html>
+
