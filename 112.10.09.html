@@ -35,7 +35,6 @@
 
         <!-- 新增中心性下拉式選單 -->
         <select id="centralityDropdown">
-            <option value="degree_centrality">Degree Centrality</option>
             <option value="betweenness_centrality">Betweenness Centrality</option>
             <option value="eigenvector_centrality">Eigenvector Centrality</option>
         </select>
@@ -50,7 +49,7 @@
 
 <script>
 // 初始化加載數據
-loadData("graph_data.json", "degree_centrality");
+loadData("graph_data.json", "betweenness_centrality");
 
 // 更新所選作者
 function updateAuthorSelection() {
