@@ -67,10 +67,11 @@ d3.json("graph_data.json").then(function(data) {
     var label = svg.selectAll(null)
                   .data(data.nodes)
                   .enter().append("text")
-                  .html(function(d) {
-                      return "<tspan x='0' dy='-1em'>" + d.id + "</tspan>" +
-                             "<tspan x='0' dy='1.2em' font-size='8' fill='black'>(" + d.degree_centrality.toFixed(2) + ")</tspan>";
-                  });
+                  .text(function(d) { return d.id + " (" + d.degree_centrality.toFixed(2) + ")"; })  // 顯示節點ID和度中心性數值
+                  .attr("font-size", 8)
+                  .attr("dx", 12)
+                  .attr("dy", 4)
+                  .style("fill", "black");  // 设置节点标签的颜色为黑色
 
     function ticked() {
         link.attr("x1", function(d) { return d.source.x; })
@@ -86,9 +87,7 @@ d3.json("graph_data.json").then(function(data) {
 
         // 控制节点标签的可见性
         label.style("display", function(d) {
-            var showAuthors = document.getElementById("showAuthors").checked;
-            var showDegreeCentrality = document.getElementById("showDegreeCentrality").checked;
-            return (showAuthors && showDegreeCentrality) ? "block" : "none";
+            return document.getElementById("showAuthors").checked ? "block" : "none";
         });
     }
 
@@ -120,18 +119,14 @@ d3.json("graph_data.json").then(function(data) {
     // 更新度中心性显示
     function updateDegreeCentralityVisibility() {
         label.style("display", function(d) {
-            var showAuthors = document.getElementById("showAuthors").checked;
-            var showDegreeCentrality = document.getElementById("showDegreeCentrality").checked;
-            return (showAuthors && showDegreeCentrality) ? "block" : "none";
+            return document.getElementById("showDegreeCentrality").checked ? "block" : "none";
         });
     }
 
     // 更新作者名字显示
     function updateAuthorsVisibility() {
         label.style("display", function(d) {
-            var showAuthors = document.getElementById("showAuthors").checked;
-            var showDegreeCentrality = document.getElementById("showDegreeCentrality").checked;
-            return (showAuthors && showDegreeCentrality) ? "block" : "none";
+            return document.getElementById("showAuthors").checked ? "block" : "none";
         });
     }
 });
@@ -139,4 +134,4 @@ d3.json("graph_data.json").then(function(data) {
 
 </body>
 </html>
-
+現在，您應該可以在網頁左側看到控制按鈕，並且文本也應該正常顯示。如果問題仍然存在，請嘗試清除瀏覽器緩存並重新加載頁面。
