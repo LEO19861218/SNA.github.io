@@ -30,14 +30,17 @@ d3.json("graph_data.json").then(function(data) {
     var link = svg.selectAll("line")
                   .data(data.links)
                   .enter().append("line")
-                  .style("stroke", "gray");  // 设置边的默认颜色
+                  .style("stroke", "gray");  // 设置边的颜色为灰色
 
     // 添加节点
     var node = svg.selectAll("circle")
                   .data(data.nodes)
                   .enter().append("circle")
                   .attr("r", function(d) { return 8 + d.degree_centrality * 20; })
-                  .style("fill", "#A4C639");  // 设置节点的默认颜色
+                  .style("fill", function(d) {
+                      // 根据不同节点设置淡色系的节点颜色
+                      return getLightColor();
+                  });
 
     // 添加节点标签
     var label = svg.selectAll(null)
@@ -46,7 +49,8 @@ d3.json("graph_data.json").then(function(data) {
                   .text(function(d) { return d.id; })
                   .attr("font-size", 8)
                   .attr("dx", 12)
-                  .attr("dy", 4);
+                  .attr("dy", 4)
+                  .style("fill", "darkgray");  // 设置节点标签的颜色为深灰色
 
     // 设置节点和边的位置更新函数
     simulation.on("tick", function() {
@@ -61,8 +65,15 @@ d3.json("graph_data.json").then(function(data) {
         label.attr("x", function(d) { return d.x; })
              .attr("y", function(d) { return d.y; });
     });
+
+    // 获取淡色系节点颜色函数
+    function getLightColor() {
+        // 在这里可以使用您想要的淡色系颜色
+        return "lightblue";
+    }
 });
 </script>
 
 </body>
 </html>
+
