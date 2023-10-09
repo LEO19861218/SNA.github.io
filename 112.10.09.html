@@ -26,8 +26,8 @@
 
         <!-- 移動下拉式選單到這裡 -->
         <select id="authorDropdown">
-            <option value="author1">Author 1</option>
-            <option value="author2">Author 2</option>
+            <option value="graph_data.json">Author 1</option>
+            <option value="graph2_data.json">Author 2</option>
             <!-- 添加更多作者的選項 -->
         </select>
     </div>
@@ -136,10 +136,13 @@ d3.json("graph_data.json").then(function(data) {
 
     // 更新所選作者
     function updateAuthorSelection() {
-        var selectedAuthorId = authorDropdown.property("value");
-        // 根据所选作者ID执行相应的操作
-        console.log("Selected Author ID:", selectedAuthorId);
-        // 添加顯示所選作者的相關操作
+        var selectedFile = authorDropdown.property("value");
+        // 根据所选JSON文件执行相应的操作
+        d3.json(selectedFile).then(function(newData) {
+            // 添加顯示新的數據的相關操作
+            console.log("Selected File:", selectedFile);
+            console.log("New Data:", newData);
+        });
     }
 });
 </script>
