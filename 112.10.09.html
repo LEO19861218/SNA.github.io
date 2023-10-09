@@ -20,30 +20,34 @@ d3.json("graph_data.json").then(function(data) {
                 .attr("width", 800)
                 .attr("height", 800);
 
+    // 根据度中心性获取节点颜色函数
+    function getColor(degree_centrality) {
+        // 将度中心性映射到颜色范围
+        var colorScale = d3.scaleLinear()
+            .domain([0, 0.5, 1])  // 度中心性的范围是 [0, 1]
+            .range(["lightblue", "lightgreen", "lightcoral"]);  // 设置颜色范围
+
+        return colorScale(degree_centrality);
+    }
+
     // 创建力导向图
     var simulation = d3.forceSimulation(data.nodes)
                        .force("link", d3.forceLink(data.links).id(function(d) { return d.id; }))
-                       .force("charge", d3.forceManyBody().strength(-50))
-                       .force("center", d3.forceCenter(400, 400))
-                       .force("collide", d3.forceCollide().radius(10).strength(0.5))
-                       .on("tick", ticked);
+                       .force("charge", d3.forceManyBody())
+                       .force("center", d3.forceCenter(400, 400));
 
     // 添加边
     var link = svg.selectAll("line")
                   .data(data.links)
                   .enter().append("line")
-                  .style("stroke", "gray");  // 设置边的颜色为灰色
+                  .style("stroke", "gray");  // 设置边的默认颜色
 
     // 添加节点
     var node = svg.selectAll("circle")
                   .data(data.nodes)
                   .enter().append("circle")
-                  .attr("r", function(d) { return 5 + d.degree_centrality * 20; })  // 根据度中心性调整节点的大小
-                  .style("fill", function(d) { return getColor(d.degree_centrality); })  // 根据度中心性设置节点的颜色
-                  .call(d3.drag()  // 添加拖拽行为
-                      .on("start", dragstarted)
-                      .on("drag", dragged)
-                      .on("end", dragended));
+                  .attr("r", function(d) { return 5 + d.degree_centrality * 20; })
+                  .style("fill", function(d) { return getColor(d.degree_centrality); });  // 设置节点的颜色
 
     // 添加节点标签
     var label = svg.selectAll(null)
@@ -52,10 +56,10 @@ d3.json("graph_data.json").then(function(data) {
                   .text(function(d) { return d.id; })
                   .attr("font-size", 8)
                   .attr("dx", 12)
-                  .attr("dy", 4)
-                  .style("fill", "darkgray");  // 设置节点标签的颜色为深灰色
+                  .attr("dy", 4);
 
-    function ticked() {
+    // 设置节点和边的位置更新函数
+    simulation.on("tick", function() {
         link.attr("x1", function(d) { return d.source.x; })
             .attr("y1", function(d) { return d.source.y; })
             .attr("x2", function(d) { return d.target.x; })
@@ -66,38 +70,10 @@ d3.json("graph_data.json").then(function(data) {
 
         label.attr("x", function(d) { return d.x; })
              .attr("y", function(d) { return d.y; });
-    }
-
-    function dragstarted(d) {
-        if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-        d.fx = d.x;
-        d.fy = d.y;
-    }
-
-    function dragged(d) {
-        d.fx = d3.event.x;
-        d.fy = d3.event.y;
-    }
-
-    function dragended(d) {
-        if (!d3.event.active) simulation.alphaTarget(0);
-        d.fx = null;
-        d.fy = null;
-    }
-
-    // 根据度中心性获取节点颜色函数
-    function getColor(degree_centrality) {
-        // 在这里可以根据不同的度中心性设置不同的颜色
-        if (degree_centrality > 0.5) {
-            return "orange";
-        } else {
-            return "lightblue";
-        }
-    }
+    });
 });
 </script>
 
 </body>
 </html>
-
 
