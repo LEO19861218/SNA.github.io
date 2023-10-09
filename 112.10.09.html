@@ -11,9 +11,9 @@
             width: 150px;
         }
 
-        /* 新增樣式，設置長條圖樣式 */
-        .bar {
-            fill: steelblue;
+        /* 新增樣式，微調 bar-chart-container 的位置 */
+        #bar-chart-container {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -41,7 +41,7 @@
     <!-- 添加 SVG 容器 -->
     <div id="graph-svg-container"></div>
 
-    <!-- 新增長條圖容器 -->
+    <!-- 添加長條圖容器 -->
     <div id="bar-chart-container"></div>
 </div>
 
@@ -60,6 +60,7 @@ function updateAuthorSelection() {
 
         // 移除先前的 SVG
         d3.select("#graph-svg-container").select("svg").remove();
+
         // 移除先前的長條圖
         d3.select("#bar-chart-container").select("svg").remove();
 
@@ -130,7 +131,7 @@ function loadData(file) {
                          .data(data.nodes)
                          .enter().append("rect")
                          .attr("class", "bar")
-                         .attr("x", function(d, i) { return i * 20; })
+                         .attr("x", function(d, i) { return i * 20 + 50; }) // 微調位置
                          .attr("y", function(d) { return 200 - d.degree_centrality * 100; })
                          .attr("width", 15)
                          .attr("height", function(d) { return d.degree_centrality * 100; });
@@ -151,10 +152,6 @@ function loadData(file) {
             label.style("display", function(d) {
                 return document.getElementById("showHideAuthorNames").checked ? "block" : "none";
             });
-
-            // 更新長條圖
-            bars.attr("y", function(d) { return 200 - d.degree_centrality * 100; })
-                .attr("height", function(d) { return d.degree_centrality * 100; });
         }
 
         function dragstarted(d) {
@@ -197,3 +194,4 @@ authorDropdown.on("change", updateAuthorSelection);
 
 </body>
 </html>
+
