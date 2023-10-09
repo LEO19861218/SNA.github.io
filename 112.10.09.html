@@ -53,7 +53,7 @@ d3.json("graph_data.json").then(function(data) {
                   .attr("font-size", 8)
                   .attr("dx", 12)
                   .attr("dy", 4)
-                  .style("fill", "darkgray");  // 设置节点标签的颜色为深灰色
+                  .style("fill", "black");  // 设置节点标签的颜色为黑色
 
     function ticked() {
         link.attr("x1", function(d) { return d.source.x; })
