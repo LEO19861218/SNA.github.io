@@ -38,11 +38,8 @@ d3.json("graph_data.json").then(function(data) {
     var node = svg.selectAll("circle")
                   .data(data.nodes)
                   .enter().append("circle")
-                  .attr("r", 5)  // 减小节点的半径
-                  .style("fill", function(d) {
-                      // 根据不同节点设置淡色系的节点颜色
-                      return getLightColor();
-                  })
+                  .attr("r", function(d) { return 5 + d.degree_centrality * 20; })  // 根据度中心性调整节点的大小
+                  .style("fill", function(d) { return getColor(d.degree_centrality); })  // 根据度中心性设置节点的颜色
                   .call(d3.drag()  // 添加拖拽行为
                       .on("start", dragstarted)
                       .on("drag", dragged)
@@ -88,10 +85,14 @@ d3.json("graph_data.json").then(function(data) {
         d.fy = null;
     }
 
-    // 获取淡色系节点颜色函数
-    function getLightColor() {
-        // 在这里可以使用您想要的淡色系颜色
-        return "lightblue";
+    // 根据度中心性获取节点颜色函数
+    function getColor(degree_centrality) {
+        // 在这里可以根据不同的度中心性设置不同的颜色
+        if (degree_centrality > 0.5) {
+            return "orange";
+        } else {
+            return "lightblue";
+        }
     }
 });
 </script>
