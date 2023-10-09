@@ -15,14 +15,6 @@
 
     <!-- 添加控制按钮 -->
     <div>
-        <label>Show Degree Centrality:</label>
-        <input type="checkbox" id="showDegreeCentrality" checked>
-    </div>
-    <div>
-        <label>Show Authors:</label>
-        <input type="checkbox" id="showAuthors" checked>
-    </div>
-    <div>
         <label>Show/Hide Author Names:</label>
         <input type="checkbox" id="showHideAuthorNames" checked>
     </div>
@@ -91,9 +83,7 @@ d3.json("graph_data.json").then(function(data) {
 
         // 控制节点标签的可见性
         label.style("display", function(d) {
-            var showAuthors = document.getElementById("showAuthors").checked;
-            var showHideAuthorNames = document.getElementById("showHideAuthorNames").checked;
-            return (showAuthors && showHideAuthorNames) ? "block" : "none";
+            return document.getElementById("showHideAuthorNames").checked ? "block" : "none";
         });
     }
 
@@ -115,28 +105,15 @@ d3.json("graph_data.json").then(function(data) {
     }
 
     // 获取控制按钮元素
-    var showAuthorsCheckbox = d3.select("#showAuthors");
     var showHideAuthorNamesCheckbox = d3.select("#showHideAuthorNames");
 
     // 监听按钮状态变化
-    showAuthorsCheckbox.on("change", updateAuthorsVisibility);
     showHideAuthorNamesCheckbox.on("change", updateAuthorNamesVisibility);
 
     // 更新作者名字显示
-    function updateAuthorsVisibility() {
-        label.style("display", function(d) {
-            var showAuthors = document.getElementById("showAuthors").checked;
-            var showHideAuthorNames = document.getElementById("showHideAuthorNames").checked;
-            return (showAuthors && showHideAuthorNames) ? "block" : "none";
-        });
-    }
-
-    // 更新作者名字可見性
     function updateAuthorNamesVisibility() {
         label.style("display", function(d) {
-            var showAuthors = document.getElementById("showAuthors").checked;
-            var showHideAuthorNames = document.getElementById("showHideAuthorNames").checked;
-            return (showAuthors && showHideAuthorNames) ? "block" : "none";
+            return document.getElementById("showHideAuthorNames").checked ? "block" : "none";
         });
     }
 });
