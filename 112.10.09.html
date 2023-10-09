@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collaboration Network Visualization</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        /* 新增樣式，將下拉式選單樣式設置為固定位置和寬度 */
+        #authorDropdown {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,14 +29,12 @@
     </div>
 </div>
 
-<!-- 添加導航欄 -->
-<nav>
-    <ul>
-        <li><a href="#author1">Author 1</a></li>
-        <li><a href="#author2">Author 2</a></li>
-        <!-- 添加更多作者的連結 -->
-    </ul>
-</nav>
+<!-- 添加下拉式選單 -->
+<select id="authorDropdown">
+    <option value="author1">Author 1</option>
+    <option value="author2">Author 2</option>
+    <!-- 添加更多作者的選項 -->
+</select>
 
 <script>
 // 使用 D3.js 加载 JSON 数据
@@ -115,6 +122,7 @@ d3.json("graph_data.json").then(function(data) {
 
     // 获取控制按钮元素
     var showHideAuthorNamesCheckbox = d3.select("#showHideAuthorNames");
+    var authorDropdown = d3.select("#authorDropdown");
 
     // 监听按钮状态变化
     showHideAuthorNamesCheckbox.on("change", updateAuthorNamesVisibility);
@@ -125,8 +133,20 @@ d3.json("graph_data.json").then(function(data) {
             return document.getElementById("showHideAuthorNames").checked ? "block" : "none";
         });
     }
+
+    // 监听下拉式選單變化
+    authorDropdown.on("change", updateAuthorSelection);
+
+    // 更新所選作者
+    function updateAuthorSelection() {
+        var selectedAuthorId = authorDropdown.property("value");
+        // 根据所选作者ID执行相应的操作
+        console.log("Selected Author ID:", selectedAuthorId);
+        // 添加顯示所選作者的相關操作
+    }
 });
 </script>
 
 </body>
 </html>
+
