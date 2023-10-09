@@ -8,9 +8,6 @@
     <style>
         /* 新增樣式，將下拉式選單樣式設置為固定位置和寬度 */
         #authorDropdown {
-            position: fixed;
-            top: 20px;
-            left: 20px;
             width: 150px;
         }
     </style>
@@ -26,15 +23,15 @@
     <div>
         <label>Show/Hide Author Names:</label>
         <input type="checkbox" id="showHideAuthorNames" checked>
+
+        <!-- 移動下拉式選單到這裡 -->
+        <select id="authorDropdown">
+            <option value="author1">Author 1</option>
+            <option value="author2">Author 2</option>
+            <!-- 添加更多作者的選項 -->
+        </select>
     </div>
 </div>
-
-<!-- 添加下拉式選單 -->
-<select id="authorDropdown">
-    <option value="author1">Author 1</option>
-    <option value="author2">Author 2</option>
-    <!-- 添加更多作者的選項 -->
-</select>
 
 <script>
 // 使用 D3.js 加载 JSON 数据
@@ -149,4 +146,3 @@ d3.json("graph_data.json").then(function(data) {
 
 </body>
 </html>
-
