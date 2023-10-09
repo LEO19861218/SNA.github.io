@@ -68,7 +68,7 @@ d3.json("graph_data.json").then(function(data) {
                   .data(data.nodes)
                   .enter().append("text")
                   .html(function(d) {
-                      return "<tspan dy='-1em'>" + d.id + "</tspan>" +
+                      return "<tspan x='0' dy='-1em'>" + d.id + "</tspan>" +
                              "<tspan x='0' dy='1.2em' font-size='8' fill='black'>(" + d.degree_centrality.toFixed(2) + ")</tspan>";
                   });
 
@@ -139,3 +139,4 @@ d3.json("graph_data.json").then(function(data) {
 
 </body>
 </html>
+
