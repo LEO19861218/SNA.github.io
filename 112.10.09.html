@@ -67,10 +67,12 @@ d3.json("graph_data.json").then(function(data) {
     var label = svg.selectAll(null)
                   .data(data.nodes)
                   .enter().append("text")
-                  .text(function(d) { return d.id + " (" + d.degree_centrality.toFixed(2) + ")"; })  // 顯示節點ID和度中心性數值
+                  .text(function(d) {
+                      return "Author: " + d.id + "\nCentrality: " + d.degree_centrality.toFixed(2);
+                  })  // 顯示節點ID和度中心性數值
                   .attr("font-size", 8)
                   .attr("dx", 12)
-                  .attr("dy", 4)
+                  .attr("dy", function(d, i) { return i % 2 === 0 ? -8 : 10; })  // 根据奇偶分配標籤位置
                   .style("fill", "black");  // 设置节点标签的颜色为黑色
 
     function ticked() {
@@ -87,7 +89,7 @@ d3.json("graph_data.json").then(function(data) {
 
         // 控制节点标签的可见性
         label.style("display", function(d) {
-            return document.getElementById("showAuthors").checked ? "block" : "none";
+            return (document.getElementById("showAuthors").checked || document.getElementById("showDegreeCentrality").checked) ? "block" : "none";
         });
     }
 
@@ -134,5 +136,4 @@ d3.json("graph_data.json").then(function(data) {
 
 </body>
 </html>
-
 
