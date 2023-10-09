@@ -15,12 +15,12 @@
 
     <!-- 添加控制按钮 -->
     <div>
-        <label>Show Author Names:</label>
-        <input type="checkbox" id="showAuthors" checked>
-    </div>
-    <div>
         <label>Show Degree Centrality:</label>
         <input type="checkbox" id="showDegreeCentrality" checked>
+    </div>
+    <div>
+        <label>Show Authors:</label>
+        <input type="checkbox" id="showAuthors" checked>
     </div>
 </div>
 
@@ -67,43 +67,11 @@ d3.json("graph_data.json").then(function(data) {
     var label = svg.selectAll(null)
                   .data(data.nodes)
                   .enter().append("text")
-                  .text(function(d) { return getLabelText(d); })
+                  .text(function(d) { return d.id + " (" + d.degree_centrality.toFixed(2) + ")"; })  // 顯示節點ID和度中心性數值
                   .attr("font-size", 8)
                   .attr("dx", 12)
                   .attr("dy", 4)
-                  .style("fill", "black")
-                  .style("visibility", "visible");  // 初始时设置为可见
-
-    // 获取控制按钮元素
-    var showAuthorsCheckbox = d3.select("#showAuthors");
-    var showDegreeCentralityCheckbox = d3.select("#showDegreeCentrality");
-
-    // 监听按钮状态变化
-    showAuthorsCheckbox.on("change", updateLabelVisibility);
-    showDegreeCentralityCheckbox.on("change", updateLabelVisibility);
-
-    function updateLabelVisibility() {
-        label.style("visibility", function(d) {
-            return isLabelVisible(d) ? "visible" : "hidden";
-        });
-    }
-
-    function isLabelVisible(d) {
-        return (showAuthorsCheckbox.property("checked") && d.id) ||
-               (showDegreeCentralityCheckbox.property("checked") && d.degree_centrality);
-    }
-
-    function getLabelText(d) {
-        if (showAuthorsCheckbox.property("checked") && showDegreeCentralityCheckbox.property("checked")) {
-            return d.id + " (" + d.degree_centrality.toFixed(2) + ")";
-        } else if (showAuthorsCheckbox.property("checked")) {
-            return d.id;
-        } else if (showDegreeCentralityCheckbox.property("checked")) {
-            return d.degree_centrality.toFixed(2);
-        } else {
-            return "";
-        }
-    }
+                  .style("fill", "black");  // 设置节点标签的颜色为黑色
 
     function ticked() {
         link.attr("x1", function(d) { return d.source.x; })
@@ -116,6 +84,11 @@ d3.json("graph_data.json").then(function(data) {
 
         label.attr("x", function(d) { return d.x; })
              .attr("y", function(d) { return d.y; });
+
+        // 控制节点标签的可见性
+        label.style("display", function(d) {
+            return document.getElementById("showAuthors").checked ? "block" : "none";
+        });
     }
 
     function dragstarted(d) {
@@ -134,8 +107,32 @@ d3.json("graph_data.json").then(function(data) {
         d.fx = null;
         d.fy = null;
     }
+
+    // 获取控制按钮元素
+    var showDegreeCentralityCheckbox = d3.select("#showDegreeCentrality");
+    var showAuthorsCheckbox = d3.select("#showAuthors");
+
+    // 监听按钮状态变化
+    showDegreeCentralityCheckbox.on("change", updateDegreeCentralityVisibility);
+    showAuthorsCheckbox.on("change", updateAuthorsVisibility);
+
+    // 更新度中心性显示
+    function updateDegreeCentralityVisibility() {
+        label.style("display", function(d) {
+            return document.getElementById("showDegreeCentrality").checked ? "block" : "none";
+        });
+    }
+
+    // 更新作者名字显示
+    function updateAuthorsVisibility() {
+        label.style("display", function(d) {
+            return document.getElementById("showAuthors").checked ? "block" : "none";
+        });
+    }
 });
 </script>
 
 </body>
 </html>
+
+
