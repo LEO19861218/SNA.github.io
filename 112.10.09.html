@@ -57,7 +57,7 @@ d3.json("graph_data.json").then(function(data) {
     var label = svg.selectAll(null)
                   .data(data.nodes)
                   .enter().append("text")
-                  .text(function(d) { return d.id; })
+                  .text(function(d) { return d.id + " (" + d.degree_centrality.toFixed(2) + ")"; })  // 顯示節點ID和度中心性數值
                   .attr("font-size", 8)
                   .attr("dx", 12)
                   .attr("dy", 4)
