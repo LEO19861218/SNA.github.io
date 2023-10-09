@@ -67,13 +67,10 @@ d3.json("graph_data.json").then(function(data) {
     var label = svg.selectAll(null)
                   .data(data.nodes)
                   .enter().append("text")
-                  .text(function(d) {
-                      return "Author: " + d.id + "\nCentrality: " + d.degree_centrality.toFixed(2);
-                  })  // 顯示節點ID和度中心性數值
-                  .attr("font-size", 8)
-                  .attr("dx", 12)
-                  .attr("dy", function(d, i) { return i % 2 === 0 ? -8 : 10; })  // 根据奇偶分配標籤位置
-                  .style("fill", "black");  // 设置节点标签的颜色为黑色
+                  .html(function(d) {
+                      return "<tspan dy='-1em'>" + d.id + "</tspan>" +
+                             "<tspan x='0' dy='1.2em' font-size='8' fill='black'>(" + d.degree_centrality.toFixed(2) + ")</tspan>";
+                  });
 
     function ticked() {
         link.attr("x1", function(d) { return d.source.x; })
@@ -89,7 +86,9 @@ d3.json("graph_data.json").then(function(data) {
 
         // 控制节点标签的可见性
         label.style("display", function(d) {
-            return (document.getElementById("showAuthors").checked || document.getElementById("showDegreeCentrality").checked) ? "block" : "none";
+            var showAuthors = document.getElementById("showAuthors").checked;
+            var showDegreeCentrality = document.getElementById("showDegreeCentrality").checked;
+            return (showAuthors && showDegreeCentrality) ? "block" : "none";
         });
     }
 
@@ -121,14 +120,18 @@ d3.json("graph_data.json").then(function(data) {
     // 更新度中心性显示
     function updateDegreeCentralityVisibility() {
         label.style("display", function(d) {
-            return document.getElementById("showDegreeCentrality").checked ? "block" : "none";
+            var showAuthors = document.getElementById("showAuthors").checked;
+            var showDegreeCentrality = document.getElementById("showDegreeCentrality").checked;
+            return (showAuthors && showDegreeCentrality) ? "block" : "none";
         });
     }
 
     // 更新作者名字显示
     function updateAuthorsVisibility() {
         label.style("display", function(d) {
-            return document.getElementById("showAuthors").checked ? "block" : "none";
+            var showAuthors = document.getElementById("showAuthors").checked;
+            var showDegreeCentrality = document.getElementById("showDegreeCentrality").checked;
+            return (showAuthors && showDegreeCentrality) ? "block" : "none";
         });
     }
 });
@@ -136,4 +139,3 @@ d3.json("graph_data.json").then(function(data) {
 
 </body>
 </html>
-
