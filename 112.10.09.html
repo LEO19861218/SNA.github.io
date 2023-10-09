@@ -10,11 +10,6 @@
         #authorDropdown {
             width: 150px;
         }
-        /* 新增樣式，用於調整兩個 SVG 容器的排版 */
-        .graph-container {
-            display: inline-block;
-            margin-right: 20px;
-        }
     </style>
 </head>
 <body>
@@ -37,16 +32,13 @@
         </select>
     </div>
 
-    <!-- 添加第一個 SVG 容器 -->
-    <div class="graph-container" id="graph-container-1"></div>
-    
-    <!-- 添加第二個 SVG 容器 -->
-    <div class="graph-container" id="graph-container-2"></div>
+    <!-- 添加 SVG 容器 -->
+    <div id="graph-svg-container"></div>
 </div>
 
 <script>
 // 初始化加載數據
-loadData("graph_data.json", "graph-container-1");
+loadData("graph_data.json");
 
 // 更新所選作者
 function updateAuthorSelection() {
@@ -58,20 +50,20 @@ function updateAuthorSelection() {
         console.log("New Data:", newData);
 
         // 移除先前的 SVG
-        d3.select("#graph-container-2").select("svg").remove();
+        d3.select("#graph-svg-container").select("svg").remove();
 
         // 加載新的數據
-        loadData(selectedFile, "graph-container-2");
+        loadData(selectedFile);
     }).catch(function(error) {
         console.error("Error loading data:", error);
     });
 }
 
 // 加載數據
-function loadData(file, containerId) {
+function loadData(file) {
     d3.json(file).then(function(data) {
         // 创建 SVG 元素
-        var svg = d3.select("#" + containerId)
+        var svg = d3.select("#graph-svg-container")
                     .append("svg")
                     .attr("width", 800)
                     .attr("height", 800);
