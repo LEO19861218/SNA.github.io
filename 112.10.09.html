@@ -24,7 +24,9 @@ d3.json("graph_data.json").then(function(data) {
     var simulation = d3.forceSimulation(data.nodes)
                        .force("link", d3.forceLink(data.links).id(function(d) { return d.id; }))
                        .force("charge", d3.forceManyBody())
-                       .force("center", d3.forceCenter(400, 400));
+                       .force("center", d3.forceCenter(400, 400))
+                       .force("collide", d3.forceCollide().radius(20).strength(0.5))
+                       .on("tick", ticked);
 
     // 添加边
     var link = svg.selectAll("line")
@@ -40,7 +42,11 @@ d3.json("graph_data.json").then(function(data) {
                   .style("fill", function(d) {
                       // 根据不同节点设置淡色系的节点颜色
                       return getLightColor();
-                  });
+                  })
+                  .call(d3.drag()  // 添加拖拽行为
+                      .on("start", dragstarted)
+                      .on("drag", dragged)
+                      .on("end", dragended));
 
     // 添加节点标签
     var label = svg.selectAll(null)
@@ -52,8 +58,7 @@ d3.json("graph_data.json").then(function(data) {
                   .attr("dy", 4)
                   .style("fill", "darkgray");  // 设置节点标签的颜色为深灰色
 
-    // 设置节点和边的位置更新函数
-    simulation.on("tick", function() {
+    function ticked() {
         link.attr("x1", function(d) { return d.source.x; })
             .attr("y1", function(d) { return d.source.y; })
             .attr("x2", function(d) { return d.target.x; })
@@ -64,7 +69,24 @@ d3.json("graph_data.json").then(function(data) {
 
         label.attr("x", function(d) { return d.x; })
              .attr("y", function(d) { return d.y; });
-    });
+    }
+
+    function dragstarted(d) {
+        if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+    }
+
+    function dragged(d) {
+        d.fx = d3.event.x;
+        d.fy = d3.event.y;
+    }
+
+    function dragended(d) {
+        if (!d3.event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+    }
 
     // 获取淡色系节点颜色函数
     function getLightColor() {
