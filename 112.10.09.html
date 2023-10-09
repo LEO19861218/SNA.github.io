@@ -1,17 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaboration Network Visualization</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+
 <!-- 添加一个容器来呈现图形 -->
 <div id="graph-container">
     <h1>Collaboration Network Visualization</h1>
     <p>This is a dynamic network visualization of collaboration among authors.</p>
-
-    <!-- 添加控制按钮 -->
-    <div>
-        <label>Show Degree Centrality:</label>
-        <input type="checkbox" id="showDegreeCentrality" checked>
-    </div>
-    <div>
-        <label>Show Authors:</label>
-        <input type="checkbox" id="showAuthors" checked>
-    </div>
 </div>
 
 <script>
@@ -47,7 +47,7 @@ d3.json("graph_data.json").then(function(data) {
                   .data(data.nodes)
                   .enter().append("circle")
                   .attr("r", function(d) { return 5 + d.degree_centrality * 20; })  // 根据度中心性调整节点的大小
-                  .style("fill", function(d) { return getColor(d.degree_centrality); })  // 根据度中心性设置节点的颜色
+                  .style("fill", function(d) { return colorScale(d.degree_centrality); })  // 根据度中心性设置节点的颜色
                   .call(d3.drag()  // 添加拖拽行为
                       .on("start", dragstarted)
                       .on("drag", dragged)
@@ -91,34 +91,6 @@ d3.json("graph_data.json").then(function(data) {
         if (!d3.event.active) simulation.alphaTarget(0);
         d.fx = null;
         d.fy = null;
-    }
-
-    // 根据度中心性获取节点颜色函数
-    function getColor(degree_centrality) {
-        // 在这里可以根据不同的度中心性设置不同的颜色
-        if (degree_centrality > 0.5) {
-            return "orange";
-        } else {
-            return "lightblue";
-        }
-    }
-
-    // 获取控制按钮元素
-    var showDegreeCentralityCheckbox = d3.select("#showDegreeCentrality");
-    var showAuthorsCheckbox = d3.select("#showAuthors");
-
-    // 监听按钮状态变化
-    showDegreeCentralityCheckbox.on("change", updateDegreeCentralityVisibility);
-    showAuthorsCheckbox.on("change", updateAuthorsVisibility);
-
-    // 定義函數以根據控制按鈕的狀態更新度中心性的可見性
-    function updateDegreeCentralityVisibility() {
-        // 這裡可以加入代碼以根據按鈕的狀態來更新度中心性的可見性
-    }
-
-    // 定義函數以根據控制按鈕的狀態更新作者的可見性
-    function updateAuthorsVisibility() {
-        // 這裡可以加入代碼以根據按鈕的狀態來更新作者的可見性
     }
 });
 </script>
