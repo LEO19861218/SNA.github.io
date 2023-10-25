@@ -21,13 +21,11 @@
         <label>Show/Hide Author Names:</label>
         <input type="checkbox" id="showHideAuthorNames" checked>
 
-        <!-- 新增下拉式選單 -->
-        <label for="authorDropdown">Select Centrality Measure:</label>
+        <label for="centralityDropdown">Select Centrality Measure:</label>
         <select id="centralityDropdown">
             <option value="degree_centrality">Degree Centrality</option>
             <option value="betweenness_centrality">Betweenness Centrality</option>
             <option value="eigenvector_centrality">Eigenvector Centrality</option>
-            <!-- 添加更多中心性選項 -->
         </select>
 
         <label for="authorDropdown">Select Author:</label>
@@ -35,6 +33,7 @@
             <option value="graph_data.json">Tomohiro Fukuda</option>
             <option value="graph2_data.json">Marc Aurel Schnabel</option>
             <option value="graph3_data.json">Matthias Hank Haeusler</option>
+            <option value="Marc Aurel Schnabel_eigenvector_centrality_graph_data.json">Marc Aurel Schnabel (Eigenvector Centrality)</option>
         </select>
     </div>
 
@@ -42,7 +41,7 @@
 </div>
 
 <script>
-loadData("graph_data.json", "degree_centrality");  // 初始化加載數據
+loadData("graph_data.json", "degree_centrality");
 
 function updateAuthorSelection() {
     var selectedFile = authorDropdown.property("value");
@@ -100,24 +99,8 @@ function loadData(file, centralityMeasure) {
         var node = svg.selectAll("circle")
                       .data(data.nodes)
                       .enter().append("circle")
-                      .attr("r", function(d) {
-                          if (centralityMeasure === "degree_centrality") {
-                              return 5 + d.degree_centrality * 20;
-                          } else if (centralityMeasure === "betweenness_centrality") {
-                              return 5 + d.betweenness_centrality * 20;
-                          } else if (centralityMeasure === "eigenvector_centrality") {
-                              return 5 + d.eigenvector_centrality * 20;
-                          }
-                      })
-                      .style("fill", function(d) {
-                          if (centralityMeasure === "degree_centrality") {
-                              return colorScale(d.degree_centrality);
-                          } else if (centralityMeasure === "betweenness_centrality") {
-                              return colorScale(d.betweenness_centrality);
-                          } else if (centralityMeasure === "eigenvector_centrality") {
-                              return colorScale(d.eigenvector_centrality);
-                          }
-                      })
+                      .attr("r", function(d) { return 5 + d[centralityMeasure] * 20; })
+                      .style("fill", function(d) { return colorScale(d[centralityMeasure]); })
                       .call(d3.drag()
                           .on("start", dragstarted)
                           .on("drag", dragged)
@@ -126,15 +109,7 @@ function loadData(file, centralityMeasure) {
         var label = svg.selectAll(null)
                       .data(data.nodes)
                       .enter().append("text")
-                      .text(function(d) {
-                          if (centralityMeasure === "degree_centrality") {
-                              return d.id + " (" + d.degree_centrality.toFixed(2) + ")";
-                          } else if (centralityMeasure === "betweenness_centrality") {
-                              return d.id + " (" + d.betweenness_centrality.toFixed(2) + ")";
-                          } else if (centralityMeasure === "eigenvector_centrality") {
-                              return d.id + " (" + d.eigenvector_centrality.toFixed(2) + ")";
-                          }
-                      })
+                      .text(function(d) { return d.id + " (" + d[centralityMeasure].toFixed(2) + ")"; })
                       .attr("font-size", 8)
                       .attr("dx", 12)
                       .attr("dy", 4)
@@ -178,11 +153,11 @@ function loadData(file, centralityMeasure) {
 
 var showHideAuthorNamesCheckbox = d3.select("#showHideAuthorNames");
 var authorDropdown = d3.select("#authorDropdown");
-var centralityDropdown = d3.select("#centralityDropdown");  // 新增中心性選單
+var centralityDropdown = d3.select("#centralityDropdown");
 
 showHideAuthorNamesCheckbox.on("change", updateAuthorNamesVisibility);
 authorDropdown.on("change", updateAuthorSelection);
-centralityDropdown.on("change", updateCentralityMeasure);  // 監聽中心性下拉式選單的變化
+centralityDropdown.on("change", updateCentralityMeasure);
 
 function updateAuthorNamesVisibility() {
     d3.selectAll("text").style("display", function(d) {
