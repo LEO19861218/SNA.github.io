@@ -7,8 +7,9 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <style>
         /* 新增樣式，將下拉式選單樣式設置為固定位置和寬度 */
-        #authorDropdown {
+        #authorDropdown, #nodeDistanceDropdown {
             width: 150px;
+            margin-right: 10px; /* 調整與其他元素的間距 */
         }
     </style>
 </head>
@@ -30,6 +31,15 @@
             <option value="graph2_data.json">Marc Aurel Schnabel</option>
             <option value="graph3_data.json">Matthias Hank Haeusler</option> <!-- 新增选项 -->
             <!-- 添加更多作者的選項 -->
+        </select>
+
+        <!-- 新增節點間距下拉式選單 -->
+        <label>Adjust Node Distance:</label>
+        <select id="nodeDistanceDropdown">
+            <option value="50">Default</option>
+            <option value="30">Short</option>
+            <option value="70">Long</option>
+            <!-- Add more options as needed -->
         </select>
     </div>
 
@@ -71,7 +81,7 @@ function loadData(file) {
 
         // 创建力导向图
         var simulation = d3.forceSimulation(data.nodes)
-                           .force("link", d3.forceLink(data.links).id(function(d) { return d.id; }))
+                           .force("link", d3.forceLink(data.links).id(function(d) { return d.id; }).distance(selectedNodeDistance)) // 調整節點間距
                            .force("charge", d3.forceManyBody().strength(-50))
                            .force("center", d3.forceCenter(400, 400))
                            .force("collide", d3.forceCollide().radius(10).strength(0.5))
@@ -149,6 +159,9 @@ function loadData(file) {
 // 获取控制按钮元素
 var showHideAuthorNamesCheckbox = d3.select("#showHideAuthorNames");
 var authorDropdown = d3.select("#authorDropdown");
+
+// 新增節點間距下拉式選單
+var nodeDistanceDropdown = d3.select("#nodeDistanceDropdown");
 
 // 监听按钮状态变化
 showHideAuthorNamesCheckbox.on("change", updateAuthorNamesVisibility);
