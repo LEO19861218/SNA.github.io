@@ -8,7 +8,7 @@
     <style>
         /* 新增樣式，將下拉式選單樣式設置為固定位置和寬度 */
         #authorDropdown {
-            width: 250px;
+            width: 150px;
         }
 
         /* 移除 SVG 容器的寬高屬性 */
@@ -31,12 +31,11 @@
 
         <!-- 移動下拉式選單到這裡 -->
         <select id="authorDropdown">
-            <option value="graph_data.json">Tomohiro Fukuda degree</option>
-            <option value="graph2_data.json">Marc Aurel Schnabel degree</option>
-            <option value="graph3_data.json">Matthias Hank Haeusler degree</option> <!-- 新增选项 -->
-            <option value="graph4_data.json">Three author degree</option> <!-- 新增选项 -->
-            <option value="graph5_data.json">All author degree</option> <!-- 新增选项 -->
-            <option value="graph6_data.json">Three author betweenness</option> <!-- 新增选项 -->
+            <option value="graph_data.json">Tomohiro Fukuda</option>
+            <option value="graph2_data.json">Marc Aurel Schnabel</option>
+            <option value="graph3_data.json">Matthias Hank Haeusler</option> <!-- 新增选项 -->
+            <option value="graph4_data.json">Three author</option> <!-- 新增选项 -->
+            <option value="graph5_data.json">All author</option> <!-- 新增选项 -->
             <!-- 添加更多作者的選項 -->
         </select>
     </div>
@@ -116,52 +115,6 @@ function loadData(file) {
                       .attr("dx", 12)
                       .attr("dy", 4)
                       .style("fill", "black");  // 设置节点标签的颜色为黑色
-
-        // 添加节点
-        var node = svg.selectAll("circle")
-                    .data(data.nodes)
-                    .enter().append("circle")
-                    .attr("r", function(d) {
-                        if (centrality === "degree") {
-                            return 5 + d.degree_centrality * 20;
-                        } else if (centrality === "betweenness") {
-                            return 5 + d.betweenness_centrality * 20;  // 修改這裡
-                        } else if (centrality === "eigenvector") {
-                            return 5 + d.eigenvector_centrality * 20;  // 修改這裡
-                        }
-            })
-            .style("fill", function(d) {
-                        if (centrality === "degree") {
-                            return colorScale(d.degree_centrality);
-                        } else if (centrality === "betweenness") {
-                            return colorScale(d.betweenness_centrality);  // 修改這裡
-                        } else if (centrality === "eigenvector") {
-                            return colorScale(d.eigenvector_centrality);  // 修改這裡
-                        }
-            })
-            .call(d3.drag()  // 添加拖拽行为
-                .on("start", dragstarted)
-                .on("drag", dragged)
-                .on("end", dragended));
-
-        // 添加节点标签
-        var label = svg.selectAll(null)
-            .data(data.nodes)
-            .enter().append("text")
-            .text(function(d) {
-                if (centrality === "degree") {
-                    return d.id + " (" + d.degree_centrality.toFixed(2) + ")";
-                } else if (centrality === "betweenness") {
-                    return d.id + " (" + d.betweenness_centrality.toFixed(2) + ")";  // 修改這裡
-                } else if (centrality === "eigenvector") {
-                    return d.id + " (" + d.eigenvector_centrality.toFixed(2) + ")";  // 修改這裡
-                }
-            })
-            .attr("font-size", 8)
-            .attr("dx", 12)
-            .attr("dy", 4)
-            .style("fill", "black");  // 设置节点标签的颜色为黑色
-
 
         function ticked() {
             link.attr("x1", function(d) { return d.source.x; })
