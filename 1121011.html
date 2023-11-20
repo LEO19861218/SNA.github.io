@@ -38,6 +38,14 @@
             <option value="graph5_data.json">All author</option> <!-- 新增选项 -->
             <!-- 添加更多作者的選項 -->
         </select>
+
+        <!-- 新增下拉式選單來選擇中心性參數 -->
+        <label>Choose Centrality Measure:</label>
+        <select id="centralityDropdown">
+            <option value="degree">Degree Centrality</option>
+            <option value="betweenness">Betweenness Centrality</option>
+            <option value="eigenvector">Eigenvector Centrality</option>
+        </select>
     </div>
 
     <!-- 修改 SVG 容器的寬高 -->
@@ -46,29 +54,32 @@
 
 <script>
 // 初始化加載數據
-loadData("graph_data.json");
+loadData("graph_data.json", "degree");
 
-// 更新所選作者
-function updateAuthorSelection() {
+// 更新所選作者和中心性
+function updateAuthorAndCentralitySelection() {
     var selectedFile = authorDropdown.property("value");
-    // 根据所选JSON文件执行相应的操作
+    var selectedCentrality = centralityDropdown.property("value");
+    
+    // 根据所选JSON文件和中心性执行相应的操作
     d3.json(selectedFile).then(function(newData) {
         // 添加顯示新的數據的相關操作
         console.log("Selected File:", selectedFile);
+        console.log("Selected Centrality:", selectedCentrality);
         console.log("New Data:", newData);
 
         // 移除先前的 SVG
         d3.select("#graph-svg-container").select("svg").remove();
 
         // 加載新的數據
-        loadData(selectedFile);
+        loadData(selectedFile, selectedCentrality);
     }).catch(function(error) {
         console.error("Error loading data:", error);
     });
 }
 
 // 加載數據
-function loadData(file) {
+function loadData(file, centrality) {
     d3.json(file).then(function(data) {
         // 创建 SVG 元素
         var svg = d3.select("#graph-svg-container")
@@ -86,7 +97,7 @@ function loadData(file) {
 
         // 创建颜色比例尺
         var colorScale = d3.scaleLinear()
-                           .domain([0, 1])  // 假设度中心性的范围在 [0, 1] 之间
+                           .domain([0, 1])  // 假设中心性的范围在 [0, 1] 之间
                            .range(["lightblue", "orange"]);
 
         // 添加边
@@ -99,8 +110,24 @@ function loadData(file) {
         var node = svg.selectAll("circle")
                       .data(data.nodes)
                       .enter().append("circle")
-                      .attr("r", function(d) { return 5 + d.degree_centrality * 20; })  // 根据度中心性调整节点的大小
-                      .style("fill", function(d) { return colorScale(d.degree_centrality); })  // 根据度中心性设置节点的颜色
+                      .attr("r", function(d) { 
+                          if (centrality === "degree") {
+                              return 5 + d.degree_centrality * 20;  // 根据度中心性调整节点的大小
+                          } else if (centrality === "betweenness") {
+                              return 5 + d.betweenness_centrality * 20;  // 根据介数中心性调整节点的大小
+                          } else if (centrality === "eigenvector") {
+                              return 5 + d.eigenvector_centrality * 20;  // 根据特征向量中心性调整节点的大小
+                          }
+                      }) 
+                      .style("fill", function(d) { 
+                          if (centrality === "degree") {
+                              return colorScale(d.degree_centrality);  // 根据度中心性设置节点的颜色
+                          } else if (centrality === "betweenness") {
+                              return colorScale(d.betweenness_centrality);  // 根据介数中心性设置节点的颜色
+                          } else if (centrality === "eigenvector") {
+                              return colorScale(d.eigenvector_centrality);  // 根据特征向量中心性设置节点的颜色
+                          }
+                      }) 
                       .call(d3.drag()  // 添加拖拽行为
                           .on("start", dragstarted)
                           .on("drag", dragged)
@@ -110,7 +137,15 @@ function loadData(file) {
         var label = svg.selectAll(null)
                       .data(data.nodes)
                       .enter().append("text")
-                      .text(function(d) { return d.id + " (" + d.degree_centrality.toFixed(2) + ")"; })  // 顯示節點ID和度中心性數值
+                      .text(function(d) { 
+                          if (centrality === "degree") {
+                              return d.id + " (" + d.degree_centrality.toFixed(2) + ")";  // 顯示節點ID和度中心性數值
+                          } else if (centrality === "betweenness") {
+                              return d.id + " (" + d.betweenness_centrality.toFixed(2) + ")";  // 顯示節點ID和介数中心性數值
+                          } else if (centrality === "eigenvector") {
+                              return d.id + " (" + d.eigenvector_centrality.toFixed(2) + ")";  // 顯示節點ID和特征向量中心性數值
+                          }
+                      }) 
                       .attr("font-size", 8)
                       .attr("dx", 12)
                       .attr("dy", 4)
@@ -156,19 +191,14 @@ function loadData(file) {
 // 获取控制按钮元素
 var showHideAuthorNamesCheckbox = d3.select("#showHideAuthorNames");
 var authorDropdown = d3.select("#authorDropdown");
+var centralityDropdown = d3.select("#centralityDropdown");  // 新增獲取中心性選單元素
 
 // 监听按钮状态变化
 showHideAuthorNamesCheckbox.on("change", updateAuthorNamesVisibility);
 
-// 更新作者名字显示
-function updateAuthorNamesVisibility() {
-    d3.selectAll("text").style("display", function(d) {
-        return showHideAuthorNamesCheckbox.property("checked") ? "block" : "none";
-    });
-}
-
 // 监听下拉式選單變化
-authorDropdown.on("change", updateAuthorSelection);
+authorDropdown.on("change", updateAuthorAndCentralitySelection);
+centralityDropdown.on("change", updateAuthorAndCentralitySelection);  // 新增監聽中心性選單變化
 
 </script>
 
