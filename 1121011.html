@@ -72,8 +72,8 @@ function loadData(file) {
         // 创建 SVG 元素
         var svg = d3.select("#graph-svg-container")
                     .append("svg")
-                    .attr("width", 400)
-                    .attr("height", 400);
+                    .attr("width", 1000)
+                    .attr("height", 1000);
 
         // 创建力导向图
         var simulation = d3.forceSimulation(data.nodes)
