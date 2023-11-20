@@ -9,12 +9,13 @@
         /* 新增樣式，將下拉式選單樣式設置為固定位置和寬度 */
         .dropdown {
             width: 150px;
-            margin-right: 10px;
         }
 
         /* 移除 SVG 容器的寬高屬性 */
         #graph-svg-container {
             /* 移除原有的 width 和 height 屬性 */
+            width: 100%;
+            height: 100vh;
         }
     </style>
 </head>
@@ -29,27 +30,28 @@
     <div>
         <label>Show/Hide Author Names:</label>
         <input type="checkbox" id="showHideAuthorNames" checked>
+
+        <!-- 添加中心性度量下拉式選單 -->
+        <select id="centralityDropdown" class="dropdown" onchange="updateCentralitySelection()">
+            <option value="degree">Degree Centrality</option>
+            <option value="betweenness">Betweenness Centrality</option>
+            <option value="eigenvector">Eigenvector Centrality</option>
+        </select>
+
+        <!-- 添加作者下拉式選單 -->
+        <select id="authorDropdown" class="dropdown" onchange="updateAuthorSelection()">
+            <option value="graph_data.json">Tomohiro Fukuda</option>
+            <option value="graph2_data.json">Marc Aurel Schnabel</option>
+            <option value="graph3_data.json">Matthias Hank Haeusler</option> <!-- 新增选项 -->
+            <option value="graph4_data.json">Three author</option> <!-- 新增选项 -->
+            <option value="graph5_data.json">All author</option> <!-- 新增选项 -->
+            <option value="graph6_data.json">Three author</option> <!-- 新增选项 -->
+            <!-- 添加更多作者的選項 -->
+        </select>
     </div>
 
-    <!-- 添加中心性度量下拉式選單 -->
-    <select id="centralityDropdown" class="dropdown" onchange="updateCentralitySelection()">
-        <option value="degree">Degree Centrality</option>
-        <option value="betweenness">Betweenness Centrality</option>
-        <option value="eigenvector">Eigenvector Centrality</option>
-    </select>
-
-    <!-- 添加作者下拉式選單 -->
-    <select id="authorDropdown" class="dropdown" onchange="updateAuthorSelection()">
-        <option value="graph_data.json">Tomohiro Fukuda</option>
-        <option value="graph2_data.json">Marc Aurel Schnabel</option>
-        <option value="graph3_data.json">Matthias Hank Haeusler</option> <!-- 新增选项 -->
-        <option value="graph4_data.json">Three author</option> <!-- 新增选项 -->
-        <option value="graph5_data.json">All author</option> <!-- 新增选项 -->
-        <!-- 添加更多作者的選項 -->
-    </select>
-
     <!-- 修改 SVG 容器的寬高 -->
-    <div id="graph-svg-container" style="width: 100%; height: 100vh;"></div>
+    <div id="graph-svg-container"></div>
 </div>
 
 <script>
@@ -61,29 +63,7 @@ function updateAuthorSelection() {
     var selectedFile = authorDropdown.value;
     var selectedCentrality = centralityDropdown.value;
 
-    // 根据所选JSON文件和中心性执行相应的操作
-    d3.json(selectedFile).then(function(newData) {
-        // 添加顯示新的數據的相關操作
-        console.log("Selected File:", selectedFile);
-        console.log("Selected Centrality:", selectedCentrality);
-        console.log("New Data:", newData);
-
-        // 移除先前的 SVG
-        d3.select("#graph-svg-container").select("svg").remove();
-
-        // 加載新的數據
-        loadData(selectedFile, selectedCentrality);
-    }).catch(function(error) {
-        console.error("Error loading data:", error);
-    });
-}
-
-// 更新所選中心性
-function updateCentralitySelection() {
-    var selectedFile = authorDropdown.value;
-    var selectedCentrality = centralityDropdown.value;
-
-    // 根据所选JSON文件和中心性执行相应的操作
+    // 根据所选 JSON 文件和中心性度量执行相应的操作
     d3.json(selectedFile).then(function(newData) {
         // 添加顯示新的數據的相關操作
         console.log("Selected File:", selectedFile);
@@ -103,6 +83,21 @@ function updateCentralitySelection() {
 // 加載數據
 function loadData(file, centrality) {
     d3.json(file).then(function(data) {
+        // 在這裡計算其他中心性度量並添加到節點對象中
+        if (centrality === "betweenness") {
+            // 假設計算 Betweenness Centrality 的邏輯為 calculateBetweennessCentrality 函數
+            // 請根據實際情況修改
+            data.nodes.forEach(function(node) {
+                node.betweenness_centrality = calculateBetweennessCentrality(node.id, data);
+            });
+        } else if (centrality === "eigenvector") {
+            // 假設計算 Eigenvector Centrality 的邏輯為 calculateEigenvectorCentrality 函數
+            // 請根據實際情況修改
+            data.nodes.forEach(function(node) {
+                node.eigenvector_centrality = calculateEigenvectorCentrality(node.id, data);
+            });
+        }
+
         // 创建 SVG 元素
         var svg = d3.select("#graph-svg-container")
                     .append("svg")
@@ -122,6 +117,16 @@ function loadData(file, centrality) {
                            .domain([0, 1])  // 假设度中心性的范围在 [0, 1] 之间
                            .range(["lightblue", "orange"]);
 
+        // 根据中心性度量選擇
+        var centralityAttribute;
+        if (centrality === "degree") {
+            centralityAttribute = "degree_centrality";
+        } else if (centrality === "betweenness") {
+            centralityAttribute = "betweenness_centrality";
+        } else if (centrality === "eigenvector") {
+            centralityAttribute = "eigenvector_centrality";
+        }
+
         // 添加边
         var link = svg.selectAll("line")
                       .data(data.links)
@@ -132,24 +137,8 @@ function loadData(file, centrality) {
         var node = svg.selectAll("circle")
                       .data(data.nodes)
                       .enter().append("circle")
-                      .attr("r", function(d) { 
-                          if (centrality === "degree") {
-                              return 5 + d.degree_centrality * 20;
-                          } else if (centrality === "betweenness") {
-                              return 5 + d.betweenness_centrality * 20;
-                          } else if (centrality === "eigenvector") {
-                              return 5 + d.eigenvector_centrality * 20;
-                          }
-                      }) 
-                      .style("fill", function(d) { 
-                          if (centrality === "degree") {
-                              return colorScale(d.degree_centrality);
-                          } else if (centrality === "betweenness") {
-                              return colorScale(d.betweenness_centrality);
-                          } else if (centrality === "eigenvector") {
-                              return colorScale(d.eigenvector_centrality);
-                          }
-                      }) 
+                      .attr("r", function(d) { return 5 + d[centralityAttribute] * 20; })  // 根据中心性度量調整節點的大小
+                      .style("fill", function(d) { return colorScale(d[centralityAttribute]); })  // 根据中心性度量设置節點的颜色
                       .call(d3.drag()  // 添加拖拽行为
                           .on("start", dragstarted)
                           .on("drag", dragged)
@@ -159,19 +148,11 @@ function loadData(file, centrality) {
         var label = svg.selectAll(null)
                       .data(data.nodes)
                       .enter().append("text")
-                      .text(function(d) { 
-                          if (centrality === "degree") {
-                              return d.id + " (" + d.degree_centrality.toFixed(2) + ")";
-                          } else if (centrality === "betweenness") {
-                              return d.id + " (" + d.betweenness_centrality.toFixed(2) + ")";
-                          } else if (centrality === "eigenvector") {
-                              return d.id + " (" + d.eigenvector_centrality.toFixed(2) + ")";
-                          }
-                      }) 
+                      .text(function(d) { return d.id + " (" + d[centralityAttribute].toFixed(2) + ")"; })  // 顯示節點ID和中心性度量數值
                       .attr("font-size", 8)
                       .attr("dx", 12)
                       .attr("dy", 4)
-                      .style("fill", "black");
+                      .style("fill", "black");  // 设置节点标签的颜色为黑色
 
         function ticked() {
             link.attr("x1", function(d) { return d.source.x; })
@@ -210,6 +191,12 @@ function loadData(file, centrality) {
     });
 }
 
+// 更新所選中心性度量
+function updateCentralitySelection() {
+    // 更新所選作者
+    updateAuthorSelection();
+}
+
 // 获取控制按钮元素
 var showHideAuthorNamesCheckbox = d3.select("#showHideAuthorNames");
 var centralityDropdown = d3.select("#centralityDropdown");
@@ -229,4 +216,3 @@ function updateAuthorNamesVisibility() {
 
 </body>
 </html>
-
