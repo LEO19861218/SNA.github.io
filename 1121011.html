@@ -30,21 +30,17 @@
         <input type="checkbox" id="showHideAuthorNames" checked>
 
         <!-- 移動下拉式選單到這裡 -->
-        <select id="authorDropdown">
-            <option value="graph_data.json">Tomohiro Fukuda</option>
-            <option value="graph2_data.json">Marc Aurel Schnabel</option>
-            <option value="graph3_data.json">Matthias Hank Haeusler</option> <!-- 新增选项 -->
-            <option value="graph4_data.json">Three author</option> <!-- 新增选项 -->
-            <option value="graph5_data.json">All author</option> <!-- 新增选项 -->
+        <select id="authorDropdown" onchange="updateAuthorAndCentralitySelection()">
+            <option value="graph_data.json" data-centrality="degree">Tomohiro Fukuda</option>
+            <option value="graph2_data.json" data-centrality="degree">Marc Aurel Schnabel</option>
+            <option value="graph3_data.json" data-centrality="degree">Matthias Hank Haeusler</option> <!-- 新增选项 -->
+            <option value="graph4_data.json" data-centrality="degree">Three author</option> <!-- 新增选项 -->
+            <option value="graph5_data.json" data-centrality="degree">All author</option> <!-- 新增选项 -->
+            <option value="graph6_data.json" data-centrality="betweenness">Betweenness</option> <!-- 新增选项 -->
+            <option value="graph7_data.json" data-centrality="betweenness">Betweenness</option> <!-- 新增选项 -->
+            <option value="graph11_data.json" data-centrality="eigenvector">Eigenvector</option> <!-- 新增选项 -->
+            <option value="graph12_data.json" data-centrality="eigenvector">Eigenvector</option> <!-- 新增选项 -->
             <!-- 添加更多作者的選項 -->
-        </select>
-
-        <!-- 新增下拉式選單來選擇中心性參數 -->
-        <label>Choose Centrality Measure:</label>
-        <select id="centralityDropdown">
-            <option value="degree">Degree Centrality</option>
-            <option value="betweenness">Betweenness Centrality</option>
-            <option value="eigenvector">Eigenvector Centrality</option>
         </select>
     </div>
 
@@ -58,8 +54,8 @@ loadData("graph_data.json", "degree");
 
 // 更新所選作者和中心性
 function updateAuthorAndCentralitySelection() {
-    var selectedFile = authorDropdown.property("value");
-    var selectedCentrality = centralityDropdown.property("value");
+    var selectedFile = authorDropdown.value;
+    var selectedCentrality = authorDropdown.selectedOptions[0].getAttribute("data-centrality");
     
     // 根据所选JSON文件和中心性执行相应的操作
     d3.json(selectedFile).then(function(newData) {
@@ -97,7 +93,7 @@ function loadData(file, centrality) {
 
         // 创建颜色比例尺
         var colorScale = d3.scaleLinear()
-                           .domain([0, 1])  // 假设中心性的范围在 [0, 1] 之间
+                           .domain([0, 1])  // 假设度中心性的范围在 [0, 1] 之间
                            .range(["lightblue", "orange"]);
 
         // 添加边
@@ -112,23 +108,23 @@ function loadData(file, centrality) {
                       .enter().append("circle")
                       .attr("r", function(d) { 
                           if (centrality === "degree") {
-                              return 5 + d.degree_centrality * 20;  // 根据度中心性调整节点的大小
+                              return 5 + d.degree_centrality * 20;
                           } else if (centrality === "betweenness") {
-                              return 5 + d.betweenness_centrality * 20;  // 根据介数中心性调整节点的大小
+                              return 5 + d.betweenness_centrality * 20;
                           } else if (centrality === "eigenvector") {
-                              return 5 + d.eigenvector_centrality * 20;  // 根据特征向量中心性调整节点的大小
+                              return 5 + d.eigenvector_centrality * 20;
                           }
                       }) 
                       .style("fill", function(d) { 
                           if (centrality === "degree") {
-                              return colorScale(d.degree_centrality);  // 根据度中心性设置节点的颜色
+                              return colorScale(d.degree_centrality);
                           } else if (centrality === "betweenness") {
-                              return colorScale(d.betweenness_centrality);  // 根据介数中心性设置节点的颜色
+                              return colorScale(d.betweenness_centrality);
                           } else if (centrality === "eigenvector") {
-                              return colorScale(d.eigenvector_centrality);  // 根据特征向量中心性设置节点的颜色
+                              return colorScale(d.eigenvector_centrality);
                           }
                       }) 
-                      .call(d3.drag()  // 添加拖拽行为
+                      .call(d3.drag()
                           .on("start", dragstarted)
                           .on("drag", dragged)
                           .on("end", dragended));
@@ -139,17 +135,17 @@ function loadData(file, centrality) {
                       .enter().append("text")
                       .text(function(d) { 
                           if (centrality === "degree") {
-                              return d.id + " (" + d.degree_centrality.toFixed(2) + ")";  // 顯示節點ID和度中心性數值
+                              return d.id + " (" + d.degree_centrality.toFixed(2) + ")";
                           } else if (centrality === "betweenness") {
-                              return d.id + " (" + d.betweenness_centrality.toFixed(2) + ")";  // 顯示節點ID和介数中心性數值
+                              return d.id + " (" + d.betweenness_centrality.toFixed(2) + ")";
                           } else if (centrality === "eigenvector") {
-                              return d.id + " (" + d.eigenvector_centrality.toFixed(2) + ")";  // 顯示節點ID和特征向量中心性數值
+                              return d.id + " (" + d.eigenvector_centrality.toFixed(2) + ")";
                           }
                       }) 
                       .attr("font-size", 8)
                       .attr("dx", 12)
                       .attr("dy", 4)
-                      .style("fill", "black");  // 设置节点标签的颜色为黑色
+                      .style("fill", "black");
 
         function ticked() {
             link.attr("x1", function(d) { return d.source.x; })
@@ -191,14 +187,16 @@ function loadData(file, centrality) {
 // 获取控制按钮元素
 var showHideAuthorNamesCheckbox = d3.select("#showHideAuthorNames");
 var authorDropdown = d3.select("#authorDropdown");
-var centralityDropdown = d3.select("#centralityDropdown");  // 新增獲取中心性選單元素
 
 // 监听按钮状态变化
 showHideAuthorNamesCheckbox.on("change", updateAuthorNamesVisibility);
 
-// 监听下拉式選單變化
-authorDropdown.on("change", updateAuthorAndCentralitySelection);
-centralityDropdown.on("change", updateAuthorAndCentralitySelection);  // 新增監聽中心性選單變化
+// 更新作者名字显示
+function updateAuthorNamesVisibility() {
+    d3.selectAll("text").style("display", function(d) {
+        return showHideAuthorNamesCheckbox.property("checked") ? "block" : "none";
+    });
+}
 
 </script>
 
