@@ -1,0 +1,758 @@
+[
+  {
+    "id": "Yosuke Takada",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Ayako Shimizu",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Katrina Simons",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Anycie Coorey",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Yingge Qu",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "James Holth",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Annisa R. Rizal",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Serjoscha Duering",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Cameron Wells",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Ben Doherty",
+    "degree_centrality": 0.0797872340425532
+  },
+  {
+    "id": "Nagahama R.",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "K. Daniel Yu",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Sophie Scott",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Peter Christensen",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Narissa Bungbrakearti",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "David Silcock",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Takayuki Kawaguchi",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Evelyn L. C. Howe",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Weidong Li",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Shuva Chowdhury",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Yingyi Zhang",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Alan Kim",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Yixi Xia",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Matthias Irger",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Kensuke Kitagawa",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Ali Motamedi",
+    "degree_centrality": 0.0425531914893617
+  },
+  {
+    "id": "Michael Chernyavsky",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Steve Kuan",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Alessandra Fabbri",
+    "degree_centrality": 0.1595744680851064
+  },
+  {
+    "id": "Yu-Tung Liu",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Keisuke Mori",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Ryo Onishi",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Sascha Bohnenberger",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Lucas Kim",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Tsuyoshi Sasada",
+    "degree_centrality": 0.06914893617021277
+  },
+  {
+    "id": "Hitoshi Takeuchi",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Nariddh Khean",
+    "degree_centrality": 0.06382978723404255
+  },
+  {
+    "id": "Rob Asher",
+    "degree_centrality": 0.0425531914893617
+  },
+  {
+    "id": "Tian Zhang",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Aron Sheldon",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Wookhyun Yeo",
+    "degree_centrality": 0.0425531914893617
+  },
+  {
+    "id": "Kazuya Inoue",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Ryan Johan",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Matthew Swarts",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Hiroyuki Fukumoto",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Jeffrey Koh",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Thomas Kvan",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Jeremy J. Ham",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Yeo Wookhyun",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Cristina Ramos",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Weihong Guo",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Madison King",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Amar Bennadji",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Ning Wang",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Marcos Novak",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Alexander Lee",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Shan Pan",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Lachlan Sharah",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Marc Aurel Schnabel",
+    "degree_centrality": 0.30851063829787234
+  },
+  {
+    "id": "Romain Guillot",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Emily Leung",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Jorge Martinez",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Garry Hangge Zhang",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Sooyeon Oh",
+    "degree_centrality": 0.03723404255319149
+  },
+  {
+    "id": "Kazuki Yokoi",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Tom Barker",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Bin Li",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Yasuyo Yoshikawa",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Rui Cao",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Madeleine Johanson",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Qun Dai",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Tane Jacob Moleta",
+    "degree_centrality": 0.10638297872340426
+  },
+  {
+    "id": "Kenichi Sakai",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Liam Jordan Sheehan",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Atsumi Maruhashi",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Hannah Rushton",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Dongsoo Choi",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Yannis Zavoleas",
+    "degree_centrality": 0.0797872340425532
+  },
+  {
+    "id": "Atsuko Kaga",
+    "degree_centrality": 0.09574468085106383
+  },
+  {
+    "id": "Nazmul Khan",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Jessie Rogers",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Ryuichiro Nagahama",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Haruyuki Kusama",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Yi He",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Yuehan Zhu",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Tomohiro Fukuda",
+    "degree_centrality": 0.4095744680851064
+  },
+  {
+    "id": "Daniel Camacho",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Takanori Terashima",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "James Durcan",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Danny D. Nguyen",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "David Batchelor",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Sam Mclennan",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Rebekah Araullo",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Kostas ?Terzidis",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Thomas Tucker",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Blaire Haslop",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Nobuaki Okamoto",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Samad Sepasgozar",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Tracy Huang",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Xiangyu Wang",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Nobuyuki Shibano",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Yasuyuki Yuda",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Alex Tohidi",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Atsushi Miyagawa",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Daniel Joseph",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Paolo Fiamma",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Davide Pierini",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Munetoshi Miyake",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Yuda Yasuyuki",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "David Madden",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Serdar Aydin",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Mitra Homolja",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Sun Lei",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Takashi Michikawa",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Michael White",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Hiroki Michida",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Duong Nguyen",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Jorke Odolphi",
+    "degree_centrality": 0.03723404255319149
+  },
+  {
+    "id": "Reinhard Koenig",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Jae Wan Park",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Rong Chen",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Shiho Nagamachi",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Margaret Goldsack",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Ruth ?Ron",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Daiki Kido",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Motoi Toshio",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Iman Sayah",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Nobuyoshi Yabuki",
+    "degree_centrality": 0.14361702127659573
+  },
+  {
+    "id": "Hoki Nakamura",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Takashi Koshiba",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Daniel Yu",
+    "degree_centrality": 0.047872340425531915
+  },
+  {
+    "id": "Naoki Kikuchi",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Mercedes Paulini",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Stephen Green",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Brandon Wang",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Nicole Gardner",
+    "degree_centrality": 0.18617021276595744
+  },
+  {
+    "id": "Scott Meekings",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Hao Chen",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Yuji Yamauchi",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Sayyed Amir Hossain Maghool",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Geoff King",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Taro Narahara",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Eliot Rosenberg",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Rebeka Vital",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Toshiki Tokuhara",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Jack Barton",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Derek Kawiti",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Lei Sun",
+    "degree_centrality": 0.03723404255319149
+  },
+  {
+    "id": "Yoshihiro Nishimura",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Shunta Shimizu",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Ben Coorey",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Kazunosuke Ikeno",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Christophe Soulier",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Tom獺s Dorta",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Qiaoliang Xu",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Yusuke Sato",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Charlotte Firth",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Erik Escalante",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Leo Lin Meng",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Yoshihiro Kobayashi",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Jennifer Mei Yee Ng",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Tiara Dobbs",
+    "degree_centrality": 0.03723404255319149
+  },
+  {
+    "id": "Masahiro Hosokawa",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Nao Ito",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Kyoko Miyashita",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Maria Rogers",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Irene Rui Chen",
+    "degree_centrality": 0.005319148936170213
+  },
+  {
+    "id": "Jane Burry",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Tian Tian Lo",
+    "degree_centrality": 0.09574468085106383
+  },
+  {
+    "id": "Martin Tomitsch",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Masaharu Taguchi",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Andrew Butler",
+    "degree_centrality": 0.06382978723404255
+  },
+  {
+    "id": "Hartmut Seichter",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Dominic Hawton",
+    "degree_centrality": 0.031914893617021274
+  },
+  {
+    "id": "Jeremy Graham",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Yu Shimojo",
+    "degree_centrality": 0.026595744680851064
+  },
+  {
+    "id": "Yoann Pencreach",
+    "degree_centrality": 0.07446808510638298
+  },
+  {
+    "id": "Manuel Muehlbauer",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Yasuko Matsunaga",
+    "degree_centrality": 0.015957446808510637
+  },
+  {
+    "id": "Suleiman Alhadidi",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Masahiro Kawaguchi",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Angelos Chronis",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Matthias Hank Haeusler",
+    "degree_centrality": 0.35106382978723405
+  },
+  {
+    "id": "Yakui Ding",
+    "degree_centrality": 0.02127659574468085
+  },
+  {
+    "id": "Kate Dunn",
+    "degree_centrality": 0.03723404255319149
+  },
+  {
+    "id": "Ben Cooper-Wooley",
+    "degree_centrality": 0.03723404255319149
+  },
+  {
+    "id": "Liang Yan",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Cyrus Qureshi",
+    "degree_centrality": 0.010638297872340425
+  },
+  {
+    "id": "Andre Brown",
+    "degree_centrality": 0.0425531914893617
+  }
+]
