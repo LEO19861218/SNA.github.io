@@ -30,19 +30,12 @@
         <input type="checkbox" id="showHideAuthorNames" checked>
 
         <!-- 移動下拉式選單到這裡 -->
-        <select id="authorDropdown" onchange="updateAuthorAndCentralitySelection()">
-            <option value="graph_data.json" data-centrality="degree">Tomohiro Fukuda</option>
-            <option value="graph2_data.json" data-centrality="degree">Marc Aurel Schnabel</option>
-            <option value="graph3_data.json" data-centrality="degree">Matthias Hank Haeusler</option> <!-- 新增选项 -->
-            <option value="graph4_data.json" data-centrality="degree">Three author</option> <!-- 新增选项 -->
-            <option value="graph5_data.json" data-centrality="degree">All author</option> <!-- 新增选项 -->
-            <option value="graph6_data.json" data-centrality="betweenness">Three Author </option> <!-- 新增选项 -->
-            <option value="graph7_data.json" data-centrality="betweenness">Betweenness</option> <!-- 新增选项 -->
-            <option value="graph8_data.json" data-centrality="betweenness">Betweenness</option> <!-- 新增选项 -->
-            <option value="graph9_data.json" data-centrality="betweenness">Betweenness</option> <!-- 新增选项 -->
-            <option value="graph10_data.json" data-centrality="betweenness">Betweenness</option> <!-- 新增选项 -->
-            <option value="graph11_data.json" data-centrality="eigenvector">Eigenvector</option> <!-- 新增选项 -->
-            <option value="graph12_data.json" data-centrality="eigenvector">Eigenvector</option> <!-- 新增选项 -->
+        <select id="authorDropdown">
+            <option value="graph_data.json">Tomohiro Fukuda</option>
+            <option value="graph2_data.json">Marc Aurel Schnabel</option>
+            <option value="graph3_data.json">Matthias Hank Haeusler</option> <!-- 新增选项 -->
+            <option value="graph4_data.json">Three author</option> <!-- 新增选项 -->
+            <option value="graph5_data.json">All author</option> <!-- 新增选项 -->
             <!-- 添加更多作者的選項 -->
         </select>
     </div>
@@ -53,32 +46,29 @@
 
 <script>
 // 初始化加載數據
-loadData("graph_data.json", "degree");
+loadData("graph_data.json");
 
-// 更新所選作者和中心性
-function updateAuthorAndCentralitySelection() {
-    var selectedFile = authorDropdown.value;
-    var selectedCentrality = authorDropdown.selectedOptions[0].getAttribute("data-centrality");
-    
-    // 根据所选JSON文件和中心性执行相应的操作
+// 更新所選作者
+function updateAuthorSelection() {
+    var selectedFile = authorDropdown.property("value");
+    // 根据所选JSON文件执行相应的操作
     d3.json(selectedFile).then(function(newData) {
         // 添加顯示新的數據的相關操作
         console.log("Selected File:", selectedFile);
-        console.log("Selected Centrality:", selectedCentrality);
         console.log("New Data:", newData);
 
         // 移除先前的 SVG
         d3.select("#graph-svg-container").select("svg").remove();
 
         // 加載新的數據
-        loadData(selectedFile, selectedCentrality);
+        loadData(selectedFile);
     }).catch(function(error) {
         console.error("Error loading data:", error);
     });
 }
 
 // 加載數據
-function loadData(file, centrality) {
+function loadData(file) {
     d3.json(file).then(function(data) {
         // 创建 SVG 元素
         var svg = d3.select("#graph-svg-container")
@@ -109,25 +99,9 @@ function loadData(file, centrality) {
         var node = svg.selectAll("circle")
                       .data(data.nodes)
                       .enter().append("circle")
-                      .attr("r", function(d) { 
-                          if (centrality === "degree") {
-                              return 5 + d.degree_centrality * 20;
-                          } else if (centrality === "betweenness") {
-                              return 5 + d.betweenness_centrality * 20;
-                          } else if (centrality === "eigenvector") {
-                              return 5 + d.eigenvector_centrality * 20;
-                          }
-                      }) 
-                      .style("fill", function(d) { 
-                          if (centrality === "degree") {
-                              return colorScale(d.degree_centrality);
-                          } else if (centrality === "betweenness") {
-                              return colorScale(d.betweenness_centrality);
-                          } else if (centrality === "eigenvector") {
-                              return colorScale(d.eigenvector_centrality);
-                          }
-                      }) 
-                      .call(d3.drag()
+                      .attr("r", function(d) { return 5 + d.degree_centrality * 20; })  // 根据度中心性调整节点的大小
+                      .style("fill", function(d) { return colorScale(d.degree_centrality); })  // 根据度中心性设置节点的颜色
+                      .call(d3.drag()  // 添加拖拽行为
                           .on("start", dragstarted)
                           .on("drag", dragged)
                           .on("end", dragended));
@@ -136,19 +110,11 @@ function loadData(file, centrality) {
         var label = svg.selectAll(null)
                       .data(data.nodes)
                       .enter().append("text")
-                      .text(function(d) { 
-                          if (centrality === "degree") {
-                              return d.id + " (" + d.degree_centrality.toFixed(2) + ")";
-                          } else if (centrality === "betweenness") {
-                              return d.id + " (" + d.betweenness_centrality.toFixed(2) + ")";
-                          } else if (centrality === "eigenvector") {
-                              return d.id + " (" + d.eigenvector_centrality.toFixed(2) + ")";
-                          }
-                      }) 
+                      .text(function(d) { return d.id + " (" + d.degree_centrality.toFixed(2) + ")"; })  // 顯示節點ID和度中心性數值
                       .attr("font-size", 8)
                       .attr("dx", 12)
                       .attr("dy", 4)
-                      .style("fill", "black");
+                      .style("fill", "black");  // 设置节点标签的颜色为黑色
 
         function ticked() {
             link.attr("x1", function(d) { return d.source.x; })
@@ -200,6 +166,9 @@ function updateAuthorNamesVisibility() {
         return showHideAuthorNamesCheckbox.property("checked") ? "block" : "none";
     });
 }
+
+// 监听下拉式選單變化
+authorDropdown.on("change", updateAuthorSelection);
 
 </script>
 
