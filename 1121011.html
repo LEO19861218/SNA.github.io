@@ -10,6 +10,11 @@
         #authorDropdown {
             width: 150px;
         }
+
+        /* 移除 SVG 容器的寬高屬性 */
+        #graph-svg-container {
+            /* 移除原有的 width 和 height 屬性 */
+        }
     </style>
 </head>
 <body>
@@ -34,8 +39,8 @@
         </select>
     </div>
 
-    <!-- 添加 SVG 容器 -->
-    <div id="graph-svg-container"></div>
+    <!-- 修改 SVG 容器的寬高 -->
+    <div id="graph-svg-container" style="width: 100%; height: 100vh;"></div>
 </div>
 
 <script>
