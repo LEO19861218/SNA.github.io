@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "Tomohiro Fukuda",
+      "degree": 0
+    },
+    {
+      "id": "Matthias Hank Haeusler",
+      "degree": 0
+    },
+    {
+      "id": "Marc Aurel Schnabel",
+      "degree": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "Tomohiro Fukuda",
+      "target": "Marc Aurel Schnabel",
+      "order": 1
+    }
+  ]
+}
