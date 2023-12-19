@@ -101,8 +101,11 @@ function loadData(file) {
         var label = svg.selectAll(null)
                       .data(data.nodes)
                       .enter().append("text")
-                      .text("") // Empty text, not displaying numerical values
-                      .style("display", "none");
+                      .text(function(d) { return d.id + " (" + d.degree_centrality.toFixed(2) + ")"; })
+                      .attr("font-size", 8)
+                      .attr("dx", 12)
+                      .attr("dy", 4)
+                      .style("fill", "black");
 
         function ticked() {
             link.attr("x1", function(d) { return d.source.x; })
@@ -147,3 +150,4 @@ loadData("graph_data.json");
 
 </body>
 </html>
+
