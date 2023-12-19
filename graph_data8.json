@@ -1,0 +1,3715 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "Yuda Yasuyuki",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Keisuke Mori",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Masahiro Hosokawa",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Kostas ?Terzidis",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Atsumi Maruhashi",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Ruth ?Ron",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Daniel Yu",
+      "degree_centrality": 0.047872340425531915
+    },
+    {
+      "id": "Yi He",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Irene Rui Chen",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Sooyeon Oh",
+      "degree_centrality": 0.03723404255319149
+    },
+    {
+      "id": "Suleiman Alhadidi",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Madison King",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Yasuyo Yoshikawa",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Masahiro Kawaguchi",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Danny D. Nguyen",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Aron Sheldon",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Munetoshi Miyake",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Liang Yan",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Masaharu Taguchi",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Jeremy J. Ham",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Mitra Homolja",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Hiroyuki Fukumoto",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Cameron Wells",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Nagahama R.",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Yasuko Matsunaga",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Hoki Nakamura",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Steve Kuan",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Matthias Hank Haeusler",
+      "degree_centrality": 0.35106382978723405
+    },
+    {
+      "id": "Qiaoliang Xu",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Geoff King",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Tane Jacob Moleta",
+      "degree_centrality": 0.10638297872340426
+    },
+    {
+      "id": "Yasuyuki Yuda",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Jae Wan Park",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Jane Burry",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Weihong Guo",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Yoann Pencreach",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Alex Tohidi",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "David Batchelor",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Tomohiro Fukuda",
+      "degree_centrality": 0.4095744680851064
+    },
+    {
+      "id": "Naoki Kikuchi",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Sascha Bohnenberger",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Ryuichiro Nagahama",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Tom獺s Dorta",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Yu Shimojo",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Narissa Bungbrakearti",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Alexander Lee",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Matthias Irger",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Kensuke Kitagawa",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Ali Motamedi",
+      "degree_centrality": 0.0425531914893617
+    },
+    {
+      "id": "Maria Rogers",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Lucas Kim",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Angelos Chronis",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Iman Sayah",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Atsushi Miyagawa",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Bin Li",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Yosuke Takada",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Leo Lin Meng",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Tsuyoshi Sasada",
+      "degree_centrality": 0.06914893617021277
+    },
+    {
+      "id": "Brandon Wang",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Shan Pan",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Michael Chernyavsky",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Jennifer Mei Yee Ng",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Wookhyun Yeo",
+      "degree_centrality": 0.0425531914893617
+    },
+    {
+      "id": "Cristina Ramos",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Andrew Butler",
+      "degree_centrality": 0.06382978723404255
+    },
+    {
+      "id": "Sayyed Amir Hossain Maghool",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Matthew Swarts",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Paolo Fiamma",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Hiroki Michida",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Katrina Simons",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Stephen Green",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Marcos Novak",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Sun Lei",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Hao Chen",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Reinhard Koenig",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Tiara Dobbs",
+      "degree_centrality": 0.03723404255319149
+    },
+    {
+      "id": "Takashi Koshiba",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Christophe Soulier",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Yingge Qu",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Yuji Yamauchi",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Yannis Zavoleas",
+      "degree_centrality": 0.0797872340425532
+    },
+    {
+      "id": "Emily Leung",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Motoi Toshio",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Haruyuki Kusama",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Samad Sepasgozar",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Lei Sun",
+      "degree_centrality": 0.03723404255319149
+    },
+    {
+      "id": "Alessandra Fabbri",
+      "degree_centrality": 0.1595744680851064
+    },
+    {
+      "id": "Ben Cooper-Wooley",
+      "degree_centrality": 0.03723404255319149
+    },
+    {
+      "id": "Xiangyu Wang",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Serdar Aydin",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Jorge Martinez",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Peter Christensen",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Takashi Michikawa",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Hitoshi Takeuchi",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Hannah Rushton",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Daiki Kido",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Davide Pierini",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Rebeka Vital",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Charlotte Firth",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Romain Guillot",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Yusuke Sato",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Nobuyoshi Yabuki",
+      "degree_centrality": 0.14361702127659573
+    },
+    {
+      "id": "Cyrus Qureshi",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Nazmul Khan",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Eliot Rosenberg",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Scott Meekings",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Kenichi Sakai",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Ayako Shimizu",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Yoshihiro Kobayashi",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Madeleine Johanson",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Hartmut Seichter",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Yingyi Zhang",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Takanori Terashima",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Lachlan Sharah",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Serjoscha Duering",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Ben Coorey",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Atsuko Kaga",
+      "degree_centrality": 0.09574468085106383
+    },
+    {
+      "id": "Toshiki Tokuhara",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Rui Cao",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Martin Tomitsch",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Annisa R. Rizal",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Tian Zhang",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Takayuki Kawaguchi",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Yoshihiro Nishimura",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Yakui Ding",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Nariddh Khean",
+      "degree_centrality": 0.06382978723404255
+    },
+    {
+      "id": "Rong Chen",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Weidong Li",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Qun Dai",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "David Silcock",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Nao Ito",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Margaret Goldsack",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Taro Narahara",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Jeremy Graham",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Duong Nguyen",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Kyoko Miyashita",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Dongsoo Choi",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Mercedes Paulini",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Kate Dunn",
+      "degree_centrality": 0.03723404255319149
+    },
+    {
+      "id": "Yuehan Zhu",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Rob Asher",
+      "degree_centrality": 0.0425531914893617
+    },
+    {
+      "id": "Nicole Gardner",
+      "degree_centrality": 0.18617021276595744
+    },
+    {
+      "id": "Yixi Xia",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Nobuyuki Shibano",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "David Madden",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Tracy Huang",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Andre Brown",
+      "degree_centrality": 0.0425531914893617
+    },
+    {
+      "id": "Manuel Muehlbauer",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Rebekah Araullo",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Anycie Coorey",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Liam Jordan Sheehan",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Ben Doherty",
+      "degree_centrality": 0.0797872340425532
+    },
+    {
+      "id": "Tian Tian Lo",
+      "degree_centrality": 0.09574468085106383
+    },
+    {
+      "id": "Yu-Tung Liu",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Evelyn L. C. Howe",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Blaire Haslop",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Daniel Joseph",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Erik Escalante",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Shuva Chowdhury",
+      "degree_centrality": 0.005319148936170213
+    },
+    {
+      "id": "Ryan Johan",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Kazuki Yokoi",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Kazunosuke Ikeno",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Dominic Hawton",
+      "degree_centrality": 0.031914893617021274
+    },
+    {
+      "id": "Yeo Wookhyun",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Daniel Camacho",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Garry Hangge Zhang",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Thomas Kvan",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Jorke Odolphi",
+      "degree_centrality": 0.03723404255319149
+    },
+    {
+      "id": "James Durcan",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "James Holth",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Kazuya Inoue",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Shunta Shimizu",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Michael White",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Jeffrey Koh",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Ryo Onishi",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Nobuaki Okamoto",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Amar Bennadji",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Sam Mclennan",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "K. Daniel Yu",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Ning Wang",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Derek Kawiti",
+      "degree_centrality": 0.010638297872340425
+    },
+    {
+      "id": "Alan Kim",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Thomas Tucker",
+      "degree_centrality": 0.07446808510638298
+    },
+    {
+      "id": "Tom Barker",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Marc Aurel Schnabel",
+      "degree_centrality": 0.30851063829787234
+    },
+    {
+      "id": "Sophie Scott",
+      "degree_centrality": 0.02127659574468085
+    },
+    {
+      "id": "Jessie Rogers",
+      "degree_centrality": 0.015957446808510637
+    },
+    {
+      "id": "Shiho Nagamachi",
+      "degree_centrality": 0.026595744680851064
+    },
+    {
+      "id": "Jack Barton",
+      "degree_centrality": 0.026595744680851064
+    }
+  ],
+  "links": [
+    {
+      "order": 1,
+      "source": "Yuda Yasuyuki",
+      "target": "Yeo Wookhyun"
+    },
+    {
+      "order": 2,
+      "source": "Yuda Yasuyuki",
+      "target": "Tsuyoshi Sasada"
+    },
+    {
+      "order": 2,
+      "source": "Yuda Yasuyuki",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 2,
+      "source": "Yuda Yasuyuki",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 1,
+      "source": "Keisuke Mori",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 2,
+      "source": "Keisuke Mori",
+      "target": "Sun Lei"
+    },
+    {
+      "order": 5,
+      "source": "Masahiro Hosokawa",
+      "target": "Ali Motamedi"
+    },
+    {
+      "order": 1,
+      "source": "Masahiro Hosokawa",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 1,
+      "source": "Masahiro Hosokawa",
+      "target": "Takashi Michikawa"
+    },
+    {
+      "order": 1,
+      "source": "Masahiro Hosokawa",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 4,
+      "source": "Kostas ?Terzidis",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 5,
+      "source": "Kostas ?Terzidis",
+      "target": "Dongsoo Choi"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Marcos Novak"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Matthew Swarts"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Paolo Fiamma"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Rebeka Vital"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Ruth ?Ron"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Taro Narahara"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Yoann Pencreach"
+    },
+    {
+      "order": 13,
+      "source": "Kostas ?Terzidis",
+      "target": "Yoshihiro Kobayashi"
+    },
+    {
+      "order": 1,
+      "source": "Atsumi Maruhashi",
+      "target": "Takayuki Kawaguchi"
+    },
+    {
+      "order": 2,
+      "source": "Atsumi Maruhashi",
+      "target": "Yoshihiro Nishimura"
+    },
+    {
+      "order": 3,
+      "source": "Atsumi Maruhashi",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 3,
+      "source": "Atsumi Maruhashi",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 4,
+      "source": "Ruth ?Ron",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 5,
+      "source": "Ruth ?Ron",
+      "target": "Dongsoo Choi"
+    },
+    {
+      "order": 1,
+      "source": "Ruth ?Ron",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 10,
+      "source": "Ruth ?Ron",
+      "target": "Marcos Novak"
+    },
+    {
+      "order": 12,
+      "source": "Ruth ?Ron",
+      "target": "Matthew Swarts"
+    },
+    {
+      "order": 6,
+      "source": "Ruth ?Ron",
+      "target": "Paolo Fiamma"
+    },
+    {
+      "order": 15,
+      "source": "Ruth ?Ron",
+      "target": "Rebeka Vital"
+    },
+    {
+      "order": 11,
+      "source": "Ruth ?Ron",
+      "target": "Taro Narahara"
+    },
+    {
+      "order": 11,
+      "source": "Ruth ?Ron",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 11,
+      "source": "Ruth ?Ron",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 11,
+      "source": "Ruth ?Ron",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 11,
+      "source": "Ruth ?Ron",
+      "target": "Yoann Pencreach"
+    },
+    {
+      "order": 11,
+      "source": "Ruth ?Ron",
+      "target": "Yoshihiro Kobayashi"
+    },
+    {
+      "order": 3,
+      "source": "Daniel Yu",
+      "target": "Jack Barton"
+    },
+    {
+      "order": 3,
+      "source": "Daniel Yu",
+      "target": "Kate Dunn"
+    },
+    {
+      "order": 1,
+      "source": "Daniel Yu",
+      "target": "Matthias Hank Haeusler"
+    },
+    {
+      "order": 4,
+      "source": "Daniel Yu",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 3,
+      "source": "Daniel Yu",
+      "target": "Tracy Huang"
+    },
+    {
+      "order": 4,
+      "source": "Daniel Yu",
+      "target": "Garry Hangge Zhang"
+    },
+    {
+      "order": 4,
+      "source": "Daniel Yu",
+      "target": "Leo Lin Meng"
+    },
+    {
+      "order": 3,
+      "source": "Daniel Yu",
+      "target": "Alex Tohidi"
+    },
+    {
+      "order": 1,
+      "source": "Daniel Yu",
+      "target": "Matthias Irger"
+    },
+    {
+      "order": 2,
+      "source": "Yi He",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 4,
+      "source": "Yi He",
+      "target": "Ning Wang"
+    },
+    {
+      "order": 3,
+      "source": "Yi He",
+      "target": "Rong Chen"
+    },
+    {
+      "order": 1,
+      "source": "Irene Rui Chen",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 2,
+      "source": "Sooyeon Oh",
+      "target": "Yasuyuki Yuda"
+    },
+    {
+      "order": 1,
+      "source": "Sooyeon Oh",
+      "target": "Wookhyun Yeo"
+    },
+    {
+      "order": 3,
+      "source": "Sooyeon Oh",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 1,
+      "source": "Sooyeon Oh",
+      "target": "Tsuyoshi Sasada"
+    },
+    {
+      "order": 2,
+      "source": "Sooyeon Oh",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 2,
+      "source": "Sooyeon Oh",
+      "target": "Ryuichiro Nagahama"
+    },
+    {
+      "order": 2,
+      "source": "Sooyeon Oh",
+      "target": "Yu-Tung Liu"
+    },
+    {
+      "order": 1,
+      "source": "Suleiman Alhadidi",
+      "target": "Alexander Lee"
+    },
+    {
+      "order": 3,
+      "source": "Suleiman Alhadidi",
+      "target": "Matthias Hank Haeusler"
+    },
+    {
+      "order": 1,
+      "source": "Madison King",
+      "target": "Charlotte Firth"
+    },
+    {
+      "order": 2,
+      "source": "Madison King",
+      "target": "Kate Dunn"
+    },
+    {
+      "order": 3,
+      "source": "Madison King",
+      "target": "Matthias Hank Haeusler"
+    },
+    {
+      "order": 1,
+      "source": "Yasuyo Yoshikawa",
+      "target": "Kyoko Miyashita"
+    },
+    {
+      "order": 1,
+      "source": "Yasuyo Yoshikawa",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 1,
+      "source": "Yasuyo Yoshikawa",
+      "target": "Kenichi Sakai"
+    },
+    {
+      "order": 2,
+      "source": "Masahiro Kawaguchi",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 2,
+      "source": "Masahiro Kawaguchi",
+      "target": "Atsushi Miyagawa"
+    },
+    {
+      "order": 3,
+      "source": "Masahiro Kawaguchi",
+      "target": "Wookhyun Yeo"
+    },
+    {
+      "order": 1,
+      "source": "Masahiro Kawaguchi",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 1,
+      "source": "Danny D. Nguyen",
+      "target": "Matthias Hank Haeusler"
+    },
+    {
+      "order": 2,
+      "source": "Danny D. Nguyen",
+      "target": "Margaret Goldsack"
+    },
+    {
+      "order": 3,
+      "source": "Aron Sheldon",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 1,
+      "source": "Aron Sheldon",
+      "target": "Cristina Ramos"
+    },
+    {
+      "order": 1,
+      "source": "Aron Sheldon",
+      "target": "Matthias Hank Haeusler"
+    },
+    {
+      "order": 1,
+      "source": "Aron Sheldon",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 1,
+      "source": "Aron Sheldon",
+      "target": "Tiara Dobbs"
+    },
+    {
+      "order": 1,
+      "source": "Aron Sheldon",
+      "target": "Yannis Zavoleas"
+    },
+    {
+      "order": 4,
+      "source": "Munetoshi Miyake",
+      "target": "Ali Motamedi"
+    },
+    {
+      "order": 1,
+      "source": "Munetoshi Miyake",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 1,
+      "source": "Munetoshi Miyake",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 1,
+      "source": "Liang Yan",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 1,
+      "source": "Liang Yan",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 1,
+      "source": "Masaharu Taguchi",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 3,
+      "source": "Masaharu Taguchi",
+      "target": "Ayako Shimizu"
+    },
+    {
+      "order": 4,
+      "source": "Masaharu Taguchi",
+      "target": "Lei Sun"
+    },
+    {
+      "order": 2,
+      "source": "Masaharu Taguchi",
+      "target": "Tian Zhang"
+    },
+    {
+      "order": 4,
+      "source": "Masaharu Taguchi",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 1,
+      "source": "Jeremy J. Ham",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 3,
+      "source": "Mitra Homolja",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Mitra Homolja",
+      "target": "Sayyed Amir Hossain Maghool"
+    },
+    {
+      "order": 1,
+      "source": "Hiroyuki Fukumoto",
+      "target": "Kazunosuke Ikeno"
+    },
+    {
+      "order": 2,
+      "source": "Hiroyuki Fukumoto",
+      "target": "Takashi Koshiba"
+    },
+    {
+      "order": 3,
+      "source": "Hiroyuki Fukumoto",
+      "target": "Yu Shimojo"
+    },
+    {
+      "order": 4,
+      "source": "Hiroyuki Fukumoto",
+      "target": "Hiroki Michida"
+    },
+    {
+      "order": 5,
+      "source": "Hiroyuki Fukumoto",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 4,
+      "source": "Cameron Wells",
+      "target": "Andre Brown"
+    },
+    {
+      "order": 1,
+      "source": "Cameron Wells",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Cameron Wells",
+      "target": "Tane Jacob Moleta"
+    },
+    {
+      "order": 1,
+      "source": "Nagahama R.",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 2,
+      "source": "Nagahama R.",
+      "target": "Tsuyoshi Sasada"
+    },
+    {
+      "order": 1,
+      "source": "Yasuko Matsunaga",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 2,
+      "source": "Yasuko Matsunaga",
+      "target": "Kenichi Sakai"
+    },
+    {
+      "order": 2,
+      "source": "Yasuko Matsunaga",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 3,
+      "source": "Hoki Nakamura",
+      "target": "Nao Ito"
+    },
+    {
+      "order": 3,
+      "source": "Hoki Nakamura",
+      "target": "Shiho Nagamachi"
+    },
+    {
+      "order": 3,
+      "source": "Hoki Nakamura",
+      "target": "Shunta Shimizu"
+    },
+    {
+      "order": 3,
+      "source": "Hoki Nakamura",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 3,
+      "source": "Hoki Nakamura",
+      "target": "Yuji Yamauchi"
+    },
+    {
+      "order": 1,
+      "source": "Steve Kuan",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 2,
+      "source": "Steve Kuan",
+      "target": "Weidong Li"
+    },
+    {
+      "order": 1,
+      "source": "Steve Kuan",
+      "target": "Thomas Kvan"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Tom Barker"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 3,
+      "source": "Matthias Hank Haeusler",
+      "target": "Martin Tomitsch"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Margaret Goldsack"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Daniel Joseph"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Alan Kim"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Andrew Butler"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Eliot Rosenberg"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Jeffrey Koh"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Annisa R. Rizal"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Alexander Lee"
+    },
+    {
+      "order": 4,
+      "source": "Matthias Hank Haeusler",
+      "target": "Jane Burry"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Manuel Muehlbauer"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Sascha Bohnenberger"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Madeleine Johanson"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Nazmul Khan"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Rob Asher"
+    },
+    {
+      "order": 3,
+      "source": "Matthias Hank Haeusler",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Erik Escalante"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Lachlan Sharah"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Romain Guillot"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Anycie Coorey"
+    },
+    {
+      "order": 3,
+      "source": "Matthias Hank Haeusler",
+      "target": "Ben Coorey"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Rebekah Araullo"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Emily Leung"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Ben Cooper-Wooley"
+    },
+    {
+      "order": 3,
+      "source": "Matthias Hank Haeusler",
+      "target": "Jorke Odolphi"
+    },
+    {
+      "order": 7,
+      "source": "Matthias Hank Haeusler",
+      "target": "Narissa Bungbrakearti"
+    },
+    {
+      "order": 3,
+      "source": "Matthias Hank Haeusler",
+      "target": "Jorge Martinez"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Lucas Kim"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Nariddh Khean"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Dominic Hawton"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "K. Daniel Yu"
+    },
+    {
+      "order": 4,
+      "source": "Matthias Hank Haeusler",
+      "target": "Katrina Simons"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Michael White"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Yannis Zavoleas"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Geoff King"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Stephen Green"
+    },
+    {
+      "order": 6,
+      "source": "Matthias Hank Haeusler",
+      "target": "Cristina Ramos"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Tiara Dobbs"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Michael Chernyavsky"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Ryan Johan"
+    },
+    {
+      "order": 3,
+      "source": "Matthias Hank Haeusler",
+      "target": "David Madden"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Jennifer Mei Yee Ng"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Sophie Scott"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Daniel Camacho"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Leo Lin Meng"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Charlotte Firth"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Kate Dunn"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Jeremy Graham"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Samad Sepasgozar"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Shan Pan"
+    },
+    {
+      "order": 4,
+      "source": "Matthias Hank Haeusler",
+      "target": "Jack Barton"
+    },
+    {
+      "order": 2,
+      "source": "Matthias Hank Haeusler",
+      "target": "Tracy Huang"
+    },
+    {
+      "order": 1,
+      "source": "Matthias Hank Haeusler",
+      "target": "Garry Hangge Zhang"
+    },
+    {
+      "order": 3,
+      "source": "Matthias Hank Haeusler",
+      "target": "Angelos Chronis"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Reinhard Koenig"
+    },
+    {
+      "order": 5,
+      "source": "Matthias Hank Haeusler",
+      "target": "Serjoscha Duering"
+    },
+    {
+      "order": 3,
+      "source": "Matthias Hank Haeusler",
+      "target": "Alex Tohidi"
+    },
+    {
+      "order": 4,
+      "source": "Matthias Hank Haeusler",
+      "target": "Matthias Irger"
+    },
+    {
+      "order": 2,
+      "source": "Qiaoliang Xu",
+      "target": "Andre Brown"
+    },
+    {
+      "order": 4,
+      "source": "Qiaoliang Xu",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 5,
+      "source": "Qiaoliang Xu",
+      "target": "Maria Rogers"
+    },
+    {
+      "order": 1,
+      "source": "Qiaoliang Xu",
+      "target": "Tane Jacob Moleta"
+    },
+    {
+      "order": 3,
+      "source": "Geoff King",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 2,
+      "source": "Geoff King",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 2,
+      "source": "Geoff King",
+      "target": "Stephen Green"
+    },
+    {
+      "order": 2,
+      "source": "Geoff King",
+      "target": "Yannis Zavoleas"
+    },
+    {
+      "order": 4,
+      "source": "Tane Jacob Moleta",
+      "target": "Davide Pierini"
+    },
+    {
+      "order": 3,
+      "source": "Tane Jacob Moleta",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 2,
+      "source": "Tane Jacob Moleta",
+      "target": "Serdar Aydin"
+    },
+    {
+      "order": 3,
+      "source": "Tane Jacob Moleta",
+      "target": "Tom獺s Dorta"
+    },
+    {
+      "order": 3,
+      "source": "Tane Jacob Moleta",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 1,
+      "source": "Tane Jacob Moleta",
+      "target": "Jessie Rogers"
+    },
+    {
+      "order": 1,
+      "source": "Tane Jacob Moleta",
+      "target": "Duong Nguyen"
+    },
+    {
+      "order": 1,
+      "source": "Tane Jacob Moleta",
+      "target": "James Holth"
+    },
+    {
+      "order": 2,
+      "source": "Tane Jacob Moleta",
+      "target": "Scott Meekings"
+    },
+    {
+      "order": 1,
+      "source": "Tane Jacob Moleta",
+      "target": "Cyrus Qureshi"
+    },
+    {
+      "order": 1,
+      "source": "Tane Jacob Moleta",
+      "target": "Brandon Wang"
+    },
+    {
+      "order": 2,
+      "source": "Tane Jacob Moleta",
+      "target": "Andre Brown"
+    },
+    {
+      "order": 1,
+      "source": "Tane Jacob Moleta",
+      "target": "Sam Mclennan"
+    },
+    {
+      "order": 5,
+      "source": "Tane Jacob Moleta",
+      "target": "Maria Rogers"
+    },
+    {
+      "order": 1,
+      "source": "Tane Jacob Moleta",
+      "target": "Bin Li"
+    },
+    {
+      "order": 4,
+      "source": "Tane Jacob Moleta",
+      "target": "Weihong Guo"
+    },
+    {
+      "order": 1,
+      "source": "Tane Jacob Moleta",
+      "target": "David Silcock"
+    },
+    {
+      "order": 1,
+      "source": "Tane Jacob Moleta",
+      "target": "Liam Jordan Sheehan"
+    },
+    {
+      "order": 1,
+      "source": "Yasuyuki Yuda",
+      "target": "Wookhyun Yeo"
+    },
+    {
+      "order": 1,
+      "source": "Yasuyuki Yuda",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 2,
+      "source": "Yasuyuki Yuda",
+      "target": "Tsuyoshi Sasada"
+    },
+    {
+      "order": 2,
+      "source": "Yasuyuki Yuda",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 1,
+      "source": "Jae Wan Park",
+      "target": "Haruyuki Kusama"
+    },
+    {
+      "order": 2,
+      "source": "Jae Wan Park",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 3,
+      "source": "Jae Wan Park",
+      "target": "Tsuyoshi Sasada"
+    },
+    {
+      "order": 4,
+      "source": "Jane Burry",
+      "target": "Manuel Muehlbauer"
+    },
+    {
+      "order": 4,
+      "source": "Jane Burry",
+      "target": "Sascha Bohnenberger"
+    },
+    {
+      "order": 1,
+      "source": "Weihong Guo",
+      "target": "Bin Li"
+    },
+    {
+      "order": 3,
+      "source": "Weihong Guo",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 4,
+      "source": "Yoann Pencreach",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 5,
+      "source": "Yoann Pencreach",
+      "target": "Dongsoo Choi"
+    },
+    {
+      "order": 1,
+      "source": "Yoann Pencreach",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 10,
+      "source": "Yoann Pencreach",
+      "target": "Marcos Novak"
+    },
+    {
+      "order": 12,
+      "source": "Yoann Pencreach",
+      "target": "Matthew Swarts"
+    },
+    {
+      "order": 6,
+      "source": "Yoann Pencreach",
+      "target": "Paolo Fiamma"
+    },
+    {
+      "order": 15,
+      "source": "Yoann Pencreach",
+      "target": "Rebeka Vital"
+    },
+    {
+      "order": 9,
+      "source": "Yoann Pencreach",
+      "target": "Taro Narahara"
+    },
+    {
+      "order": 14,
+      "source": "Yoann Pencreach",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 8,
+      "source": "Yoann Pencreach",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 7,
+      "source": "Yoann Pencreach",
+      "target": "Tomohiro Fukuda"
+    },
+    {
+      "order": 3,
+      "source": "Yoann Pencreach",
+      "target": "Yoshihiro Kobayashi"
+    },
+    {
+      "order": 3,
+      "source": "Alex Tohidi",
+      "target": "Matthias Irger"
+    },
+    {
+      "order": 1,
+      "source": "David Batchelor",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Haruyuki Kusama"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Tsuyoshi Sasada"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Ryuichiro Nagahama"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Yeo Wookhyun"
+    },
+    {
+      "order": 2,
+      "source": "Tomohiro Fukuda",
+      "target": "Motoi Toshio"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Nobuyuki Shibano"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Yu-Tung Liu"
+    },
+    {
+      "order": 2,
+      "source": "Tomohiro Fukuda",
+      "target": "Atsushi Miyagawa"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Wookhyun Yeo"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Nobuaki Okamoto"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Yosuke Takada"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Takanori Terashima"
+    },
+    {
+      "order": 3,
+      "source": "Tomohiro Fukuda",
+      "target": "Kenichi Sakai"
+    },
+    {
+      "order": 2,
+      "source": "Tomohiro Fukuda",
+      "target": "Kyoko Miyashita"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Takayuki Kawaguchi"
+    },
+    {
+      "order": 2,
+      "source": "Tomohiro Fukuda",
+      "target": "Yoshihiro Nishimura"
+    },
+    {
+      "order": 3,
+      "source": "Tomohiro Fukuda",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Hitoshi Takeuchi"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Kensuke Kitagawa"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Ayako Shimizu"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Lei Sun"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Tian Zhang"
+    },
+    {
+      "order": 2,
+      "source": "Tomohiro Fukuda",
+      "target": "Christophe Soulier"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Toshiki Tokuhara"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Sun Lei"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Kazunosuke Ikeno"
+    },
+    {
+      "order": 2,
+      "source": "Tomohiro Fukuda",
+      "target": "Takashi Koshiba"
+    },
+    {
+      "order": 3,
+      "source": "Tomohiro Fukuda",
+      "target": "Yu Shimojo"
+    },
+    {
+      "order": 4,
+      "source": "Tomohiro Fukuda",
+      "target": "Hiroki Michida"
+    },
+    {
+      "order": 4,
+      "source": "Tomohiro Fukuda",
+      "target": "Ali Motamedi"
+    },
+    {
+      "order": 4,
+      "source": "Tomohiro Fukuda",
+      "target": "Takashi Michikawa"
+    },
+    {
+      "order": 2,
+      "source": "Tomohiro Fukuda",
+      "target": "Yakui Ding"
+    },
+    {
+      "order": 2,
+      "source": "Tomohiro Fukuda",
+      "target": "Yusuke Sato"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Kazuki Yokoi"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Kazuya Inoue"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Rui Cao"
+    },
+    {
+      "order": 2,
+      "source": "Tomohiro Fukuda",
+      "target": "Yuehan Zhu"
+    },
+    {
+      "order": 3,
+      "source": "Tomohiro Fukuda",
+      "target": "Yixi Xia"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Daiki Kido"
+    },
+    {
+      "order": 4,
+      "source": "Tomohiro Fukuda",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 5,
+      "source": "Tomohiro Fukuda",
+      "target": "Dongsoo Choi"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 10,
+      "source": "Tomohiro Fukuda",
+      "target": "Marcos Novak"
+    },
+    {
+      "order": 12,
+      "source": "Tomohiro Fukuda",
+      "target": "Matthew Swarts"
+    },
+    {
+      "order": 6,
+      "source": "Tomohiro Fukuda",
+      "target": "Paolo Fiamma"
+    },
+    {
+      "order": 15,
+      "source": "Tomohiro Fukuda",
+      "target": "Rebeka Vital"
+    },
+    {
+      "order": 9,
+      "source": "Tomohiro Fukuda",
+      "target": "Taro Narahara"
+    },
+    {
+      "order": 14,
+      "source": "Tomohiro Fukuda",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 8,
+      "source": "Tomohiro Fukuda",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 7,
+      "source": "Tomohiro Fukuda",
+      "target": "Yoshihiro Kobayashi"
+    },
+    {
+      "order": 5,
+      "source": "Tomohiro Fukuda",
+      "target": "Nao Ito"
+    },
+    {
+      "order": 2,
+      "source": "Tomohiro Fukuda",
+      "target": "Shiho Nagamachi"
+    },
+    {
+      "order": 6,
+      "source": "Tomohiro Fukuda",
+      "target": "Shunta Shimizu"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Yuji Yamauchi"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Naoki Kikuchi"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Hao Chen"
+    },
+    {
+      "order": 1,
+      "source": "Tomohiro Fukuda",
+      "target": "Ryo Onishi"
+    },
+    {
+      "order": 1,
+      "source": "Naoki Kikuchi",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 2,
+      "source": "Sascha Bohnenberger",
+      "target": "Manuel Muehlbauer"
+    },
+    {
+      "order": 3,
+      "source": "Ryuichiro Nagahama",
+      "target": "Tsuyoshi Sasada"
+    },
+    {
+      "order": 2,
+      "source": "Ryuichiro Nagahama",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 3,
+      "source": "Ryuichiro Nagahama",
+      "target": "Nobuyuki Shibano"
+    },
+    {
+      "order": 3,
+      "source": "Ryuichiro Nagahama",
+      "target": "Yu-Tung Liu"
+    },
+    {
+      "order": 4,
+      "source": "Tom獺s Dorta",
+      "target": "Davide Pierini"
+    },
+    {
+      "order": 1,
+      "source": "Tom獺s Dorta",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 2,
+      "source": "Tom獺s Dorta",
+      "target": "Serdar Aydin"
+    },
+    {
+      "order": 1,
+      "source": "Yu Shimojo",
+      "target": "Kazunosuke Ikeno"
+    },
+    {
+      "order": 2,
+      "source": "Yu Shimojo",
+      "target": "Takashi Koshiba"
+    },
+    {
+      "order": 3,
+      "source": "Yu Shimojo",
+      "target": "Hiroki Michida"
+    },
+    {
+      "order": 5,
+      "source": "Narissa Bungbrakearti",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 2,
+      "source": "Narissa Bungbrakearti",
+      "target": "Ben Cooper-Wooley"
+    },
+    {
+      "order": 4,
+      "source": "Narissa Bungbrakearti",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 3,
+      "source": "Narissa Bungbrakearti",
+      "target": "Jorke Odolphi"
+    },
+    {
+      "order": 1,
+      "source": "Narissa Bungbrakearti",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 2,
+      "source": "Kensuke Kitagawa",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 4,
+      "source": "Ali Motamedi",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 5,
+      "source": "Ali Motamedi",
+      "target": "Takashi Michikawa"
+    },
+    {
+      "order": 5,
+      "source": "Ali Motamedi",
+      "target": "Yakui Ding"
+    },
+    {
+      "order": 5,
+      "source": "Ali Motamedi",
+      "target": "Yusuke Sato"
+    },
+    {
+      "order": 4,
+      "source": "Ali Motamedi",
+      "target": "Kazuki Yokoi"
+    },
+    {
+      "order": 2,
+      "source": "Maria Rogers",
+      "target": "Andre Brown"
+    },
+    {
+      "order": 4,
+      "source": "Maria Rogers",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 5,
+      "source": "Lucas Kim",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 4,
+      "source": "Lucas Kim",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 3,
+      "source": "Lucas Kim",
+      "target": "Jorge Martinez"
+    },
+    {
+      "order": 2,
+      "source": "Lucas Kim",
+      "target": "Nariddh Khean"
+    },
+    {
+      "order": 2,
+      "source": "Lucas Kim",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 3,
+      "source": "Angelos Chronis",
+      "target": "Reinhard Koenig"
+    },
+    {
+      "order": 3,
+      "source": "Angelos Chronis",
+      "target": "Serjoscha Duering"
+    },
+    {
+      "order": 3,
+      "source": "Angelos Chronis",
+      "target": "Nariddh Khean"
+    },
+    {
+      "order": 1,
+      "source": "Iman Sayah",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Atsushi Miyagawa",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 2,
+      "source": "Atsushi Miyagawa",
+      "target": "Wookhyun Yeo"
+    },
+    {
+      "order": 1,
+      "source": "Bin Li",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 2,
+      "source": "Yosuke Takada",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 2,
+      "source": "Leo Lin Meng",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 2,
+      "source": "Leo Lin Meng",
+      "target": "Jeremy Graham"
+    },
+    {
+      "order": 1,
+      "source": "Leo Lin Meng",
+      "target": "Garry Hangge Zhang"
+    },
+    {
+      "order": 1,
+      "source": "Tsuyoshi Sasada",
+      "target": "Yeo Wookhyun"
+    },
+    {
+      "order": 2,
+      "source": "Tsuyoshi Sasada",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 1,
+      "source": "Tsuyoshi Sasada",
+      "target": "Wookhyun Yeo"
+    },
+    {
+      "order": 1,
+      "source": "Tsuyoshi Sasada",
+      "target": "Haruyuki Kusama"
+    },
+    {
+      "order": 5,
+      "source": "Tsuyoshi Sasada",
+      "target": "Yu-Tung Liu"
+    },
+    {
+      "order": 4,
+      "source": "Tsuyoshi Sasada",
+      "target": "Nobuyuki Shibano"
+    },
+    {
+      "order": 1,
+      "source": "Brandon Wang",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 2,
+      "source": "Shan Pan",
+      "target": "Andrew Butler"
+    },
+    {
+      "order": 3,
+      "source": "Shan Pan",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 4,
+      "source": "Shan Pan",
+      "target": "Samad Sepasgozar"
+    },
+    {
+      "order": 3,
+      "source": "Michael Chernyavsky",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 2,
+      "source": "Michael Chernyavsky",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 2,
+      "source": "Michael Chernyavsky",
+      "target": "Ryan Johan"
+    },
+    {
+      "order": 2,
+      "source": "Michael Chernyavsky",
+      "target": "Yannis Zavoleas"
+    },
+    {
+      "order": 4,
+      "source": "Jennifer Mei Yee Ng",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 3,
+      "source": "Jennifer Mei Yee Ng",
+      "target": "David Madden"
+    },
+    {
+      "order": 1,
+      "source": "Jennifer Mei Yee Ng",
+      "target": "Nariddh Khean"
+    },
+    {
+      "order": 1,
+      "source": "Jennifer Mei Yee Ng",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 1,
+      "source": "Jennifer Mei Yee Ng",
+      "target": "Yannis Zavoleas"
+    },
+    {
+      "order": 2,
+      "source": "Wookhyun Yeo",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 2,
+      "source": "Wookhyun Yeo",
+      "target": "Nobuaki Okamoto"
+    },
+    {
+      "order": 3,
+      "source": "Cristina Ramos",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 6,
+      "source": "Cristina Ramos",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 6,
+      "source": "Cristina Ramos",
+      "target": "Tiara Dobbs"
+    },
+    {
+      "order": 6,
+      "source": "Cristina Ramos",
+      "target": "Yannis Zavoleas"
+    },
+    {
+      "order": 1,
+      "source": "Andrew Butler",
+      "target": "Daniel Joseph"
+    },
+    {
+      "order": 2,
+      "source": "Andrew Butler",
+      "target": "Alan Kim"
+    },
+    {
+      "order": 4,
+      "source": "Andrew Butler",
+      "target": "Madeleine Johanson"
+    },
+    {
+      "order": 4,
+      "source": "Andrew Butler",
+      "target": "Nazmul Khan"
+    },
+    {
+      "order": 2,
+      "source": "Andrew Butler",
+      "target": "Rob Asher"
+    },
+    {
+      "order": 5,
+      "source": "Andrew Butler",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 3,
+      "source": "Andrew Butler",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 2,
+      "source": "Andrew Butler",
+      "target": "Emily Leung"
+    },
+    {
+      "order": 2,
+      "source": "Andrew Butler",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 2,
+      "source": "Andrew Butler",
+      "target": "Samad Sepasgozar"
+    },
+    {
+      "order": 3,
+      "source": "Sayyed Amir Hossain Maghool",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 4,
+      "source": "Matthew Swarts",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 5,
+      "source": "Matthew Swarts",
+      "target": "Dongsoo Choi"
+    },
+    {
+      "order": 1,
+      "source": "Matthew Swarts",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 10,
+      "source": "Matthew Swarts",
+      "target": "Marcos Novak"
+    },
+    {
+      "order": 12,
+      "source": "Matthew Swarts",
+      "target": "Paolo Fiamma"
+    },
+    {
+      "order": 12,
+      "source": "Matthew Swarts",
+      "target": "Rebeka Vital"
+    },
+    {
+      "order": 12,
+      "source": "Matthew Swarts",
+      "target": "Taro Narahara"
+    },
+    {
+      "order": 12,
+      "source": "Matthew Swarts",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 12,
+      "source": "Matthew Swarts",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 12,
+      "source": "Matthew Swarts",
+      "target": "Yoshihiro Kobayashi"
+    },
+    {
+      "order": 4,
+      "source": "Paolo Fiamma",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 5,
+      "source": "Paolo Fiamma",
+      "target": "Dongsoo Choi"
+    },
+    {
+      "order": 1,
+      "source": "Paolo Fiamma",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 10,
+      "source": "Paolo Fiamma",
+      "target": "Marcos Novak"
+    },
+    {
+      "order": 6,
+      "source": "Paolo Fiamma",
+      "target": "Rebeka Vital"
+    },
+    {
+      "order": 6,
+      "source": "Paolo Fiamma",
+      "target": "Taro Narahara"
+    },
+    {
+      "order": 6,
+      "source": "Paolo Fiamma",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 6,
+      "source": "Paolo Fiamma",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 6,
+      "source": "Paolo Fiamma",
+      "target": "Yoshihiro Kobayashi"
+    },
+    {
+      "order": 1,
+      "source": "Hiroki Michida",
+      "target": "Kazunosuke Ikeno"
+    },
+    {
+      "order": 2,
+      "source": "Hiroki Michida",
+      "target": "Takashi Koshiba"
+    },
+    {
+      "order": 3,
+      "source": "Katrina Simons",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 1,
+      "source": "Katrina Simons",
+      "target": "K. Daniel Yu"
+    },
+    {
+      "order": 3,
+      "source": "Stephen Green",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 4,
+      "source": "Stephen Green",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 1,
+      "source": "Stephen Green",
+      "target": "Yannis Zavoleas"
+    },
+    {
+      "order": 4,
+      "source": "Marcos Novak",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 5,
+      "source": "Marcos Novak",
+      "target": "Dongsoo Choi"
+    },
+    {
+      "order": 1,
+      "source": "Marcos Novak",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 10,
+      "source": "Marcos Novak",
+      "target": "Rebeka Vital"
+    },
+    {
+      "order": 10,
+      "source": "Marcos Novak",
+      "target": "Taro Narahara"
+    },
+    {
+      "order": 10,
+      "source": "Marcos Novak",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 10,
+      "source": "Marcos Novak",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 10,
+      "source": "Marcos Novak",
+      "target": "Yoshihiro Kobayashi"
+    },
+    {
+      "order": 1,
+      "source": "Hao Chen",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 4,
+      "source": "Reinhard Koenig",
+      "target": "Serjoscha Duering"
+    },
+    {
+      "order": 1,
+      "source": "Reinhard Koenig",
+      "target": "Nariddh Khean"
+    },
+    {
+      "order": 3,
+      "source": "Tiara Dobbs",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 4,
+      "source": "Tiara Dobbs",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 2,
+      "source": "Tiara Dobbs",
+      "target": "Yannis Zavoleas"
+    },
+    {
+      "order": 1,
+      "source": "Tiara Dobbs",
+      "target": "Daniel Camacho"
+    },
+    {
+      "order": 1,
+      "source": "Takashi Koshiba",
+      "target": "Kazunosuke Ikeno"
+    },
+    {
+      "order": 1,
+      "source": "Christophe Soulier",
+      "target": "Lei Sun"
+    },
+    {
+      "order": 1,
+      "source": "Yingge Qu",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 2,
+      "source": "Yingge Qu",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 5,
+      "source": "Yuji Yamauchi",
+      "target": "Nao Ito"
+    },
+    {
+      "order": 2,
+      "source": "Yuji Yamauchi",
+      "target": "Shiho Nagamachi"
+    },
+    {
+      "order": 6,
+      "source": "Yuji Yamauchi",
+      "target": "Shunta Shimizu"
+    },
+    {
+      "order": 1,
+      "source": "Yannis Zavoleas",
+      "target": "Michael White"
+    },
+    {
+      "order": 3,
+      "source": "Yannis Zavoleas",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 4,
+      "source": "Yannis Zavoleas",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 1,
+      "source": "Yannis Zavoleas",
+      "target": "Ryan Johan"
+    },
+    {
+      "order": 3,
+      "source": "Yannis Zavoleas",
+      "target": "David Madden"
+    },
+    {
+      "order": 2,
+      "source": "Yannis Zavoleas",
+      "target": "Nariddh Khean"
+    },
+    {
+      "order": 1,
+      "source": "Yannis Zavoleas",
+      "target": "Daniel Camacho"
+    },
+    {
+      "order": 5,
+      "source": "Emily Leung",
+      "target": "Alessandra Fabbri"
+    },
+    {
+      "order": 4,
+      "source": "Emily Leung",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 1,
+      "source": "Emily Leung",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 1,
+      "source": "Emily Leung",
+      "target": "Rob Asher"
+    },
+    {
+      "order": 1,
+      "source": "Motoi Toshio",
+      "target": "Yeo Wookhyun"
+    },
+    {
+      "order": 2,
+      "source": "Motoi Toshio",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 3,
+      "source": "Samad Sepasgozar",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 3,
+      "source": "Lei Sun",
+      "target": "Ayako Shimizu"
+    },
+    {
+      "order": 2,
+      "source": "Lei Sun",
+      "target": "Tian Zhang"
+    },
+    {
+      "order": 1,
+      "source": "Lei Sun",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 1,
+      "source": "Lei Sun",
+      "target": "Toshiki Tokuhara"
+    },
+    {
+      "order": 3,
+      "source": "Alessandra Fabbri",
+      "target": "Erik Escalante"
+    },
+    {
+      "order": 3,
+      "source": "Alessandra Fabbri",
+      "target": "Lachlan Sharah"
+    },
+    {
+      "order": 3,
+      "source": "Alessandra Fabbri",
+      "target": "Romain Guillot"
+    },
+    {
+      "order": 3,
+      "source": "Alessandra Fabbri",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 3,
+      "source": "Alessandra Fabbri",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 5,
+      "source": "Alessandra Fabbri",
+      "target": "Rob Asher"
+    },
+    {
+      "order": 5,
+      "source": "Alessandra Fabbri",
+      "target": "Ben Cooper-Wooley"
+    },
+    {
+      "order": 5,
+      "source": "Alessandra Fabbri",
+      "target": "Jorke Odolphi"
+    },
+    {
+      "order": 5,
+      "source": "Alessandra Fabbri",
+      "target": "Jorge Martinez"
+    },
+    {
+      "order": 4,
+      "source": "Alessandra Fabbri",
+      "target": "Nariddh Khean"
+    },
+    {
+      "order": 5,
+      "source": "Alessandra Fabbri",
+      "target": "Dominic Hawton"
+    },
+    {
+      "order": 3,
+      "source": "Alessandra Fabbri",
+      "target": "K. Daniel Yu"
+    },
+    {
+      "order": 3,
+      "source": "Alessandra Fabbri",
+      "target": "Ryan Johan"
+    },
+    {
+      "order": 4,
+      "source": "Alessandra Fabbri",
+      "target": "David Madden"
+    },
+    {
+      "order": 3,
+      "source": "Alessandra Fabbri",
+      "target": "Sophie Scott"
+    },
+    {
+      "order": 3,
+      "source": "Alessandra Fabbri",
+      "target": "Daniel Camacho"
+    },
+    {
+      "order": 2,
+      "source": "Ben Cooper-Wooley",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 2,
+      "source": "Ben Cooper-Wooley",
+      "target": "Jorke Odolphi"
+    },
+    {
+      "order": 2,
+      "source": "Ben Cooper-Wooley",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 2,
+      "source": "Ben Cooper-Wooley",
+      "target": "Dominic Hawton"
+    },
+    {
+      "order": 1,
+      "source": "Xiangyu Wang",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 2,
+      "source": "Xiangyu Wang",
+      "target": "Hartmut Seichter"
+    },
+    {
+      "order": 2,
+      "source": "Xiangyu Wang",
+      "target": "Thomas Kvan"
+    },
+    {
+      "order": 2,
+      "source": "Serdar Aydin",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Serdar Aydin",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 4,
+      "source": "Serdar Aydin",
+      "target": "Davide Pierini"
+    },
+    {
+      "order": 1,
+      "source": "Serdar Aydin",
+      "target": "Blaire Haslop"
+    },
+    {
+      "order": 4,
+      "source": "Jorge Martinez",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 3,
+      "source": "Jorge Martinez",
+      "target": "Nariddh Khean"
+    },
+    {
+      "order": 3,
+      "source": "Jorge Martinez",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 1,
+      "source": "Peter Christensen",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 3,
+      "source": "Takashi Michikawa",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 4,
+      "source": "Takashi Michikawa",
+      "target": "Yakui Ding"
+    },
+    {
+      "order": 4,
+      "source": "Takashi Michikawa",
+      "target": "Yusuke Sato"
+    },
+    {
+      "order": 1,
+      "source": "Hannah Rushton",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Daiki Kido",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 4,
+      "source": "Davide Pierini",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 4,
+      "source": "Rebeka Vital",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 5,
+      "source": "Rebeka Vital",
+      "target": "Dongsoo Choi"
+    },
+    {
+      "order": 1,
+      "source": "Rebeka Vital",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 15,
+      "source": "Rebeka Vital",
+      "target": "Taro Narahara"
+    },
+    {
+      "order": 15,
+      "source": "Rebeka Vital",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 15,
+      "source": "Rebeka Vital",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 15,
+      "source": "Rebeka Vital",
+      "target": "Yoshihiro Kobayashi"
+    },
+    {
+      "order": 1,
+      "source": "Charlotte Firth",
+      "target": "Kate Dunn"
+    },
+    {
+      "order": 2,
+      "source": "Romain Guillot",
+      "target": "Erik Escalante"
+    },
+    {
+      "order": 1,
+      "source": "Romain Guillot",
+      "target": "Lachlan Sharah"
+    },
+    {
+      "order": 3,
+      "source": "Yusuke Sato",
+      "target": "Nobuyoshi Yabuki"
+    },
+    {
+      "order": 1,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Takayuki Kawaguchi"
+    },
+    {
+      "order": 2,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Yoshihiro Nishimura"
+    },
+    {
+      "order": 2,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Tian Zhang"
+    },
+    {
+      "order": 3,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Ayako Shimizu"
+    },
+    {
+      "order": 2,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Toshiki Tokuhara"
+    },
+    {
+      "order": 3,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Yakui Ding"
+    },
+    {
+      "order": 1,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Kazuki Yokoi"
+    },
+    {
+      "order": 1,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Kazuya Inoue"
+    },
+    {
+      "order": 3,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Rui Cao"
+    },
+    {
+      "order": 3,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Yuehan Zhu"
+    },
+    {
+      "order": 2,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Yixi Xia"
+    },
+    {
+      "order": 1,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Kazunosuke Ikeno"
+    },
+    {
+      "order": 3,
+      "source": "Nobuyoshi Yabuki",
+      "target": "Ryo Onishi"
+    },
+    {
+      "order": 1,
+      "source": "Cyrus Qureshi",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Nazmul Khan",
+      "target": "Madeleine Johanson"
+    },
+    {
+      "order": 2,
+      "source": "Nazmul Khan",
+      "target": "Rob Asher"
+    },
+    {
+      "order": 1,
+      "source": "Eliot Rosenberg",
+      "target": "Jeffrey Koh"
+    },
+    {
+      "order": 1,
+      "source": "Scott Meekings",
+      "target": "James Holth"
+    },
+    {
+      "order": 3,
+      "source": "Scott Meekings",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Kenichi Sakai",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 2,
+      "source": "Kenichi Sakai",
+      "target": "Kyoko Miyashita"
+    },
+    {
+      "order": 2,
+      "source": "Ayako Shimizu",
+      "target": "Tian Zhang"
+    },
+    {
+      "order": 4,
+      "source": "Yoshihiro Kobayashi",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 5,
+      "source": "Yoshihiro Kobayashi",
+      "target": "Dongsoo Choi"
+    },
+    {
+      "order": 1,
+      "source": "Yoshihiro Kobayashi",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 9,
+      "source": "Yoshihiro Kobayashi",
+      "target": "Taro Narahara"
+    },
+    {
+      "order": 14,
+      "source": "Yoshihiro Kobayashi",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 8,
+      "source": "Yoshihiro Kobayashi",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 1,
+      "source": "Madeleine Johanson",
+      "target": "Rob Asher"
+    },
+    {
+      "order": 1,
+      "source": "Hartmut Seichter",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 3,
+      "source": "Hartmut Seichter",
+      "target": "Thomas Kvan"
+    },
+    {
+      "order": 2,
+      "source": "Yingyi Zhang",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 2,
+      "source": "Takanori Terashima",
+      "target": "Atsuko Kaga"
+    },
+    {
+      "order": 2,
+      "source": "Lachlan Sharah",
+      "target": "Erik Escalante"
+    },
+    {
+      "order": 1,
+      "source": "Serjoscha Duering",
+      "target": "Nariddh Khean"
+    },
+    {
+      "order": 1,
+      "source": "Ben Coorey",
+      "target": "Anycie Coorey"
+    },
+    {
+      "order": 1,
+      "source": "Atsuko Kaga",
+      "target": "Yeo Wookhyun"
+    },
+    {
+      "order": 2,
+      "source": "Atsuko Kaga",
+      "target": "Yu-Tung Liu"
+    },
+    {
+      "order": 2,
+      "source": "Atsuko Kaga",
+      "target": "Nobuyuki Shibano"
+    },
+    {
+      "order": 2,
+      "source": "Atsuko Kaga",
+      "target": "Nobuaki Okamoto"
+    },
+    {
+      "order": 1,
+      "source": "Rui Cao",
+      "target": "Kazuya Inoue"
+    },
+    {
+      "order": 1,
+      "source": "Martin Tomitsch",
+      "target": "Tom Barker"
+    },
+    {
+      "order": 2,
+      "source": "Martin Tomitsch",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 1,
+      "source": "Annisa R. Rizal",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 1,
+      "source": "Takayuki Kawaguchi",
+      "target": "Yoshihiro Nishimura"
+    },
+    {
+      "order": 4,
+      "source": "Nariddh Khean",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 2,
+      "source": "Nariddh Khean",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 3,
+      "source": "Nariddh Khean",
+      "target": "David Madden"
+    },
+    {
+      "order": 2,
+      "source": "Rong Chen",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 4,
+      "source": "Rong Chen",
+      "target": "Ning Wang"
+    },
+    {
+      "order": 1,
+      "source": "Weidong Li",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Weidong Li",
+      "target": "Thomas Kvan"
+    },
+    {
+      "order": 1,
+      "source": "Qun Dai",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 4,
+      "source": "David Silcock",
+      "target": "Andre Brown"
+    },
+    {
+      "order": 1,
+      "source": "David Silcock",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 5,
+      "source": "Nao Ito",
+      "target": "Shiho Nagamachi"
+    },
+    {
+      "order": 5,
+      "source": "Nao Ito",
+      "target": "Shunta Shimizu"
+    },
+    {
+      "order": 4,
+      "source": "Taro Narahara",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 5,
+      "source": "Taro Narahara",
+      "target": "Dongsoo Choi"
+    },
+    {
+      "order": 1,
+      "source": "Taro Narahara",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 9,
+      "source": "Taro Narahara",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 9,
+      "source": "Taro Narahara",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 1,
+      "source": "Duong Nguyen",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 4,
+      "source": "Dongsoo Choi",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 5,
+      "source": "Dongsoo Choi",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 5,
+      "source": "Dongsoo Choi",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 5,
+      "source": "Dongsoo Choi",
+      "target": "Tian Tian Lo"
+    },
+    {
+      "order": 1,
+      "source": "Mercedes Paulini",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 4,
+      "source": "Kate Dunn",
+      "target": "Jack Barton"
+    },
+    {
+      "order": 5,
+      "source": "Kate Dunn",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 5,
+      "source": "Kate Dunn",
+      "target": "Tracy Huang"
+    },
+    {
+      "order": 4,
+      "source": "Rob Asher",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 4,
+      "source": "Rob Asher",
+      "target": "Nicole Gardner"
+    },
+    {
+      "order": 1,
+      "source": "Nicole Gardner",
+      "target": "Tom Barker"
+    },
+    {
+      "order": 2,
+      "source": "Nicole Gardner",
+      "target": "Ben Doherty"
+    },
+    {
+      "order": 3,
+      "source": "Nicole Gardner",
+      "target": "Jorke Odolphi"
+    },
+    {
+      "order": 1,
+      "source": "Nicole Gardner",
+      "target": "Dominic Hawton"
+    },
+    {
+      "order": 4,
+      "source": "Nicole Gardner",
+      "target": "Ryan Johan"
+    },
+    {
+      "order": 3,
+      "source": "Nicole Gardner",
+      "target": "David Madden"
+    },
+    {
+      "order": 4,
+      "source": "Nicole Gardner",
+      "target": "Sophie Scott"
+    },
+    {
+      "order": 1,
+      "source": "Nicole Gardner",
+      "target": "Daniel Camacho"
+    },
+    {
+      "order": 4,
+      "source": "Nicole Gardner",
+      "target": "Jack Barton"
+    },
+    {
+      "order": 1,
+      "source": "Nicole Gardner",
+      "target": "Tracy Huang"
+    },
+    {
+      "order": 1,
+      "source": "Nicole Gardner",
+      "target": "Garry Hangge Zhang"
+    },
+    {
+      "order": 4,
+      "source": "Nobuyuki Shibano",
+      "target": "Yu-Tung Liu"
+    },
+    {
+      "order": 4,
+      "source": "Tracy Huang",
+      "target": "Jack Barton"
+    },
+    {
+      "order": 2,
+      "source": "Andre Brown",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 4,
+      "source": "Andre Brown",
+      "target": "Sam Mclennan"
+    },
+    {
+      "order": 2,
+      "source": "Andre Brown",
+      "target": "Liam Jordan Sheehan"
+    },
+    {
+      "order": 1,
+      "source": "Liam Jordan Sheehan",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 4,
+      "source": "Ben Doherty",
+      "target": "Jorke Odolphi"
+    },
+    {
+      "order": 4,
+      "source": "Ben Doherty",
+      "target": "Dominic Hawton"
+    },
+    {
+      "order": 2,
+      "source": "Ben Doherty",
+      "target": "Sophie Scott"
+    },
+    {
+      "order": 1,
+      "source": "Tian Tian Lo",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Tian Tian Lo",
+      "target": "Jessie Rogers"
+    },
+    {
+      "order": 4,
+      "source": "Tian Tian Lo",
+      "target": "Amar Bennadji"
+    },
+    {
+      "order": 14,
+      "source": "Tian Tian Lo",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 1,
+      "source": "Evelyn L. C. Howe",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Blaire Haslop",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Daniel Joseph",
+      "target": "Alan Kim"
+    },
+    {
+      "order": 1,
+      "source": "Shuva Chowdhury",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Dominic Hawton",
+      "target": "Jorke Odolphi"
+    },
+    {
+      "order": 1,
+      "source": "Thomas Kvan",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "James Durcan",
+      "target": "Derek Kawiti"
+    },
+    {
+      "order": 3,
+      "source": "James Durcan",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "James Holth",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 2,
+      "source": "Shunta Shimizu",
+      "target": "Shiho Nagamachi"
+    },
+    {
+      "order": 4,
+      "source": "Amar Bennadji",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 4,
+      "source": "Amar Bennadji",
+      "target": "Thomas Tucker"
+    },
+    {
+      "order": 2,
+      "source": "Sam Mclennan",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 2,
+      "source": "Ning Wang",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Derek Kawiti",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Thomas Tucker",
+      "target": "Marc Aurel Schnabel"
+    },
+    {
+      "order": 1,
+      "source": "Marc Aurel Schnabel",
+      "target": "Jessie Rogers"
+    }
+  ]
+}
