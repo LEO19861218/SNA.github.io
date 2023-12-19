@@ -1,0 +1,1733 @@
+{
+    "nodes": [
+        {
+            "id": "Jae Wan Park",
+            "group": 1
+        },
+        {
+            "id": "Tomohiro Fukuda",
+            "group": 1
+        },
+        {
+            "id": "Marc Aurel Schnabel",
+            "group": 1
+        },
+        {
+            "id": "Yu Shimojo",
+            "group": 1
+        },
+        {
+            "id": "Yeo Wookhyun",
+            "group": 1
+        },
+        {
+            "id": "Christophe Soulier",
+            "group": 1
+        },
+        {
+            "id": "Yasuko Matsunaga",
+            "group": 1
+        },
+        {
+            "id": "Sooyeon Oh",
+            "group": 1
+        },
+        {
+            "id": "Kazunosuke Ikeno",
+            "group": 1
+        },
+        {
+            "id": "Haruyuki Kusama",
+            "group": 1
+        },
+        {
+            "id": "Shiho Nagamachi",
+            "group": 1
+        },
+        {
+            "id": "Yosuke Takada",
+            "group": 1
+        },
+        {
+            "id": "Amar Bennadji",
+            "group": 1
+        },
+        {
+            "id": "Liang Yan",
+            "group": 1
+        },
+        {
+            "id": "Yuehan Zhu",
+            "group": 1
+        },
+        {
+            "id": "Takanori Terashima",
+            "group": 1
+        },
+        {
+            "id": "Ali Motamedi",
+            "group": 1
+        },
+        {
+            "id": "Rebeka Vital",
+            "group": 1
+        },
+        {
+            "id": "Yusuke Sato",
+            "group": 1
+        },
+        {
+            "id": "Ayako Shimizu",
+            "group": 1
+        },
+        {
+            "id": "Tsuyoshi Sasada",
+            "group": 1
+        },
+        {
+            "id": "Shunta Shimizu",
+            "group": 1
+        },
+        {
+            "id": "Atsuko Kaga",
+            "group": 1
+        },
+        {
+            "id": "Tian Zhang",
+            "group": 1
+        },
+        {
+            "id": "Takashi Michikawa",
+            "group": 1
+        },
+        {
+            "id": "Taro Narahara",
+            "group": 1
+        },
+        {
+            "id": "Ryo Onishi",
+            "group": 1
+        },
+        {
+            "id": "Hao Chen",
+            "group": 1
+        },
+        {
+            "id": "Lei Sun",
+            "group": 1
+        },
+        {
+            "id": "Kazuya Inoue",
+            "group": 1
+        },
+        {
+            "id": "Yoshihiro Nishimura",
+            "group": 1
+        },
+        {
+            "id": "Yoann Pencreach",
+            "group": 1
+        },
+        {
+            "id": "Paolo Fiamma",
+            "group": 1
+        },
+        {
+            "id": "Yixi Xia",
+            "group": 1
+        },
+        {
+            "id": "Munetoshi Miyake",
+            "group": 1
+        },
+        {
+            "id": "Wookhyun Yeo",
+            "group": 1
+        },
+        {
+            "id": "Yasuyo Yoshikawa",
+            "group": 1
+        },
+        {
+            "id": "Yuji Yamauchi",
+            "group": 1
+        },
+        {
+            "id": "Kensuke Kitagawa",
+            "group": 1
+        },
+        {
+            "id": "Masahiro Hosokawa",
+            "group": 1
+        },
+        {
+            "id": "Nobuyuki Shibano",
+            "group": 1
+        },
+        {
+            "id": "Takayuki Kawaguchi",
+            "group": 1
+        },
+        {
+            "id": "Yu-Tung Liu",
+            "group": 1
+        },
+        {
+            "id": "Masahiro Kawaguchi",
+            "group": 1
+        },
+        {
+            "id": "Marcos Novak",
+            "group": 1
+        },
+        {
+            "id": "Ruth ?Ron",
+            "group": 1
+        },
+        {
+            "id": "Hitoshi Takeuchi",
+            "group": 1
+        },
+        {
+            "id": "Tian Tian Lo",
+            "group": 1
+        },
+        {
+            "id": "Dongsoo Choi",
+            "group": 1
+        },
+        {
+            "id": "Thomas Tucker",
+            "group": 1
+        },
+        {
+            "id": "Nao Ito",
+            "group": 1
+        },
+        {
+            "id": "Atsumi Maruhashi",
+            "group": 1
+        },
+        {
+            "id": "Yoshihiro Kobayashi",
+            "group": 1
+        },
+        {
+            "id": "Yasuyuki Yuda",
+            "group": 1
+        },
+        {
+            "id": "Ryuichiro Nagahama",
+            "group": 1
+        },
+        {
+            "id": "Rui Cao",
+            "group": 1
+        },
+        {
+            "id": "Atsushi Miyagawa",
+            "group": 1
+        },
+        {
+            "id": "Kazuki Yokoi",
+            "group": 1
+        },
+        {
+            "id": "Nobuyoshi Yabuki",
+            "group": 1
+        },
+        {
+            "id": "Motoi Toshio",
+            "group": 1
+        },
+        {
+            "id": "Kenichi Sakai",
+            "group": 1
+        },
+        {
+            "id": "Yuda Yasuyuki",
+            "group": 1
+        },
+        {
+            "id": "Kyoko Miyashita",
+            "group": 1
+        },
+        {
+            "id": "Keisuke Mori",
+            "group": 1
+        },
+        {
+            "id": "Yakui Ding",
+            "group": 1
+        },
+        {
+            "id": "Nobuaki Okamoto",
+            "group": 1
+        },
+        {
+            "id": "Hoki Nakamura",
+            "group": 1
+        },
+        {
+            "id": "Daiki Kido",
+            "group": 1
+        },
+        {
+            "id": "Matthew Swarts",
+            "group": 1
+        },
+        {
+            "id": "Hiroyuki Fukumoto",
+            "group": 1
+        },
+        {
+            "id": "Masaharu Taguchi",
+            "group": 1
+        },
+        {
+            "id": "Naoki Kikuchi",
+            "group": 1
+        },
+        {
+            "id": "Kostas ?Terzidis",
+            "group": 1
+        },
+        {
+            "id": "Takashi Koshiba",
+            "group": 1
+        },
+        {
+            "id": "Nagahama R.",
+            "group": 1
+        },
+        {
+            "id": "Hiroki Michida",
+            "group": 1
+        },
+        {
+            "id": "Sun Lei",
+            "group": 1
+        },
+        {
+            "id": "Toshiki Tokuhara",
+            "group": 1
+        }
+    ],
+    "links": [
+        {
+            "source": "Jae Wan Park",
+            "target": "Haruyuki Kusama",
+            "value": 1
+        },
+        {
+            "source": "Jae Wan Park",
+            "target": "Tomohiro Fukuda",
+            "value": 2
+        },
+        {
+            "source": "Jae Wan Park",
+            "target": "Tsuyoshi Sasada",
+            "value": 3
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Haruyuki Kusama",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Tsuyoshi Sasada",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Ryuichiro Nagahama",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Nagahama R.",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Sooyeon Oh",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Atsuko Kaga",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yeo Wookhyun",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yuda Yasuyuki",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Motoi Toshio",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yasuyuki Yuda",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Nobuyuki Shibano",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yu-Tung Liu",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Atsushi Miyagawa",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Masahiro Kawaguchi",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Wookhyun Yeo",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Nobuaki Okamoto",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yosuke Takada",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Takanori Terashima",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yasuko Matsunaga",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Kenichi Sakai",
+            "value": 3
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yasuyo Yoshikawa",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Kyoko Miyashita",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Takayuki Kawaguchi",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yoshihiro Nishimura",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Atsumi Maruhashi",
+            "value": 3
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Nobuyoshi Yabuki",
+            "value": 3
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Hitoshi Takeuchi",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Kensuke Kitagawa",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Masaharu Taguchi",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Ayako Shimizu",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Lei Sun",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Tian Zhang",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Christophe Soulier",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Toshiki Tokuhara",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Sun Lei",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Keisuke Mori",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Kazunosuke Ikeno",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Takashi Koshiba",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yu Shimojo",
+            "value": 3
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Hiroki Michida",
+            "value": 4
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Hiroyuki Fukumoto",
+            "value": 5
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Ali Motamedi",
+            "value": 4
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Masahiro Hosokawa",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Takashi Michikawa",
+            "value": 4
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yakui Ding",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yusuke Sato",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Munetoshi Miyake",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Kazuki Yokoi",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Kazuya Inoue",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Rui Cao",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yuehan Zhu",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Liang Yan",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yixi Xia",
+            "value": 3
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Daiki Kido",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Amar Bennadji",
+            "value": 4
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Dongsoo Choi",
+            "value": 5
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Marc Aurel Schnabel",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Marcos Novak",
+            "value": 10
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Matthew Swarts",
+            "value": 12
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Paolo Fiamma",
+            "value": 6
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Rebeka Vital",
+            "value": 15
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Ruth ?Ron",
+            "value": 11
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Taro Narahara",
+            "value": 9
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Thomas Tucker",
+            "value": 14
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Tian Tian Lo",
+            "value": 8
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yoann Pencreach",
+            "value": 7
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yoshihiro Kobayashi",
+            "value": 7
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Hoki Nakamura",
+            "value": 3
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Nao Ito",
+            "value": 5
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Shiho Nagamachi",
+            "value": 2
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Shunta Shimizu",
+            "value": 6
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Yuji Yamauchi",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Naoki Kikuchi",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Hao Chen",
+            "value": 1
+        },
+        {
+            "source": "Tomohiro Fukuda",
+            "target": "Ryo Onishi",
+            "value": 1
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Tian Tian Lo",
+            "value": 1
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Amar Bennadji",
+            "value": 4
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Dongsoo Choi",
+            "value": 5
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Marcos Novak",
+            "value": 1
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Matthew Swarts",
+            "value": 1
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Paolo Fiamma",
+            "value": 1
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Rebeka Vital",
+            "value": 1
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Ruth ?Ron",
+            "value": 1
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Taro Narahara",
+            "value": 1
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Thomas Tucker",
+            "value": 1
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Yoann Pencreach",
+            "value": 1
+        },
+        {
+            "source": "Marc Aurel Schnabel",
+            "target": "Yoshihiro Kobayashi",
+            "value": 1
+        },
+        {
+            "source": "Yu Shimojo",
+            "target": "Kazunosuke Ikeno",
+            "value": 1
+        },
+        {
+            "source": "Yu Shimojo",
+            "target": "Takashi Koshiba",
+            "value": 2
+        },
+        {
+            "source": "Yu Shimojo",
+            "target": "Hiroki Michida",
+            "value": 3
+        },
+        {
+            "source": "Yu Shimojo",
+            "target": "Hiroyuki Fukumoto",
+            "value": 3
+        },
+        {
+            "source": "Yeo Wookhyun",
+            "target": "Yuda Yasuyuki",
+            "value": 1
+        },
+        {
+            "source": "Yeo Wookhyun",
+            "target": "Tsuyoshi Sasada",
+            "value": 1
+        },
+        {
+            "source": "Yeo Wookhyun",
+            "target": "Atsuko Kaga",
+            "value": 1
+        },
+        {
+            "source": "Yeo Wookhyun",
+            "target": "Motoi Toshio",
+            "value": 1
+        },
+        {
+            "source": "Christophe Soulier",
+            "target": "Lei Sun",
+            "value": 1
+        },
+        {
+            "source": "Yasuko Matsunaga",
+            "target": "Atsuko Kaga",
+            "value": 1
+        },
+        {
+            "source": "Yasuko Matsunaga",
+            "target": "Kenichi Sakai",
+            "value": 2
+        },
+        {
+            "source": "Sooyeon Oh",
+            "target": "Yasuyuki Yuda",
+            "value": 2
+        },
+        {
+            "source": "Sooyeon Oh",
+            "target": "Wookhyun Yeo",
+            "value": 1
+        },
+        {
+            "source": "Sooyeon Oh",
+            "target": "Atsuko Kaga",
+            "value": 3
+        },
+        {
+            "source": "Sooyeon Oh",
+            "target": "Tsuyoshi Sasada",
+            "value": 1
+        },
+        {
+            "source": "Sooyeon Oh",
+            "target": "Ryuichiro Nagahama",
+            "value": 2
+        },
+        {
+            "source": "Sooyeon Oh",
+            "target": "Yu-Tung Liu",
+            "value": 2
+        },
+        {
+            "source": "Kazunosuke Ikeno",
+            "target": "Takashi Koshiba",
+            "value": 1
+        },
+        {
+            "source": "Kazunosuke Ikeno",
+            "target": "Hiroki Michida",
+            "value": 1
+        },
+        {
+            "source": "Kazunosuke Ikeno",
+            "target": "Hiroyuki Fukumoto",
+            "value": 1
+        },
+        {
+            "source": "Kazunosuke Ikeno",
+            "target": "Nobuyoshi Yabuki",
+            "value": 1
+        },
+        {
+            "source": "Haruyuki Kusama",
+            "target": "Tsuyoshi Sasada",
+            "value": 1
+        },
+        {
+            "source": "Shiho Nagamachi",
+            "target": "Hoki Nakamura",
+            "value": 3
+        },
+        {
+            "source": "Shiho Nagamachi",
+            "target": "Nao Ito",
+            "value": 5
+        },
+        {
+            "source": "Shiho Nagamachi",
+            "target": "Shunta Shimizu",
+            "value": 2
+        },
+        {
+            "source": "Shiho Nagamachi",
+            "target": "Yuji Yamauchi",
+            "value": 2
+        },
+        {
+            "source": "Yosuke Takada",
+            "target": "Atsuko Kaga",
+            "value": 2
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Dongsoo Choi",
+            "value": 4
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Kostas ?Terzidis",
+            "value": 4
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Marcos Novak",
+            "value": 4
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Matthew Swarts",
+            "value": 4
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Paolo Fiamma",
+            "value": 4
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Rebeka Vital",
+            "value": 4
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Ruth ?Ron",
+            "value": 4
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Taro Narahara",
+            "value": 4
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Thomas Tucker",
+            "value": 4
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Tian Tian Lo",
+            "value": 4
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Yoann Pencreach",
+            "value": 4
+        },
+        {
+            "source": "Amar Bennadji",
+            "target": "Yoshihiro Kobayashi",
+            "value": 4
+        },
+        {
+            "source": "Liang Yan",
+            "target": "Nobuyoshi Yabuki",
+            "value": 1
+        },
+        {
+            "source": "Yuehan Zhu",
+            "target": "Nobuyoshi Yabuki",
+            "value": 3
+        },
+        {
+            "source": "Takanori Terashima",
+            "target": "Atsuko Kaga",
+            "value": 2
+        },
+        {
+            "source": "Ali Motamedi",
+            "target": "Masahiro Hosokawa",
+            "value": 5
+        },
+        {
+            "source": "Ali Motamedi",
+            "target": "Nobuyoshi Yabuki",
+            "value": 4
+        },
+        {
+            "source": "Ali Motamedi",
+            "target": "Takashi Michikawa",
+            "value": 5
+        },
+        {
+            "source": "Ali Motamedi",
+            "target": "Yakui Ding",
+            "value": 5
+        },
+        {
+            "source": "Ali Motamedi",
+            "target": "Yusuke Sato",
+            "value": 5
+        },
+        {
+            "source": "Ali Motamedi",
+            "target": "Munetoshi Miyake",
+            "value": 4
+        },
+        {
+            "source": "Ali Motamedi",
+            "target": "Kazuki Yokoi",
+            "value": 4
+        },
+        {
+            "source": "Rebeka Vital",
+            "target": "Dongsoo Choi",
+            "value": 5
+        },
+        {
+            "source": "Rebeka Vital",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Rebeka Vital",
+            "target": "Marcos Novak",
+            "value": 10
+        },
+        {
+            "source": "Rebeka Vital",
+            "target": "Matthew Swarts",
+            "value": 12
+        },
+        {
+            "source": "Rebeka Vital",
+            "target": "Paolo Fiamma",
+            "value": 6
+        },
+        {
+            "source": "Rebeka Vital",
+            "target": "Ruth ?Ron",
+            "value": 15
+        },
+        {
+            "source": "Rebeka Vital",
+            "target": "Taro Narahara",
+            "value": 15
+        },
+        {
+            "source": "Rebeka Vital",
+            "target": "Thomas Tucker",
+            "value": 15
+        },
+        {
+            "source": "Rebeka Vital",
+            "target": "Tian Tian Lo",
+            "value": 15
+        },
+        {
+            "source": "Rebeka Vital",
+            "target": "Yoann Pencreach",
+            "value": 15
+        },
+        {
+            "source": "Rebeka Vital",
+            "target": "Yoshihiro Kobayashi",
+            "value": 15
+        },
+        {
+            "source": "Yusuke Sato",
+            "target": "Nobuyoshi Yabuki",
+            "value": 3
+        },
+        {
+            "source": "Yusuke Sato",
+            "target": "Takashi Michikawa",
+            "value": 4
+        },
+        {
+            "source": "Ayako Shimizu",
+            "target": "Masaharu Taguchi",
+            "value": 3
+        },
+        {
+            "source": "Ayako Shimizu",
+            "target": "Lei Sun",
+            "value": 3
+        },
+        {
+            "source": "Ayako Shimizu",
+            "target": "Tian Zhang",
+            "value": 2
+        },
+        {
+            "source": "Ayako Shimizu",
+            "target": "Nobuyoshi Yabuki",
+            "value": 3
+        },
+        {
+            "source": "Tsuyoshi Sasada",
+            "target": "Yuda Yasuyuki",
+            "value": 2
+        },
+        {
+            "source": "Tsuyoshi Sasada",
+            "target": "Atsuko Kaga",
+            "value": 2
+        },
+        {
+            "source": "Tsuyoshi Sasada",
+            "target": "Yasuyuki Yuda",
+            "value": 2
+        },
+        {
+            "source": "Tsuyoshi Sasada",
+            "target": "Wookhyun Yeo",
+            "value": 1
+        },
+        {
+            "source": "Tsuyoshi Sasada",
+            "target": "Ryuichiro Nagahama",
+            "value": 3
+        },
+        {
+            "source": "Tsuyoshi Sasada",
+            "target": "Nagahama R.",
+            "value": 2
+        },
+        {
+            "source": "Tsuyoshi Sasada",
+            "target": "Yu-Tung Liu",
+            "value": 5
+        },
+        {
+            "source": "Tsuyoshi Sasada",
+            "target": "Nobuyuki Shibano",
+            "value": 4
+        },
+        {
+            "source": "Shunta Shimizu",
+            "target": "Hoki Nakamura",
+            "value": 3
+        },
+        {
+            "source": "Shunta Shimizu",
+            "target": "Nao Ito",
+            "value": 5
+        },
+        {
+            "source": "Shunta Shimizu",
+            "target": "Yuji Yamauchi",
+            "value": 6
+        },
+        {
+            "source": "Atsuko Kaga",
+            "target": "Yuda Yasuyuki",
+            "value": 2
+        },
+        {
+            "source": "Atsuko Kaga",
+            "target": "Yasuyuki Yuda",
+            "value": 1
+        },
+        {
+            "source": "Atsuko Kaga",
+            "target": "Wookhyun Yeo",
+            "value": 2
+        },
+        {
+            "source": "Atsuko Kaga",
+            "target": "Ryuichiro Nagahama",
+            "value": 2
+        },
+        {
+            "source": "Atsuko Kaga",
+            "target": "Yu-Tung Liu",
+            "value": 2
+        },
+        {
+            "source": "Atsuko Kaga",
+            "target": "Motoi Toshio",
+            "value": 2
+        },
+        {
+            "source": "Atsuko Kaga",
+            "target": "Nobuyuki Shibano",
+            "value": 2
+        },
+        {
+            "source": "Atsuko Kaga",
+            "target": "Atsushi Miyagawa",
+            "value": 1
+        },
+        {
+            "source": "Atsuko Kaga",
+            "target": "Masahiro Kawaguchi",
+            "value": 2
+        },
+        {
+            "source": "Atsuko Kaga",
+            "target": "Nobuaki Okamoto",
+            "value": 2
+        },
+        {
+            "source": "Atsuko Kaga",
+            "target": "Kenichi Sakai",
+            "value": 1
+        },
+        {
+            "source": "Tian Zhang",
+            "target": "Masaharu Taguchi",
+            "value": 2
+        },
+        {
+            "source": "Tian Zhang",
+            "target": "Lei Sun",
+            "value": 2
+        },
+        {
+            "source": "Tian Zhang",
+            "target": "Nobuyoshi Yabuki",
+            "value": 2
+        },
+        {
+            "source": "Takashi Michikawa",
+            "target": "Masahiro Hosokawa",
+            "value": 1
+        },
+        {
+            "source": "Takashi Michikawa",
+            "target": "Nobuyoshi Yabuki",
+            "value": 3
+        },
+        {
+            "source": "Takashi Michikawa",
+            "target": "Yakui Ding",
+            "value": 4
+        },
+        {
+            "source": "Taro Narahara",
+            "target": "Dongsoo Choi",
+            "value": 5
+        },
+        {
+            "source": "Taro Narahara",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Taro Narahara",
+            "target": "Marcos Novak",
+            "value": 10
+        },
+        {
+            "source": "Taro Narahara",
+            "target": "Matthew Swarts",
+            "value": 12
+        },
+        {
+            "source": "Taro Narahara",
+            "target": "Paolo Fiamma",
+            "value": 6
+        },
+        {
+            "source": "Taro Narahara",
+            "target": "Ruth ?Ron",
+            "value": 11
+        },
+        {
+            "source": "Taro Narahara",
+            "target": "Thomas Tucker",
+            "value": 9
+        },
+        {
+            "source": "Taro Narahara",
+            "target": "Tian Tian Lo",
+            "value": 9
+        },
+        {
+            "source": "Taro Narahara",
+            "target": "Yoann Pencreach",
+            "value": 9
+        },
+        {
+            "source": "Taro Narahara",
+            "target": "Yoshihiro Kobayashi",
+            "value": 9
+        },
+        {
+            "source": "Ryo Onishi",
+            "target": "Nobuyoshi Yabuki",
+            "value": 3
+        },
+        {
+            "source": "Hao Chen",
+            "target": "Nobuyoshi Yabuki",
+            "value": 1
+        },
+        {
+            "source": "Lei Sun",
+            "target": "Masaharu Taguchi",
+            "value": 4
+        },
+        {
+            "source": "Lei Sun",
+            "target": "Nobuyoshi Yabuki",
+            "value": 1
+        },
+        {
+            "source": "Lei Sun",
+            "target": "Toshiki Tokuhara",
+            "value": 1
+        },
+        {
+            "source": "Kazuya Inoue",
+            "target": "Nobuyoshi Yabuki",
+            "value": 1
+        },
+        {
+            "source": "Kazuya Inoue",
+            "target": "Rui Cao",
+            "value": 1
+        },
+        {
+            "source": "Yoshihiro Nishimura",
+            "target": "Takayuki Kawaguchi",
+            "value": 1
+        },
+        {
+            "source": "Yoshihiro Nishimura",
+            "target": "Atsumi Maruhashi",
+            "value": 2
+        },
+        {
+            "source": "Yoshihiro Nishimura",
+            "target": "Nobuyoshi Yabuki",
+            "value": 2
+        },
+        {
+            "source": "Yoann Pencreach",
+            "target": "Dongsoo Choi",
+            "value": 5
+        },
+        {
+            "source": "Yoann Pencreach",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Yoann Pencreach",
+            "target": "Marcos Novak",
+            "value": 10
+        },
+        {
+            "source": "Yoann Pencreach",
+            "target": "Matthew Swarts",
+            "value": 12
+        },
+        {
+            "source": "Yoann Pencreach",
+            "target": "Paolo Fiamma",
+            "value": 6
+        },
+        {
+            "source": "Yoann Pencreach",
+            "target": "Ruth ?Ron",
+            "value": 11
+        },
+        {
+            "source": "Yoann Pencreach",
+            "target": "Thomas Tucker",
+            "value": 14
+        },
+        {
+            "source": "Yoann Pencreach",
+            "target": "Tian Tian Lo",
+            "value": 8
+        },
+        {
+            "source": "Yoann Pencreach",
+            "target": "Yoshihiro Kobayashi",
+            "value": 3
+        },
+        {
+            "source": "Paolo Fiamma",
+            "target": "Dongsoo Choi",
+            "value": 5
+        },
+        {
+            "source": "Paolo Fiamma",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Paolo Fiamma",
+            "target": "Marcos Novak",
+            "value": 10
+        },
+        {
+            "source": "Paolo Fiamma",
+            "target": "Matthew Swarts",
+            "value": 12
+        },
+        {
+            "source": "Paolo Fiamma",
+            "target": "Ruth ?Ron",
+            "value": 6
+        },
+        {
+            "source": "Paolo Fiamma",
+            "target": "Thomas Tucker",
+            "value": 6
+        },
+        {
+            "source": "Paolo Fiamma",
+            "target": "Tian Tian Lo",
+            "value": 6
+        },
+        {
+            "source": "Paolo Fiamma",
+            "target": "Yoshihiro Kobayashi",
+            "value": 6
+        },
+        {
+            "source": "Yixi Xia",
+            "target": "Nobuyoshi Yabuki",
+            "value": 2
+        },
+        {
+            "source": "Munetoshi Miyake",
+            "target": "Nobuyoshi Yabuki",
+            "value": 1
+        },
+        {
+            "source": "Wookhyun Yeo",
+            "target": "Yasuyuki Yuda",
+            "value": 1
+        },
+        {
+            "source": "Wookhyun Yeo",
+            "target": "Atsushi Miyagawa",
+            "value": 2
+        },
+        {
+            "source": "Wookhyun Yeo",
+            "target": "Masahiro Kawaguchi",
+            "value": 3
+        },
+        {
+            "source": "Wookhyun Yeo",
+            "target": "Nobuaki Okamoto",
+            "value": 2
+        },
+        {
+            "source": "Yasuyo Yoshikawa",
+            "target": "Kyoko Miyashita",
+            "value": 1
+        },
+        {
+            "source": "Yasuyo Yoshikawa",
+            "target": "Kenichi Sakai",
+            "value": 1
+        },
+        {
+            "source": "Yuji Yamauchi",
+            "target": "Hoki Nakamura",
+            "value": 3
+        },
+        {
+            "source": "Yuji Yamauchi",
+            "target": "Nao Ito",
+            "value": 5
+        },
+        {
+            "source": "Kensuke Kitagawa",
+            "target": "Nobuyoshi Yabuki",
+            "value": 2
+        },
+        {
+            "source": "Masahiro Hosokawa",
+            "target": "Nobuyoshi Yabuki",
+            "value": 1
+        },
+        {
+            "source": "Nobuyuki Shibano",
+            "target": "Ryuichiro Nagahama",
+            "value": 3
+        },
+        {
+            "source": "Nobuyuki Shibano",
+            "target": "Yu-Tung Liu",
+            "value": 4
+        },
+        {
+            "source": "Takayuki Kawaguchi",
+            "target": "Atsumi Maruhashi",
+            "value": 1
+        },
+        {
+            "source": "Takayuki Kawaguchi",
+            "target": "Nobuyoshi Yabuki",
+            "value": 1
+        },
+        {
+            "source": "Yu-Tung Liu",
+            "target": "Ryuichiro Nagahama",
+            "value": 3
+        },
+        {
+            "source": "Masahiro Kawaguchi",
+            "target": "Atsushi Miyagawa",
+            "value": 2
+        },
+        {
+            "source": "Marcos Novak",
+            "target": "Dongsoo Choi",
+            "value": 5
+        },
+        {
+            "source": "Marcos Novak",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Marcos Novak",
+            "target": "Matthew Swarts",
+            "value": 10
+        },
+        {
+            "source": "Marcos Novak",
+            "target": "Ruth ?Ron",
+            "value": 10
+        },
+        {
+            "source": "Marcos Novak",
+            "target": "Thomas Tucker",
+            "value": 10
+        },
+        {
+            "source": "Marcos Novak",
+            "target": "Tian Tian Lo",
+            "value": 10
+        },
+        {
+            "source": "Marcos Novak",
+            "target": "Yoshihiro Kobayashi",
+            "value": 10
+        },
+        {
+            "source": "Ruth ?Ron",
+            "target": "Dongsoo Choi",
+            "value": 5
+        },
+        {
+            "source": "Ruth ?Ron",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Ruth ?Ron",
+            "target": "Matthew Swarts",
+            "value": 12
+        },
+        {
+            "source": "Ruth ?Ron",
+            "target": "Thomas Tucker",
+            "value": 11
+        },
+        {
+            "source": "Ruth ?Ron",
+            "target": "Tian Tian Lo",
+            "value": 11
+        },
+        {
+            "source": "Ruth ?Ron",
+            "target": "Yoshihiro Kobayashi",
+            "value": 11
+        },
+        {
+            "source": "Tian Tian Lo",
+            "target": "Dongsoo Choi",
+            "value": 5
+        },
+        {
+            "source": "Tian Tian Lo",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Tian Tian Lo",
+            "target": "Matthew Swarts",
+            "value": 12
+        },
+        {
+            "source": "Tian Tian Lo",
+            "target": "Thomas Tucker",
+            "value": 14
+        },
+        {
+            "source": "Tian Tian Lo",
+            "target": "Yoshihiro Kobayashi",
+            "value": 8
+        },
+        {
+            "source": "Dongsoo Choi",
+            "target": "Kostas ?Terzidis",
+            "value": 5
+        },
+        {
+            "source": "Dongsoo Choi",
+            "target": "Matthew Swarts",
+            "value": 5
+        },
+        {
+            "source": "Dongsoo Choi",
+            "target": "Thomas Tucker",
+            "value": 5
+        },
+        {
+            "source": "Dongsoo Choi",
+            "target": "Yoshihiro Kobayashi",
+            "value": 5
+        },
+        {
+            "source": "Thomas Tucker",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Thomas Tucker",
+            "target": "Matthew Swarts",
+            "value": 12
+        },
+        {
+            "source": "Thomas Tucker",
+            "target": "Yoshihiro Kobayashi",
+            "value": 14
+        },
+        {
+            "source": "Nao Ito",
+            "target": "Hoki Nakamura",
+            "value": 3
+        },
+        {
+            "source": "Atsumi Maruhashi",
+            "target": "Nobuyoshi Yabuki",
+            "value": 3
+        },
+        {
+            "source": "Yoshihiro Kobayashi",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Yoshihiro Kobayashi",
+            "target": "Matthew Swarts",
+            "value": 12
+        },
+        {
+            "source": "Rui Cao",
+            "target": "Nobuyoshi Yabuki",
+            "value": 3
+        },
+        {
+            "source": "Kazuki Yokoi",
+            "target": "Nobuyoshi Yabuki",
+            "value": 1
+        },
+        {
+            "source": "Nobuyoshi Yabuki",
+            "target": "Masaharu Taguchi",
+            "value": 4
+        },
+        {
+            "source": "Nobuyoshi Yabuki",
+            "target": "Toshiki Tokuhara",
+            "value": 2
+        },
+        {
+            "source": "Nobuyoshi Yabuki",
+            "target": "Yakui Ding",
+            "value": 3
+        },
+        {
+            "source": "Nobuyoshi Yabuki",
+            "target": "Daiki Kido",
+            "value": 1
+        },
+        {
+            "source": "Nobuyoshi Yabuki",
+            "target": "Naoki Kikuchi",
+            "value": 1
+        },
+        {
+            "source": "Kenichi Sakai",
+            "target": "Kyoko Miyashita",
+            "value": 2
+        },
+        {
+            "source": "Keisuke Mori",
+            "target": "Sun Lei",
+            "value": 2
+        },
+        {
+            "source": "Matthew Swarts",
+            "target": "Kostas ?Terzidis",
+            "value": 13
+        },
+        {
+            "source": "Hiroyuki Fukumoto",
+            "target": "Takashi Koshiba",
+            "value": 2
+        },
+        {
+            "source": "Hiroyuki Fukumoto",
+            "target": "Hiroki Michida",
+            "value": 4
+        },
+        {
+            "source": "Takashi Koshiba",
+            "target": "Hiroki Michida",
+            "value": 2
+        }
+    ]
+}
