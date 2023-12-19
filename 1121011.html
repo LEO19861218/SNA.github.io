@@ -6,114 +6,108 @@
     <title>Key Opinion Leaders Social Network Analysis</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <style>
-        /* Add styles to set the dropdown width */
+        /* 新增樣式，將下拉式選單樣式設置為固定位置和寬度 */
         #authorDropdown {
             width: 150px;
-        }
-
-        /* Remove width and height attributes from the SVG container */
-        #graph-svg-container {
-            /* Remove the original width and height attributes */
         }
     </style>
 </head>
 <body>
 
-<!-- Add a container to render the graph -->
+<!-- 添加一个容器来呈现图形 -->
 <div id="graph-container">
     <h1>Key Opinion Leaders Social Network Analysis</h1>
     <p>This is a dynamic network visualization of collaboration among authors.</p>
 
-    <!-- Add control buttons -->
+    <!-- 添加控制按钮 -->
     <div>
         <label>Show/Hide Author Names:</label>
         <input type="checkbox" id="showHideAuthorNames" checked>
 
-        <!-- Move the dropdown menu here -->
+        <!-- 移動下拉式選單到這裡 -->
         <select id="authorDropdown">
-            <option value="network_data.json">Tomohiro Fukuda</option>
+            <option value="graph_data.json">Tomohiro Fukuda</option>
             <option value="graph2_data.json">Marc Aurel Schnabel</option>
-            <option value="graph3_data.json">Matthias Hank Haeusler</option>
-            <option value="selected_authors_subgraph_data.json">Selected Authors</option>
-            <option value="graph4_data.json">Three author</option>
-            <option value="graph5_data.json">All author</option>
-            <option value="d3_json_subgraph.json">Social Network Analysis</option>
-            <!-- Add more options for other authors -->
+            <option value="graph3_data.json">Matthias Hank Haeusler</option> <!-- 新增选项 -->
+            <!-- 添加更多作者的選項 -->
         </select>
     </div>
 
-    <!-- Modify the width and height of the SVG container -->
-    <div id="graph-svg-container" style="width: 100%; height: 100vh;"></div>
+    <!-- 添加 SVG 容器 -->
+    <div id="graph-svg-container"></div>
 </div>
 
 <script>
-// Update the selected author
+// 初始化加載數據
+loadData("graph_data.json");
+
+// 更新所選作者
 function updateAuthorSelection() {
     var selectedFile = authorDropdown.property("value");
-    // Perform actions based on the selected JSON file
+    // 根据所选JSON文件执行相应的操作
     d3.json(selectedFile).then(function(newData) {
-        // Add actions to display the new data
+        // 添加顯示新的數據的相關操作
         console.log("Selected File:", selectedFile);
         console.log("New Data:", newData);
 
-        // Remove the previous SVG
+        // 移除先前的 SVG
         d3.select("#graph-svg-container").select("svg").remove();
 
-        // Load the new data
+        // 加載新的數據
         loadData(selectedFile);
     }).catch(function(error) {
         console.error("Error loading data:", error);
     });
 }
 
-// Load data
+// 加載數據
 function loadData(file) {
     d3.json(file).then(function(data) {
-        // Create the SVG element
+        // 创建 SVG 元素
         var svg = d3.select("#graph-svg-container")
                     .append("svg")
-                    .attr("width", 2000)
-                    .attr("height", 2000);
+                    .attr("width", 800)
+                    .attr("height", 800);
 
-        // Create the force-directed graph
+        // 创建力导向图
         var simulation = d3.forceSimulation(data.nodes)
                            .force("link", d3.forceLink(data.links).id(function(d) { return d.id; }))
                            .force("charge", d3.forceManyBody().strength(-50))
-                           .force("center", d3.forceCenter(1000, 500))  // Adjust the position here
+                           .force("center", d3.forceCenter(400, 400))
                            .force("collide", d3.forceCollide().radius(10).strength(0.5))
                            .on("tick", ticked);
 
-        // Create a color scale
+        // 创建颜色比例尺
         var colorScale = d3.scaleLinear()
-                           .domain([0, 1])  // Assuming the range of degree centrality is [0, 1]
+                           .domain([0, 1])  // 假设度中心性的范围在 [0, 1] 之间
                            .range(["lightblue", "orange"]);
 
-        // Add edges
+        // 添加边
         var link = svg.selectAll("line")
                       .data(data.links)
                       .enter().append("line")
-                      .style("stroke", "gray");  // Set the edge color to gray
+                      .style("stroke", "gray");  // 设置边的颜色为灰色
 
-        // Add nodes
+        // 添加节点
         var node = svg.selectAll("circle")
                       .data(data.nodes)
                       .enter().append("circle")
-                      .attr("r", function(d) { return 5 + d.degree_centrality * 20; })  // Adjust the node size based on degree centrality
-                      .style("fill", function(d) { return colorScale(d.degree_centrality); })  // Set the node color based on degree centrality
-                      .call(d3.drag()  // Add drag behavior
+                      .attr("r", function(d) { return 5 + d.degree_centrality * 20; })  // 根据度中心性调整节点的大小
+                      .style("fill", function(d) { return colorScale(d.degree_centrality); })  // 根据度中心性设置节点的颜色
+                      .call(d3.drag()  // 添加拖拽行为
                           .on("start", dragstarted)
                           .on("drag", dragged)
                           .on("end", dragended));
 
-        // Add node labels
+        // 添加节点标签
         var label = svg.selectAll(null)
                       .data(data.nodes)
                       .enter().append("text")
-                      .text(function(d) { return d.id + " (" + d.degree_centrality.toFixed(2) + ")"; })  // Display node ID and degree centrality value
+                      .text(function(d) { return d.id + " (" + d.degree_centrality.toFixed(2) + ")"; })  // 顯示節點ID和度中心性數值
                       .attr("font-size", 8)
                       .attr("dx", 12)
                       .attr("dy", 4)
-                      .style("fill", "black");  // Set the color of node labels to black
+                      .style("fill", "black");  // 设置节点标签的颜色为黑色
 
         function ticked() {
             link.attr("x1", function(d) { return d.source.x; })
@@ -127,7 +121,7 @@ function loadData(file) {
             label.attr("x", function(d) { return d.x; })
                  .attr("y", function(d) { return d.y; });
 
-            // Control the visibility of node labels
+            // 控制节点标签的可见性
             label.style("display", function(d) {
                 return document.getElementById("showHideAuthorNames").checked ? "block" : "none";
             });
@@ -152,27 +146,24 @@ function loadData(file) {
     });
 }
 
-// Get control button elements
+// 获取控制按钮元素
 var showHideAuthorNamesCheckbox = d3.select("#showHideAuthorNames");
 var authorDropdown = d3.select("#authorDropdown");
 
-// Listen for button state changes
+// 监听按钮状态变化
 showHideAuthorNamesCheckbox.on("change", updateAuthorNamesVisibility);
 
-// Update author name display
+// 更新作者名字显示
 function updateAuthorNamesVisibility() {
     d3.selectAll("text").style("display", function(d) {
         return showHideAuthorNamesCheckbox.property("checked") ? "block" : "none";
     });
 }
 
-// Listen for dropdown menu changes
+// 监听下拉式選單變化
 authorDropdown.on("change", updateAuthorSelection);
-
-// Initialize data loading
-loadData("d3_json_subgraph.json");
 
 </script>
 
-</body> 
+</body>
 </html>
