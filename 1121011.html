@@ -74,7 +74,7 @@ function loadData(file) {
         var simulation = d3.forceSimulation(data.nodes)
                            .force("link", d3.forceLink(data.links).id(function(d) { return d.id; }))
                            .force("charge", d3.forceManyBody().strength(-50))
-                           .force("center", d3.forceCenter(2000, 2000))
+                           .force("center", d3.forceCenter(800, 800))
                            .force("collide", d3.forceCollide().radius(10).strength(0.5))
                            .on("tick", ticked);
 
