@@ -17,19 +17,20 @@
     <svg></svg>
 
     <script>
-        let globalCsvData = null; // To store CSV data globally
+        let globalCsvData = null;  // To store CSV data globally
 
         document.getElementById('upload').addEventListener('change', function(event) {
             const file = event.target.files[0];
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function(e) {
-                    globalCsvData = e.target.result; // Store CSV data globally
+                    globalCsvData = e.target.result;  // Store CSV data globally
                 };
                 reader.readAsText(file);
             }
         });
 
+        // Function to process the file and generate the graph
         function processFile() {
             if (globalCsvData) {
                 createGraph(globalCsvData);
@@ -38,20 +39,20 @@
             }
         }
 
+        // Function to create the graph from CSV data
         function createGraph(csvData) {
             const data = d3.csvParse(csvData, d3.autoType);
+            // Assume "work_id" relates to "Order", creating links based on these
             const links = data.map(d => ({ source: d.work_id, target: d.Order, value: 1 }));
             const nodes = Array.from(new Set(links.flatMap(d => [d.source, d.target])), id => ({ id }));
 
             const svg = d3.select('svg').html(''); // Clear previous SVG content
             const width = +svg.attr('width');
             const height = +svg.attr('height');
-            svg.attr('viewBox', `-${width / 2} -${height / 2} ${width} ${height}`);
-
             const simulation = d3.forceSimulation(nodes)
-                .force("link", d3.forceLink(links).id(d => d.id).distance(100))
-                .force("charge", d3.forceManyBody().strength(-400))
-                .force("center", d3.forceCenter(0, 0)); // Center the graph at (0, 0)
+                .force("link", d3.forceLink(links).id(d => d.id))
+                .force("charge", d3.forceManyBody())
+                .force("center", d3.forceCenter(width / 2, height / 2));
 
             const link = svg.append("g")
                 .attr("stroke", "#999")
@@ -84,30 +85,31 @@
             });
 
             function drag(simulation) {
-                function dragstarted(event) {
-                    if (!event.active) simulation.alphaTarget(0.3).restart();
-                    event.subject.fx = event.subject.x;
-                    event.subject.fy = event.subject.y;
-                }
+              function dragstarted(event) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                event.subject.fx = event.subject.x;
+                event.subject.fy = event.subject.y;
+              }
 
-                function dragged(event) {
-                    event.subject.fx = event.x;
-                    event.subject.fy = event.y;
-                }
+              function dragged(event) {
+                event.subject.fx = event.x;
+                event.subject.fy = event.y;
+              }
 
-                function dragended(event) {
-                    if (!event.active) simulation.alphaTarget(0);
-                    event.subject.fx = null;
-                    event.subject.fy = null;
-                    simulation.alphaTarget(0.3).restart(); // Reheat the simulation to recenter after dragging
-                }
+              function dragended(event) {
+                if (!event.active) simulation.alphaTarget(0);
+                event.subject.fx = null;
+                event.subject.fy = null;
+              }
 
-                return d3.drag()
-                    .on("start", dragstarted)
-                    .on("drag", dragged)
-                    .on("end", dragended);
+              return d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended);
             }
         }
     </script>
 </body>
+</html>
+
 
