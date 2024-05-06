@@ -49,10 +49,12 @@
             const svg = d3.select('svg').html(''); // Clear previous SVG content
             const width = +svg.attr('width');
             const height = +svg.attr('height');
+
+            // Initialize the simulation with appropriate forces
             const simulation = d3.forceSimulation(nodes)
-                .force("link", d3.forceLink(links).id(d => d.id))
-                .force("charge", d3.forceManyBody())
-                .force("center", d3.forceCenter(width / 2, height / 2));
+                .force("link", d3.forceLink(links).id(d => d.id).distance(100)) // Control the length of links
+                .force("charge", d3.forceManyBody().strength(-400)) // Increase the repulsion between nodes
+                .force("center", d3.forceCenter(width / 2, height / 2)); // Center the graph in the SVG
 
             const link = svg.append("g")
                 .attr("stroke", "#999")
