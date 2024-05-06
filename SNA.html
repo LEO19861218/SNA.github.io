@@ -7,7 +7,13 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         body { font-family: Arial, sans-serif; }
-        svg { width: 100%; height: 600px; border: 1px solid #aaa; }
+        svg { 
+            width: 100%; 
+            height: 600px; 
+            border: 1px solid #aaa;
+            display: block;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
@@ -71,7 +77,12 @@
                 .attr("fill", "#69b3a2")
                 .call(drag(simulation));
 
-            node.append("title")
+            const label = svg.append("g")
+                .attr("class", "labels")
+                .selectAll("text")
+                .data(nodes)
+                .enter().append("text")
+                .attr("class", "label")
                 .text(d => d.id);
 
             simulation.on("tick", () => {
@@ -82,6 +93,9 @@
 
                 node.attr("cx", d => d.x)
                     .attr("cy", d => d.y);
+
+                label.attr("x", d => d.x + 6)
+                     .attr("y", d => d.y + 3);
             });
 
             function drag(simulation) {
@@ -111,5 +125,3 @@
     </script>
 </body>
 </html>
-
-
