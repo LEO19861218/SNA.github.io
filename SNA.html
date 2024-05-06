@@ -13,29 +13,39 @@
 <body>
     <h2>Social Network Visualization from CSV</h2>
     <input type="file" id="upload" accept=".csv">
+    <button onclick="processFile()">Generate Graph</button>
     <svg></svg>
 
     <script>
-        // File upload listener
+        let globalCsvData = null;  // To store CSV data globally
+
         document.getElementById('upload').addEventListener('change', function(event) {
             const file = event.target.files[0];
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function(e) {
-                    const csv = e.target.result;
-                    createGraph(csv);
+                    globalCsvData = e.target.result;  // Store CSV data globally
                 };
                 reader.readAsText(file);
             }
         });
 
+        // Function to process the file and generate the graph
+        function processFile() {
+            if (globalCsvData) {
+                createGraph(globalCsvData);
+            } else {
+                alert("Please upload a CSV file first.");
+            }
+        }
+
         // Function to create the graph from CSV data
         function createGraph(csvData) {
             const data = d3.csvParse(csvData, d3.autoType);
-            const links = data.map(d => ({ source: d.source, target: d.target }));
+            const links = data.map(d => ({ source: d.source, target: d.target, value: d.weight || 1 }));
             const nodes = Array.from(new Set(links.flat().map(d => d.source).concat(links.map(d => d.target))), name => ({ name }));
 
-            const svg = d3.select('svg');
+            const svg = d3.select('svg').html(''); // Clear previous SVG content
             const width = +svg.attr('width');
             const height = +svg.attr('height');
             const simulation = d3.forceSimulation(nodes)
