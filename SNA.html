@@ -7,12 +7,14 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         body { font-family: Arial, sans-serif; }
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
         svg { 
-            width: 100%; 
+            width: 45%; 
             height: 600px; 
             border: 1px solid #aaa;
-            display: block;
-            margin: auto;
         }
         .label {
             font-size: 10px;
@@ -24,7 +26,10 @@
     <h2>Social Network Visualization from CSV</h2>
     <input type="file" id="upload" accept=".csv">
     <button onclick="processFile()">Generate Graph</button>
-    <svg></svg>
+    <div class="container">
+        <svg id="undirected"></svg>
+        <svg id="directed"></svg>
+    </div>
 
     <script>
         let globalCsvData = null;  // To store CSV data globally
@@ -53,80 +58,117 @@
         function createGraph(csvData) {
             const data = d3.csvParse(csvData, d3.autoType);
             // Assume "work_id" relates to "Order", creating links based on these
-            const links = data.map(d => ({ source: d.work_id, target: d.Order, value: 1 }));
-            const nodes = Array.from(new Set(links.flatMap(d => [d.source, d.target])), id => ({ id }));
+            const undirectedLinks = data.map(d => ({ source: d.work_id, target: d.Order, value: 1 }));
+            const directedLinks = data.map(d => ({ source: d.Order, target: d.work_id, value: 1 }));
+            const nodes = Array.from(new Set(undirectedLinks.flatMap(d => [d.source, d.target])), id => ({ id }));
 
-            const svg = d3.select('svg').html(''); // Clear previous SVG content
-            const width = +svg.attr('width');
-            const height = +svg.attr('height');
-            const simulation = d3.forceSimulation(nodes)
-                .force("link", d3.forceLink(links).id(d => d.id))
-                .force("charge", d3.forceManyBody().strength(-100))
-                .force("center", d3.forceCenter(width / 2, height / 2))
-                .force("x", d3.forceX(width / 2).strength(0.05))
-                .force("y", d3.forceY(height / 2).strength(0.05));
+            // Clear previous SVG content
+            d3.select('#undirected').html('');
+            d3.select('#directed').html('');
 
-            const link = svg.append("g")
-                .attr("stroke", "#999")
-                .selectAll("line")
-                .data(links)
-                .join("line")
-                .attr("stroke-width", 2);
+            // Create undirected graph
+            const undirectedSvg = d3.select('#undirected');
+            const undirectedWidth = +undirectedSvg.attr('width');
+            const undirectedHeight = +undirectedSvg.attr('height');
+            const undirectedSimulation = d3.forceSimulation(nodes)
+                .force("link", d3.forceLink(undirectedLinks).id(d => d.id).distance(100))
+                .force("charge", d3.forceManyBody().strength(-400))
+                .force("x", d3.forceX(undirectedWidth / 2))
+                .force("y", d3.forceY(undirectedHeight / 2));
 
-            const node = svg.append("g")
-                .attr("stroke", "#fff")
-                .attr("stroke-width", 1.5)
-                .selectAll("circle")
-                .data(nodes)
-                .join("circle")
-                .attr("r", 5)
-                .attr("fill", "#69b3a2")
-                .call(drag(simulation));
+            createGraph(undirectedSvg, undirectedLinks, nodes, undirectedSimulation);
 
-            const label = svg.append("g")
-                .attr("class", "labels")
-                .selectAll("text")
-                .data(nodes)
-                .enter().append("text")
-                .attr("class", "label")
-                .text(d => d.id);
+            // Create directed graph
+            const directedSvg = d3.select('#directed');
+            const directedWidth = +directedSvg.attr('width');
+            const directedHeight = +directedSvg.attr('height');
+            const directedSimulation = d3.forceSimulation(nodes)
+                .force("link", d3.forceLink(directedLinks).id(d => d.id).distance(100))
+                .force("charge", d3.forceManyBody().strength(-400))
+                .force("x", d3.forceX(directedWidth / 2))
+                .force("y", d3.forceY(directedHeight / 2));
 
-            simulation.on("tick", () => {
-                link.attr("x1", d => d.source.x)
-                    .attr("y1", d => d.source.y)
-                    .attr("x2", d => d.target.x)
-                    .attr("y2", d => d.target.y);
+            createGraph(directedSvg, directedLinks, nodes, directedSimulation);
 
-                node.attr("cx", d => d.x)
-                    .attr("cy", d => d.y);
+            function createGraph(svg, links, nodes, simulation) {
+                const link = svg.append("g")
+                    .attr("stroke", "#999")
+                    .selectAll("line")
+                    .data(links)
+                    .join("line")
+                    .attr("stroke-width", 2)
+                    .attr("marker-end", "url(#arrowhead)"); // Add arrow marker for directed graph
 
-                label.attr("x", d => d.x + 6)
-                     .attr("y", d => d.y + 3);
-            });
+                const node = svg.append("g")
+                    .attr("stroke", "#fff")
+                    .attr("stroke-width", 1.5)
+                    .selectAll("circle")
+                    .data(nodes)
+                    .join("circle")
+                    .attr("r", 5)
+                    .attr("fill", "#69b3a2")
+                    .call(drag(simulation));
 
-            function drag(simulation) {
-              function dragstarted(event) {
+                const label = svg.append("g")
+                    .attr("class", "labels")
+                    .selectAll("text")
+                    .data(nodes)
+                    .enter().append("text")
+                    .attr("class", "label")
+                    .text(d => d.id);
+
+                // Add arrow marker for directed graph
+                svg.append("defs").append("marker")
+                    .attr("id", "arrowhead")
+                    .attr("viewBox", "-0 -5 10 10")
+                    .attr("refX", 20)
+                    .attr("refY", 0)
+                    .attr("orient", "auto")
+                    .attr("markerWidth", 10)
+                    .attr("markerHeight", 10)
+                    .attr("xoverflow", "visible")
+                    .append("svg:path")
+                    .attr("d", "M 0,-5 L 10 ,0 L 0,5")
+                    .attr("fill", "#999")
+                    .style("stroke", "none");
+
+                simulation.on("tick", () => {
+                    link.attr("x1", d => d.source.x)
+                        .attr("y1", d => d.source.y)
+                        .attr("x2", d => d.target.x)
+                        .attr("y2", d => d.target.y);
+
+                    node.attr("cx", d => d.x)
+                        .attr("cy", d => d.y);
+
+                    label.attr("x", d => d.x + 6)
+                        .attr("y", d => d.y + 3);
+                });
+            }
+        }
+
+        function drag(simulation) {
+            function dragstarted(event) {
                 if (!event.active) simulation.alphaTarget(0.3).restart();
                 event.subject.fx = event.subject.x;
                 event.subject.fy = event.subject.y;
-              }
+            }
 
-              function dragged(event) {
+            function dragged(event) {
                 event.subject.fx = event.x;
                 event.subject.fy = event.y;
-              }
+            }
 
-              function dragended(event) {
+            function dragended(event) {
                 if (!event.active) simulation.alphaTarget(0);
                 event.subject.fx = null;
                 event.subject.fy = null;
-              }
+            }
 
-              return d3.drag()
+            return d3.drag()
                 .on("start", dragstarted)
                 .on("drag", dragged)
                 .on("end", dragended);
-            }
         }
     </script>
 </body>
