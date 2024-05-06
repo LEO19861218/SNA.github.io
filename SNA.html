@@ -14,6 +14,10 @@
             display: block;
             margin: auto;
         }
+        .label {
+            font-size: 10px;
+            fill: #333;
+        }
     </style>
 </head>
 <body>
@@ -57,8 +61,10 @@
             const height = +svg.attr('height');
             const simulation = d3.forceSimulation(nodes)
                 .force("link", d3.forceLink(links).id(d => d.id))
-                .force("charge", d3.forceManyBody())
-                .force("center", d3.forceCenter(width / 2, height / 2));
+                .force("charge", d3.forceManyBody().strength(-100))
+                .force("center", d3.forceCenter(width / 2, height / 2))
+                .force("x", d3.forceX(width / 2).strength(0.05))
+                .force("y", d3.forceY(height / 2).strength(0.05));
 
             const link = svg.append("g")
                 .attr("stroke", "#999")
