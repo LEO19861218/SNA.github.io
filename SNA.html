@@ -7,7 +7,7 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         body { font-family: Arial, sans-serif; }
-        <svg width="100%" height="600px" viewBox="-800 -600 1600 1200"></svg>
+        svg { width: 100%; height: 600px; border: 1px solid #aaa; }
     </style>
 </head>
 <body>
@@ -17,20 +17,19 @@
     <svg></svg>
 
     <script>
-        let globalCsvData = null;  // To store CSV data globally
+        let globalCsvData = null; // To store CSV data globally
 
         document.getElementById('upload').addEventListener('change', function(event) {
             const file = event.target.files[0];
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function(e) {
-                    globalCsvData = e.target.result;  // Store CSV data globally
+                    globalCsvData = e.target.result; // Store CSV data globally
                 };
                 reader.readAsText(file);
             }
         });
 
-        // Function to process the file and generate the graph
         function processFile() {
             if (globalCsvData) {
                 createGraph(globalCsvData);
@@ -39,7 +38,6 @@
             }
         }
 
-        // Function to create the graph from CSV data
         function createGraph(csvData) {
             const data = d3.csvParse(csvData, d3.autoType);
             const links = data.map(d => ({ source: d.work_id, target: d.Order, value: 1 }));
@@ -101,7 +99,7 @@
                     if (!event.active) simulation.alphaTarget(0);
                     event.subject.fx = null;
                     event.subject.fy = null;
-                    simulation.alphaTarget(0.3).restart();  // Reheat the simulation to recenter after dragging
+                    simulation.alphaTarget(0.3).restart(); // Reheat the simulation to recenter after dragging
                 }
 
                 return d3.drag()
@@ -112,4 +110,4 @@
         }
     </script>
 </body>
-</html>
+
